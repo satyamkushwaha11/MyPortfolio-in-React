@@ -1,0 +1,6 @@
+
+.header_container{
+    height: 10vh;
+    background-color: var(--app-background);
+    color: var(--app-text-color);
+}

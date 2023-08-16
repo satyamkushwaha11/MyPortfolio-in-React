@@ -1,3 +1,63 @@
+:root{
+   --app-background :white;
+   --app-text-color:black;
+
+}
+
+
+[data-theme="dark"]{
+  --app-background :black;
+  --app-text-color:white;
+  
+}
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
