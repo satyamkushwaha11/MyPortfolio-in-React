@@ -1,0 +1,53 @@
+.homepage-container{
+    
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+}
+
+.section_1{
+    width: 100%;
+    min-height: 100vh;
+    clear: both;
+    float: left;
+    position: relative;
+    margin-bottom: 190px;
+}
+
+.section_1_background_img{
+    background-image: var(--main-background-image-url);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.section1_content{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1_content .my-info{
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .section1_content{
+       
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    
+}

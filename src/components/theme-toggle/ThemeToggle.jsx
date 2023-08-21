@@ -6,7 +6,6 @@ const ThemeToggle = ({ toggleTheme }) => {
     const toggleChange = () => {
         const seletedTheme=getLocalStorage('theme')
         if (seletedTheme === 'dark') {
-            console.log('hhh')
             toggleTheme('light')
         } else {
             toggleTheme('dark')

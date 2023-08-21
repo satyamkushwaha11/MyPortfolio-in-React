@@ -1,0 +1,31 @@
+.logo-icon {
+    background-color: var(--orange);
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.icon-text2 {
+    color: var(--orange);
+}
+
+.icon-text,
+.logo-icon {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+@media screen and (max-width:1024px) {
+
+    .icon-text,
+    .logo-icon {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .icon-text,
+    .logo-icon {
+        font-size: 5vw;
+    }
+}

@@ -1,13 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
-   --app-background :white;
-   --app-text-color:black;
+   --app-background :white ;
+   --app-text-color:#2b2d33;
+   --orange:#f75023;
+   --main-background-image-url: url('../public/images/background-light.jpg');
+   --reverse-color:#2b2d33;
 
 }
 
 
 [data-theme="dark"]{
-  --app-background :black;
+  --app-background :#2b2d33;
   --app-text-color:white;
+  --main-background-image-url: url('../public/images/background-dark.jpg');
+  --reverse-color:white;
   
 }
 
@@ -19,9 +28,16 @@
   margin: 0;
   padding: 0;
   transition: all 0.3s ease-in-out;
+  font-family: jost,sans-serif;
+
 }
 
 
+
+.container{
+  max-width: 1440px;
+  margin: auto;
+}
 
 
 
