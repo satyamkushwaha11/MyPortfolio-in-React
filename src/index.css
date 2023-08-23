@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,8 +35,10 @@
 
 
 
+
+
 .container{
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
 }
 

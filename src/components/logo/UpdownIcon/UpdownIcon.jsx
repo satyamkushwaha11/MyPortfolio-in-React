@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UpdownIcon = ({imageUrl}) => {
+const UpdownIcon = ({imageUrl,classNamee}) => {
   return (
-    <div className='p-3 border-2 bg-white  w-[50px] h-[50px] rounded-full'>
+    <div className={` border-2 bg-white absolute  w-[60px] h-[60px]  ${classNamee?classNamee:''}`}>
         <img src={imageUrl||''} alt="No " className='w-[100%]'/>
     </div>
   )

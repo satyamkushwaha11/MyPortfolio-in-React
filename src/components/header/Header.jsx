@@ -49,7 +49,7 @@ const Header = () => {
     return (
 
 
-        <div className={`header_container  ${scrolled ? 'scrolled' : ''}`}>
+        <div className={`header_container    ${scrolled ? 'scrolled' : ''}`}>
             <div className='flex items-center container justify-between'>
                 <LOGO />
                 <div className='hrz-ul'>
