@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +9,7 @@
    --orange:#f75023;
    --main-background-image-url: url('../public/images/background-light.jpg');
    --reverse-color:#2b2d33;
+   --footer-background:#f2f5fb;
 
 }
 
@@ -18,6 +19,7 @@
   --app-text-color:white;
   --main-background-image-url: url('../public/images/background-dark.jpg');
   --reverse-color:white;
+  --footer-background:#3f4453;
   
 }
 
@@ -29,8 +31,7 @@
   margin: 0;
   padding: 0;
   transition: all 0.3s ease-in-out;
-  font-family: jost,sans-serif;
-
+  font-family: 'Rubik', sans-serif;
 }
 
 

@@ -18,3 +18,19 @@
 
 
 }
+
+.simple_btn_fill {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid var(--orange);
+    font-weight: 800;
+    font-size: 17px;
+    background-color: var(--orange);
+    color: var(--app-background);
+}
+
+.simple_btn_fill:hover {
+    background-color: transparent;
+    color: var(--reverse-color);
+
+}

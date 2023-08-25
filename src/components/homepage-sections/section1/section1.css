@@ -1,12 +1,3 @@
-.homepage-container {
-
-    width: 100%;
-    min-height: 100vh;
-    /* height: auto; */
-    /* clear: both; */
-    /* float: left; */
-}
-
 .section_1 {
     width: 100%;
     min-height: 100vh;
@@ -70,9 +61,6 @@
 
 
 
-
-
-/* .section1_content .my-info {} */
 
 
 @media screen and (max-width: 1024px) {
