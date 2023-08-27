@@ -29,7 +29,6 @@ const Footer = () => {
                         <li>Projects</li>
                         <li>Skill</li>
                         <li>Blogs</li>
-
                     </ul>
                 </div>
                 <div className='footer-content'>
@@ -47,7 +46,7 @@ const Footer = () => {
                     <ul>
                         <li>MADE WITH ❤️ BY
                             <div>
-                                <i>Satyam Kushwaha.</i>
+                                <i>Satyam Kushwaha</i>.
                             </div>
                         </li>
                     </ul>

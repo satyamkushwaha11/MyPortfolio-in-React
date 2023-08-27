@@ -3,31 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-   --app-background :white ;
-   --app-text-color:#2b2d33;
-   --orange:#f75023;
-   --main-background-image-url: url('../public/images/background-light.jpg');
-   --reverse-color:#2b2d33;
-   --footer-background:#f2f5fb;
+:root {
+  --app-background: white;
+  --app-text-color: #2b2d33;
+  --orange: #f75023;
+  --main-background-image-url: url('../public/images/background-light.jpg');
+  --reverse-color: #2b2d33;
+  --footer-background: #f2f5fb;
 
 }
 
 
-[data-theme="dark"]{
-  --app-background :#2b2d33;
-  --app-text-color:white;
+[data-theme="dark"] {
+  --app-background: #2b2d33;
+  --app-text-color: white;
   --main-background-image-url: url('../public/images/background-dark.jpg');
-  --reverse-color:white;
-  --footer-background:#3f4453;
-  
+  --reverse-color: white;
+  --footer-background: #3f4453;
+
 }
 
 
 
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   transition: all 0.3s ease-in-out;
@@ -35,10 +35,16 @@
 }
 
 
+.color-orange {
+  color: #f75023;
+}
+
+.bg-orange {
+  background-color: #f75023;
+}
 
 
-
-.container{
+.container {
   max-width: 1240px;
   margin: auto;
 }

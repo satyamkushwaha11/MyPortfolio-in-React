@@ -1,0 +1,8 @@
+.about-us-container{
+    min-height: 10vh;
+    padding: 8rem 0;
+    /* background-color: var(--app-background);
+    color: var(--reverse-color); */
+    border: none;
+
+}

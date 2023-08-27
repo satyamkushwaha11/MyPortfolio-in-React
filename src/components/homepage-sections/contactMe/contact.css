@@ -1,0 +1,13 @@
+.contact-me-container{
+    min-height: 10vh;
+    padding: 8rem 0;
+    /* background-color: var(--app-background);
+    color: var(--reverse-color); */
+    border: none;
+
+}
+
+.input-contact-me{
+    border: 1px solid #d6dbe5;
+    background-color: transparent;
+}
