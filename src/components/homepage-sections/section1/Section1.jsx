@@ -20,7 +20,7 @@ const Section1 = () => {
                         <div className='text-[1.5rem] mt-3 mb-5 '>
                             A <span className='text-[#1cbe59]'>   Full Stack Web Developer  </span>  From<span className='text-[var(--orange)]'>  India</span>.
                         </div>
-                        <p className='text-[1.3rem] mt-4 mb-5'>
+                        <p className='text-[1rem] mt-4 mb-5'>
                             I'm a talented full-stack web developer from India, merging creative design with powerful functionality. Passionate about crafting seamless user experiences and building robust digital solutions.                            </p>
                         <div className='flex gap-4 items-center'>
                             <SimpleBtn fill={true}>About Me</SimpleBtn>
