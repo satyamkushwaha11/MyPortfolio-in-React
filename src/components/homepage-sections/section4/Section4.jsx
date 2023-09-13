@@ -1,5 +1,5 @@
 import React from 'react'
-import SimpleBtn from '../../buttons/SimpleBtn/SimpleBtn'
+// import SimpleBtn from '../../buttons/SimpleBtn/SimpleBtn'
 
 const Section4 = () => {
   return (
