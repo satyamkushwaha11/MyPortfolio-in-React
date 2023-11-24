@@ -2,6 +2,7 @@ import React from 'react'
 import UpdownIcon from '../../logo/UpdownIcon/UpdownIcon'
 import SimpleBtn from '../../buttons/SimpleBtn/SimpleBtn'
 import './section1.css'
+import SocialMedia from '../../social media/SocialMedia'
 
 const Section1 = () => {
     return (
@@ -11,22 +12,22 @@ const Section1 = () => {
             <div className="container lg:h-[100vh]S ">
                 <div className='section1_content'>
                     <div className='my-info px-2 pb-5 text-center lg:text-left lg:w-1/2  text-[var(--reverse-color)]'>
-                        <div className='text-[2rem] font-semibold text-[var(--orange)]'>
+                        <div className='text-[3rem] font-semibold text-[var(--orange)]'>
                             Hello, I'm
                         </div>
                         <h3 className='text-[3rem] lg:text-[4rem] font-bold leading-[3.3rem]  mt-5 mb-[2rem]'>
                             Satyam Kushwaha
                         </h3>
-                        <div className='text-[1.5rem] mt-3 mb-5 '>
+                        <div className='text-[1.5rem] mt-3 mb-4 '>
                             A <span className='text-[#1cbe59]'>   Full Stack Web Developer  </span>  From<span className='text-[var(--orange)]'>  India</span>.
                         </div>
-                        <p className='text-[1rem] mt-4 mb-5'>
-                            I'm a talented full-stack web developer from India, merging creative design with powerful functionality. Passionate about crafting seamless user experiences and building robust digital solutions.                            </p>
-                        <div className='flex gap-4 items-center'>
+                        <p className='text-[1rem]   mb-5'>
+                            I'm a talented full-stack web developer from India, merging creative design with powerful functionality. Passionate about crafting seamless user experiences and building robust digital solutions.
+                        </p>
+                        <div className='flex flex-col lg:flex-row gap-5 mt-[2rem] items-center'>
                             <SimpleBtn fill={true}>About Me</SimpleBtn>
-                            <ul>
-                                social media
-                            </ul>
+
+                            <SocialMedia />
                         </div>
                     </div>
                     <div className='my-img-container  lg:w-1/2 flex items-center h-full  justify-end'>

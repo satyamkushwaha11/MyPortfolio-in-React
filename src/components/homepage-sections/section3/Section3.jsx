@@ -6,8 +6,8 @@ const Section3 = () => {
     <div className='my-[5rem] lg:my-[1rem]'>
       <div className='container flex flex-col lg:flex-row'>
 
-        <div className='lg:w-1/2'>
-          image
+        <div className='lg:w-1/2 flex justify-center'>
+          <img src="/images/satyam1.png" alt="" className='w-[550px] h-[380px] fit flip-horz lg:mr-[0px] ' />
         </div>
         <div className='lg:w-1/2'>
           <div className=' mb-[4rem] px-4'>

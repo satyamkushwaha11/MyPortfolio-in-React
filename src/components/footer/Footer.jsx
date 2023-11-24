@@ -1,6 +1,8 @@
 import React from 'react'
 import './footer.css'
 import { PiCopyrightBold } from 'react-icons/pi'
+import SocialMedia from '../social media/SocialMedia'
+import { contactDetails } from '../../config/constants'
 
 const Footer = () => {
     return (
@@ -14,9 +16,18 @@ const Footer = () => {
                                 I'm a talented full-stack web developer from India, merging creative design with powerful functionality.
                             </p>
                         </li>
-                        <li className='mt-5'>
-                            social media
-                        </li>
+
+                        <SocialMedia size={18} className='mt-3' />
+                    </ul>
+                </div>
+
+                <div className='footer-content'>
+                    <h2>Contact Me</h2>
+                    <ul className='flex flex-col gap-2 '>
+                        <li>Noida,India</li>
+                        <li>+91-9625110686</li>
+                        <li className='wrap-break'>satyamkushwaha1101@gmail.com</li>
+
 
                     </ul>
                 </div>
@@ -29,16 +40,6 @@ const Footer = () => {
                         <li>Projects</li>
                         <li>Skill</li>
                         <li>Blogs</li>
-                    </ul>
-                </div>
-                <div className='footer-content'>
-                    <h2>Contact Me</h2>
-                    <ul className='flex flex-col gap-2 '>
-                        <li>Noida,India</li>
-                        <li>+91-9625110686</li>
-                        <li className='wrap-break'>satyamkushwaha1101@gmail.com</li>
-
-
                     </ul>
                 </div>
                 <div className='footer-content'>

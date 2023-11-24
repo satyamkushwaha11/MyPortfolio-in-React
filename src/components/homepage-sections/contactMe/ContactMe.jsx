@@ -1,6 +1,11 @@
 import React from 'react'
 import './contact.css'
 import SimpleBtn from '../../buttons/SimpleBtn/SimpleBtn'
+import { ImLocation } from 'react-icons/im'
+import { MdEmail } from 'react-icons/md'
+import { FaPhoneAlt } from 'react-icons/fa'
+
+
 const ContactMe = () => {
     return (
         <div className='contact-me-container '>
@@ -20,14 +25,45 @@ const ContactMe = () => {
 
                 <div className='lg:flex px-5 lg:px-0 '>
                     <div className='w-full lg:w-1/2'>
-                        <div>
-                            <div>Location</div>
-                            <div>Email</div>
-                            <div>Phone Number</div>
-                            <div>Instagram</div>
-                            <div>Linkedin</div>
-                            <div>Github</div>
-                            <div>Facebook</div>
+                        <div className='flex flex-col gap-6 mb-5'>
+                            <div className='flex gap-4'>
+
+                                <div className='icon-contact-me text-[#f75023] bg-[#fedfd7]'>
+                                    <ImLocation size={32} />
+                                </div>
+                                <div className='flex flex-col gap-3 py-1'>
+                                    <h5 className='text-[30px] font-semibold'>Address</h5>
+                                    <div className='text-[#6f6b80]'>
+                                        Noida,India
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='flex gap-4'>
+
+                                <div className='icon-contact-me text-[#1cbe59] bg-[#ddf5e6]'>
+                                    <MdEmail size={32} />
+                                </div>
+                                <div className='flex flex-col gap-3 py-1'>
+                                    <h5 className='text-[30px] font-semibold'>Email</h5>
+                                    <div className='text-[#6f6b80]'>
+                                        satyamkushwaha1101@gmail.com
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='flex gap-4'>
+                                <div className='icon-contact-me text-[#8067f0] bg-[#ece8fd]'>
+                                    <FaPhoneAlt size={27} />
+                                </div>
+                                <div className='flex flex-col gap-3 py-1'>
+                                    <h5 className='text-[30px] font-semibold'>Phone</h5>
+                                    <div className='text-[#6f6b80]'>
+                                        +91-9625110686
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div className='w-full lg:w-1/2 '>

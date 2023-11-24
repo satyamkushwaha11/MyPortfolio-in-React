@@ -58,7 +58,7 @@ const Header = () => {
                         <li className='header-li'>About</li>
                         <li className='header-li'>Portfolio</li>
                         <li className='header-li'>Services</li>
-                        <li className='header-li'> Blog</li>
+                        <li className='header-li'>Blog</li>
                         <li className='header-li'>Contact</li>
                         <li>
                             <ThemeToggle toggleTheme={toggleTheme} />
