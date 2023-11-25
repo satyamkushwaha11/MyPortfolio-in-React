@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import { PiCopyrightBold } from 'react-icons/pi'
 import SocialMedia from '../social media/SocialMedia'
-import { contactDetails } from '../../config/constants'
+// import { contactDetails } from '../../config/constants'
 
 const Footer = () => {
     return (
