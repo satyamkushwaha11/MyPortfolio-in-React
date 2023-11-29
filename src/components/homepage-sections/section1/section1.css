@@ -46,6 +46,18 @@
     animation: floatAnimation 3s ease-in-out infinite;
 }
 
+.dizme_tm_down svg #wheel {
+    margin-top: 3px;
+    stroke: var(--reverse-color);
+    animation: floatAnimation ease 1s infinite;
+}
+
+.dizme_tm_down svg #mouse {
+    stroke: var(--reverse-color);
+}
+
+
+
 @keyframes floatAnimation {
 
     0%,

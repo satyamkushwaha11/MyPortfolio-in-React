@@ -5,3 +5,27 @@
     border: none;
 } */
 
+
+
+.dizme_tm_process {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dizme_tm_process .svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+  
+}
+
+.dizme_tm_process .svg #process_outline {
+ fill: var(--reverse-color);
+}
+
+
+

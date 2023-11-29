@@ -12,6 +12,7 @@ const Header = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+
     const setDarkMode = () => {
         setLocalStorage('theme', 'dark')
         document.querySelector("body").setAttribute('data-theme', 'dark');
@@ -33,6 +34,7 @@ const Header = () => {
     useEffect(() => {
         // const getTheme =
         setLightMode()
+        // setDarkMode()
         const handleScroll = () => {
             if (window.scrollY > 50) {
                 setScrolled(true);

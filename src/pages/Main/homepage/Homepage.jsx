@@ -6,6 +6,7 @@ import Section2 from '../../../components/homepage-sections/section2/Section2'
 import ContactMe from '../../../components/homepage-sections/contactMe/ContactMe'
 import Section3 from '../../../components/homepage-sections/section3/Section3'
 import Section4 from '../../../components/homepage-sections/section4/Section4'
+import MyTech from '../../../components/homepage-sections/My-tech/MyTech'
 
 const Homepage = () => {
     return (
@@ -15,6 +16,7 @@ const Homepage = () => {
             <div className='theme-bg'>
                 <Section2 />
                 <Section3 />
+                <MyTech/>
                 <Section4 />
                 {/* <AboutUs /> */}
                 <ContactMe />

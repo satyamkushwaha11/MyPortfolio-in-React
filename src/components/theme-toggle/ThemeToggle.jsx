@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './themeToggle.css'
 import { getLocalStorage } from '../../config/sessions';
 
@@ -12,10 +12,11 @@ const ThemeToggle = ({ toggleTheme }) => {
 
         }
     }
+
     return (
         <div>
             <label className="switch">
-                <input type="checkbox" onChange={toggleChange}/>
+                <input type="checkbox"  onChange={toggleChange}/>
                 <span className="slider round"></span>
             </label>
         </div>
