@@ -63,27 +63,33 @@ const MyTechStackList = [
                 rating: '5'
             },
             {
+                name: 'React-Native',
+                description: "JavaScript Framework for building Hybrid App",
+                image: 'reactNative.png',
+                rating: '3'
+            },
+            {
                 name: 'Nextjs',
                 description: "A React framework that gives you building blocks to create web applications.",
-                image: '',
+                image: 'nextjs.png',
                 rating: '4'
             },
             {
                 name: 'Material UI',
                 description: "An open-source project that features React components that implement Google's Material Design",
-                image: '',
+                image: 'materialUI.png',
                 rating: '4'
             },
             {
                 name: 'Bootstrap',
                 description: "Most popular CSS Framework for developing responsive and mobile-first websites",
-                image: '',
+                image: 'boostrap.png',
                 rating: '4'
             },
             {
                 name: 'Redux',
                 description: "An open-source JavaScript library for managing and centralizing application state",
-                image: '',
+                image: 'redux.png',
                 rating: '4'
             },
 
@@ -131,25 +137,25 @@ const MyTechStackList = [
             {
                 name: 'Git & Github',
                 description: "Worked with Github, Bitbucket, & Gitlab",
-                image: '',
+                image: 'github.png',
                 rating: '4'
             },
             {
                 name: 'AWS',
                 description: "Worked with Aws functionalities like EC2,Serverless,DynamoDB etc.                ",
-                image: '',
+                image: 'aws.png',
                 rating: '3'
             },
             {
                 name: 'IDE',
                 description: "Using VS Code",
-                image: '',
+                image: 'vscode.png',
                 rating: '4'
             },
             {
                 name: 'Productivity Tools',
                 description: " Worked with Jira, Trello, & Asana",
-                image: '',
+                image: 'tools.png',
                 rating: '3'
             },
 
@@ -184,7 +190,7 @@ const MyTech = () => {
 
                 {
                     MyTechStackList.map(item => (
-                        <div className='mb-[20px] px-5 md:px-0'>
+                        <div className='mb-[25px] px-5 md:px-0'>
                             <h1 className='text-[25px] font-bold my-2'>
                                 {/* <span className='text-[var(--orange)]'>
                                     {'>>> '}
@@ -198,7 +204,7 @@ const MyTech = () => {
                                     </div>
                                 </span>
                             </h1>
-                            <div className='grid grid-cols-2  md:grid-cols-3  gap-x-8 gap-y-6 pt-3 pb-4'>
+                            <div className='grid grid-cols-2  md:grid-cols-3  gap-x-8 gap-y-8 pt-3 pb-5'>
 
                                 {
                                     item?.data.map(tech => {

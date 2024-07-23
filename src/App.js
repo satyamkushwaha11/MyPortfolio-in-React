@@ -2,7 +2,7 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 // import CustomCursor from './components/cursor/CustomCursor';
-import Homepage from './pages/Main/homepage/Homepage';
+import Homepage from './pages/homepage/Homepage';
 
 function App() {
   return (

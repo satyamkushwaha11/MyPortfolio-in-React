@@ -45,7 +45,7 @@ const Section3 = () => {
 
         <div className={`lg:w-1/2  relative  hidden md:flex justify-center ${ isVisible? 'slide-in-left' : 'opacity-0'}`}>
           <div className='w-[170px] h-[70px] flex-center p-4 z-[5] left-[2rem] top-[4rem] absolute bg-[var(--reverse-color)] rounded-md'>
-            <div className=' text-[50px] font-bold text-[green]  ml-1 '>2 </div>
+            <div className=' text-[50px] font-bold text-[green]  ml-1 '>3+ </div>
             <div className=' text-[20px] font-normal leading-5 ml-2 text-[var(--app-background)]   '>
               Years of Expirences
             </div>
@@ -71,7 +71,7 @@ const Section3 = () => {
             <div className='text-[2.5rem] mb-3 font-bold'>
               I Can Design & Develope Anything You Want            </div>
             <p className='w-full    text-gray-400'>
-              Hello there! I'm a web developer, and I'm very passionate and dedicated to my work. With 2 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
+              Hello there! I'm a web developer, and I'm very passionate and dedicated to my work. With 3+ years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
 
             </p>
             <SimpleBtn fill={true} className={`mt-4 ${isVisible && 'slide-in'}`}>Hire Me</SimpleBtn>
