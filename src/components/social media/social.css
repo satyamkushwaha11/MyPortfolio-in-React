@@ -1,0 +1,23 @@
+.social-media-list {
+    list-style: none;
+}
+
+.social-media-item a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.social-media-item a:hover {
+    color: var(--orange);
+    transform: translateY(-4px) scale(1.1);
+}
+
+.social-media-item:nth-child(1) a:hover { color: #333; }
+.social-media-item:nth-child(2) a:hover { color: #0a66c2; }
+.social-media-item:nth-child(3) a:hover { color: #e1306c; }
+.social-media-item:nth-child(4) a:hover { color: #1877f2; }
+
+[data-theme="dark"] .social-media-item:nth-child(1) a:hover { color: #f5f5f5; }

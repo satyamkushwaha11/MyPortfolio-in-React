@@ -1,36 +1,69 @@
-.simple_btn {
+.simple_btn,
+.simple_btn_fill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 30px;
     border-radius: 50px;
     border: 2px solid var(--orange);
-    color: var(--reverse-color);
     font-weight: 800;
     font-size: 17px;
-
-
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.simple_btn:hover {
-    /* border: 2px solid  white; */
-    color: var(--app-background);
-
-    background-color: var(--orange);
-
-
-
+.simple_btn {
+    color: var(--reverse-color);
+    background-color: transparent;
 }
 
 .simple_btn_fill {
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: 2px solid var(--orange);
-    font-weight: 800;
-    font-size: 17px;
     background-color: var(--orange);
     color: var(--app-background);
 }
 
-.simple_btn_fill:hover {
-    background-color: transparent;
-    color: var(--reverse-color);
+.simple_btn::before,
+.simple_btn_fill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--orange);
+    transform: translateX(-101%);
+    transition: transform 0.35s ease;
+    z-index: 0;
+}
 
+.simple_btn_fill::before {
+    background: var(--app-background);
+}
+
+.simple_btn_label {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.simple_btn:hover::before,
+.simple_btn_fill:hover::before {
+    transform: translateX(0);
+}
+
+.simple_btn:hover {
+    color: var(--app-background);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(247, 80, 35, 0.25);
+}
+
+.simple_btn_fill:hover {
+    color: var(--reverse-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(247, 80, 35, 0.25);
+}
+
+.simple_btn:active,
+.simple_btn_fill:active {
+    transform: translateY(0);
 }

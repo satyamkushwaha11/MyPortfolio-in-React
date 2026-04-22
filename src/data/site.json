@@ -1,0 +1,100 @@
+{
+  "name": "Satyam Kushwaha",
+  "role": "Software Engineer · Full-Stack Developer",
+  "location": "Noida, Uttar Pradesh, India",
+  "email": "satyamkushwaha1101@gmail.com",
+  "phone": "+91-9626110686",
+  "cvUrl": "/Satyam_Kushwaha_CV.pdf",
+  "cvFileUrl": "/Satyam_Kushwaha_CV.pdf",
+  "website": "https://satyamkushwaha.netlify.com",
+  "heroTagline": "A Software Engineer from India.",
+  "heroDescription": "Full-Stack Software Engineer with 4+ years of experience building scalable web and mobile applications. Specialized in AI-driven systems, LLM integration, and cloud-native architectures using AWS — delivered end-to-end using React and Node.js with a focus on scalability, reliability, and user experience.",
+  "aboutTitle": "I Build AI-Driven Full-Stack Systems End-to-End",
+  "aboutSubtitle": "Software Engineer & Technical Lead",
+  "aboutBody": "Hi, I'm Satyam — a full-stack engineer with 4+ years of experience shipping production SaaS, AI-powered platforms, and mobile apps. I enjoy architecting scalable systems, integrating LLMs into real user workflows, and leading features from whiteboard to deploy.",
+  "yearsOfExperience": "4+",
+  "totalProjects": 20,
+  "socials": {
+    "github": "https://github.com/satyamkushwaha11",
+    "linkedin": "https://www.linkedin.com/in/satyam-kushwaha-783573205",
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/"
+  },
+  "resume": {
+    "summary": "Full-Stack Software Engineer with 4+ years of experience building scalable web and mobile applications. Specialized in AI-driven systems, LLM integration, and cloud-native architectures using AWS. Strong expertise in full-stack development, system design, REST APIs, and performance optimization. Proven track record of delivering high-performance SaaS platforms and leading end-to-end development using React and Node.js, with a focus on scalability, reliability, and user experience.",
+    "skills": [
+      { "label": "Languages", "items": ["JavaScript", "TypeScript", "Python", "C", "C++"] },
+      { "label": "Frontend", "items": ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Material UI", "Bootstrap"] },
+      { "label": "Backend", "items": ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "Serverless Framework"] },
+      { "label": "Databases", "items": ["MongoDB", "PostgreSQL", "MySQL"] },
+      { "label": "AI / LLM", "items": ["OpenAI API", "Prompt Engineering", "LLM Integration", "AI Agents"] },
+      { "label": "Cloud & DevOps", "items": ["AWS", "AWS Lambda", "Serverless Architecture", "Git", "GitHub"] },
+      { "label": "Mobile", "items": ["React Native (hybrid)", "Expo CLI"] }
+    ],
+    "experience": [
+      {
+        "company": "Swiirl Inc",
+        "role": "Software Engineer (Technical Lead)",
+        "location": "Remote, USA",
+        "period": "Oct 2025 — Present",
+        "bullets": [
+          "Led end-to-end development of a scalable web platform handling frontend and backend systems.",
+          "Designed AI-driven features using OpenAI APIs, improving content generation and user engagement.",
+          "Architected scalable backend systems supporting concurrent users and real-time interactions.",
+          "Established CI/CD pipelines and coding standards to improve development efficiency.",
+          "Collaborated with stakeholders to deliver production-ready features aligned with business goals."
+        ]
+      },
+      {
+        "company": "Eqaim Technology and Services Pvt. Ltd.",
+        "role": "Full Stack Software Developer",
+        "location": "Hyderabad, India",
+        "period": "Mar 2023 — Sep 2025",
+        "bullets": [
+          "Developed and optimized web applications, improving performance and database efficiency.",
+          "Built an AI-powered content moderation system for detecting unsafe media content.",
+          "Developed an LLM-based document Q&A system using prompt pipelines.",
+          "Engineered a resume automation platform for CV creation and job integrations."
+        ]
+      },
+      {
+        "company": "Appsdelite Technology",
+        "role": "MERN Stack Developer",
+        "location": "Mohali, India",
+        "period": "Jan 2022 — Feb 2023",
+        "bullets": [
+          "Built responsive UIs using React.js and improved user experience.",
+          "Developed REST APIs and integrated frontend with backend services.",
+          "Optimized database queries for better performance."
+        ]
+      },
+      {
+        "company": "Navgurukul Foundation",
+        "role": "Frontend Developer and Mentor",
+        "location": "Dharamshala, India",
+        "period": "Jun 2021 — Dec 2021",
+        "bullets": [
+          "Led development of a learning platform and improved UI/UX design.",
+          "Mentored students and conducted mock interviews."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "I.G.N.O.U (Indira Gandhi National Open University)",
+        "degree": "Bachelor of Computer Applications",
+        "location": "Noida, India"
+      },
+      {
+        "school": "J.N.V. (Jawahar Navodaya Vidyalaya)",
+        "degree": "Senior Secondary",
+        "location": "Dadri, India"
+      }
+    ],
+    "achievements": [
+      "Gold Medalist — National Judo Championship",
+      "Silver Medalist — SGFI Judo Championship",
+      "Silver Medalist — Regional Wrestling Championship"
+    ]
+  }
+}

@@ -10,9 +10,7 @@
   --main-background-image-url: url('../public/images/background-light.jpg');
   --reverse-color: #2b2d33;
   --footer-background: #f2f5fb;
-
 }
-
 
 [data-theme="dark"] {
   --app-background: #2b2d33;
@@ -20,50 +18,45 @@
   --main-background-image-url: url('../public/images/background-dark.jpg');
   --reverse-color: white;
   --footer-background: #3f4453;
-
 }
-
-
-
-
 
 * {
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
 
-
-.color-orange {
-  color: #f75023;
+html {
+  scroll-behavior: smooth;
 }
 
-.bg-orange {
-  background-color: #f75023;
+body {
+  margin: 0;
+  background-color: var(--app-background);
+  color: var(--app-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.color-orange { color: #f75023; }
+.bg-orange { background-color: #f75023; }
 
 .container {
   max-width: 1240px;
   margin: auto;
 }
 
+.fs-14 { font-size: 14px; }
+.fs-15 { font-size: 15px; }
+.fs-16 { font-size: 16px; }
 
-.fs-14{
-  font-size: 14px;
-}
-
-.fs-16{
-  font-size: 16px;
-}
-.fs-15{
-  font-size: 15px;
-}
-
-.flip-horz{
-  transform: scaleX(-1);
-}
+.flip-horz { transform: scaleX(-1); }
 
 .flex-center {
   display: flex;
@@ -71,115 +64,76 @@
   align-items: center;
 }
 
+/* --- Scroll reveal base ---
+ * Usage: add `reveal` (hidden) + one of `reveal-up|left|right` when visible.
+ * The element stays at translate(0,0) once the direction modifier is applied.
+ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
 
+.reveal.reveal-up,
+.reveal.reveal-left,
+.reveal.reveal-right {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
-/* ------------animations */
+/* --- Legacy slide-in helpers (kept for stability) --- */
 @keyframes slideIn {
-  from {
-    transform: translateY(40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
+.slide-in { animation: slideIn 1s ease-in; }
 
-
-.slide-in {
-  animation: slideIn 1s ease-in;
-}
-/* ------- */
 @keyframes slideInTop {
-  from {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
+.slide-in-top { animation: slideInTop 2s ease-out; }
 
-
-.slide-in-top {
-  animation: slideInTop 2s ease-out;
-}
-
-/* ----------- */
 @keyframes slideInFromRight {
-  from {
-    transform: translateX(40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  from { transform: translateX(40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
-
-
-.slide-in-right {
-  animation: slideInFromRight 2s ease-out;
-}
-
-
+.slide-in-right { animation: slideInFromRight 2s ease-out; }
 
 @keyframes slideInFromLeft {
-  from {
-    transform: translateX(-40px);
-    opacity: 0;
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.slide-in-left { animation: slideInFromLeft 2s ease-out; }
+
+/* --- Page transition --- */
+.page-fade {
+  animation: pageFade 0.5s ease;
+}
+
+@keyframes pageFade {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Accessibility: respect reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
-  to {
-    transform: translateX(0);
-    opacity: 1;
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 
-
-.slide-in-left {
-  animation: slideInFromLeft 2s ease-out;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* --- Focus styles --- */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+  border-radius: 4px;
 }

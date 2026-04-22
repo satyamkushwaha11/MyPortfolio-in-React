@@ -1,0 +1,53 @@
+[
+  {
+    "id": "post-1",
+    "slug": "crafting-a-minimal-react-portfolio",
+    "title": "Crafting a Minimal React Portfolio That Still Feels Alive",
+    "excerpt": "How I kept the bundle small while layering in scroll-triggered reveals, hover choreography, and a theme system that respects user preference.",
+    "date": "2026-02-12",
+    "readMinutes": 6,
+    "cover": "/images/round1.png",
+    "tags": ["React", "UX", "CSS"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "A portfolio is a long conversation with future collaborators. It should load fast, show range, and quietly demonstrate taste.",
+      "For the rebuild I leaned on plain CSS custom properties for theming, Tailwind for layout, and a tiny IntersectionObserver hook for the reveal animations. No framer-motion, no headless UI — just the platform, honestly used.",
+      "The animations are intentionally restrained: a 40px translate, a soft fade, staggered by about 120ms across siblings. Anything flashier starts to feel like the site is selling the animation instead of the work.",
+      "If you're building your own, resist the urge to add a library until you've tried the CSS and a hook first. Most of what we import is vestigial."
+    ]
+  },
+  {
+    "id": "post-2",
+    "slug": "from-cra-to-vite-notes",
+    "title": "From CRA to Vite — Notes From the Middle of a Migration",
+    "excerpt": "Why I considered migrating, what changed, and the three small gotchas that cost me an afternoon each.",
+    "date": "2026-01-28",
+    "readMinutes": 8,
+    "cover": "/images/round2.png",
+    "tags": ["Tooling", "React", "Vite"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "CRA served us well, but dev-server cold starts and config escape hatches were adding up. Vite's ESM-native pipeline is a big step up for everyday DX.",
+      "The migration itself was mostly renames: index.html moves to the root, entry points get a module script, and environment variables pivot from REACT_APP_ to VITE_.",
+      "Three things bit me: SVG imports (need vite-plugin-svgr), process.env references in libraries, and a jest config that needed to move to Vitest.",
+      "After two days I had faster HMR, a 40% smaller bundle, and no more transitive audit noise. Worth it."
+    ]
+  },
+  {
+    "id": "post-3",
+    "slug": "hooks-i-reach-for-daily",
+    "title": "Three Hooks I Reach For Every Single Day",
+    "excerpt": "useReveal, useScrollSpy, useTheme — the small custom hooks that earn their weight in every React app I build.",
+    "date": "2026-01-10",
+    "readMinutes": 4,
+    "cover": "/images/round3.png",
+    "tags": ["React", "Hooks"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Custom hooks are the cheapest abstraction in React. The trick is to keep them sharp — one responsibility, clear return shape.",
+      "useReveal wraps IntersectionObserver and returns [ref, visible]. I use it for every scroll-in animation on this site.",
+      "useScrollSpy takes a list of section IDs and returns the active one — perfect for highlighting the current nav link.",
+      "useTheme persists a theme to localStorage and sets a data-theme attribute on <body>. It's five lines. It changes the whole feel."
+    ]
+  }
+]

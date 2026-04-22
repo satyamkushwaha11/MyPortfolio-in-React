@@ -1,0 +1,48 @@
+[
+  {
+    "id": "g-languages",
+    "label": "Languages",
+    "data": [
+      { "id": "t-js", "name": "Javascript", "description": "Scripting language powering dynamic content on the web.", "image": "js.png", "rating": 4 },
+      { "id": "t-ts", "name": "Typescript", "description": "Strongly typed language that builds on JavaScript.", "image": "typescript.png", "rating": 4 },
+      { "id": "t-py", "name": "Python", "description": "Interpreted, object-oriented language with dynamic semantics.", "image": "python.png", "rating": 3 },
+      { "id": "t-cpp", "name": "C++", "description": "Versatile OO language with polymorphism and templates.", "image": "c++.png", "rating": 4 },
+      { "id": "t-c", "name": "C", "description": "Low-level language known for efficiency and hardware access.", "image": "c.png", "rating": 3 }
+    ]
+  },
+  {
+    "id": "g-frontend",
+    "label": "Frontend",
+    "data": [
+      { "id": "t-html", "name": "HTML", "description": "Standard markup language for web documents.", "image": "html-5.png", "rating": 5 },
+      { "id": "t-css", "name": "CSS", "description": "Styles HTML and layouts across devices.", "image": "css.png", "rating": 4 },
+      { "id": "t-react", "name": "React.js", "description": "Library for building component-based UIs.", "image": "react.png", "rating": 5 },
+      { "id": "t-rn", "name": "React Native", "description": "Framework for cross-platform native apps.", "image": "reactNative.png", "rating": 3 },
+      { "id": "t-next", "name": "Next.js", "description": "React framework for SSR/SSG web apps.", "image": "nextjs.png", "rating": 4 },
+      { "id": "t-mui", "name": "Material UI", "description": "React components implementing Material Design.", "image": "materialUI.png", "rating": 4 },
+      { "id": "t-bs", "name": "Bootstrap", "description": "Popular CSS framework for responsive design.", "image": "boostrap.png", "rating": 4 },
+      { "id": "t-redux", "name": "Redux", "description": "Predictable state container for JS apps.", "image": "redux.png", "rating": 4 }
+    ]
+  },
+  {
+    "id": "g-backend",
+    "label": "Backend",
+    "data": [
+      { "id": "t-node", "name": "Node.js", "description": "Cross-platform JavaScript runtime.", "image": "nodejs.png", "rating": 5 },
+      { "id": "t-express", "name": "Express.js", "description": "Minimal web framework for Node.", "image": "expressjs.jpeg", "rating": 4 },
+      { "id": "t-mongo", "name": "MongoDB", "description": "Document-oriented NoSQL database.", "image": "mongoDb.png", "rating": 5 },
+      { "id": "t-mysql", "name": "MySQL", "description": "Popular relational SQL database.", "image": "mysql.png", "rating": 4 },
+      { "id": "t-pg", "name": "PostgreSQL", "description": "Advanced open-source relational database.", "image": "pgsql.png", "rating": 3 }
+    ]
+  },
+  {
+    "id": "g-other",
+    "label": "Other",
+    "data": [
+      { "id": "t-git", "name": "Git & GitHub", "description": "Worked with GitHub, Bitbucket, and GitLab.", "image": "github.png", "rating": 4 },
+      { "id": "t-aws", "name": "AWS", "description": "EC2, Lambda, DynamoDB, S3 and friends.", "image": "aws.png", "rating": 3 },
+      { "id": "t-vsc", "name": "VS Code", "description": "Primary editor with a tuned setup.", "image": "vscode.png", "rating": 4 },
+      { "id": "t-prod", "name": "Productivity", "description": "Jira, Trello, Asana, Notion.", "image": "tools.png", "rating": 3 }
+    ]
+  }
+]

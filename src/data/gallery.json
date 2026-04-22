@@ -1,0 +1,11 @@
+[
+  { "id": "gal-1", "src": "/images/satyam.png", "caption": "On set", "category": "Portrait" },
+  { "id": "gal-2", "src": "/images/satyam1.png", "caption": "Studio portrait", "category": "Portrait" },
+  { "id": "gal-3", "src": "/images/satyam2.jpeg", "caption": "Evening walk", "category": "Candid" },
+  { "id": "gal-4", "src": "/images/satyam3.jpeg", "caption": "Golden hour", "category": "Candid" },
+  { "id": "gal-5", "src": "/images/round1.png", "caption": "Abstract one", "category": "Design" },
+  { "id": "gal-6", "src": "/images/round2.png", "caption": "Abstract two", "category": "Design" },
+  { "id": "gal-7", "src": "/images/round3.png", "caption": "Abstract three", "category": "Design" },
+  { "id": "gal-8", "src": "/images/background-light.jpg", "caption": "Day mood", "category": "Landscape" },
+  { "id": "gal-9", "src": "/images/background-dark.jpg", "caption": "Night mood", "category": "Landscape" }
+]

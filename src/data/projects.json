@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p-smart-commerce",
+    "title": "Smart Commerce Platform",
+    "category": "Web App",
+    "image": "/images/round1.png",
+    "tags": ["React.js", "Node.js", "Express.js", "MySQL", "OpenAI API"],
+    "live": "#",
+    "source": "#",
+    "description": "AI-powered multivendor e-commerce with natural-language product search, an intelligent price-negotiation agent, and personalized recommendations."
+  },
+  {
+    "id": "p-resume-optimizer",
+    "title": "Resume Optimizer SaaS",
+    "category": "SaaS",
+    "image": "/images/round2.png",
+    "tags": ["React.js", "Node.js", "MongoDB", "OpenAI API"],
+    "live": "#",
+    "source": "#",
+    "description": "AI resume-tailoring system using LLM agents — improves ATS matching with keyword optimization and prompt engineering. Cut manual resume effort by 70%."
+  },
+  {
+    "id": "p-interview-practice",
+    "title": "Interview Practice Platform",
+    "category": "AI / LLM",
+    "image": "/images/round3.png",
+    "tags": ["React.js", "Node.js", "OpenAI API"],
+    "live": "#",
+    "source": "#",
+    "description": "AI interview simulator that generates questions from a resume and job description, and gives adaptive feedback across realistic scenarios."
+  },
+  {
+    "id": "p-social",
+    "title": "Social Networking App",
+    "category": "Web App",
+    "image": "/images/round1.png",
+    "tags": ["React.js", "Node.js", "MongoDB", "Socket.io"],
+    "live": "#",
+    "source": "#",
+    "description": "Real-time social platform with messaging, notifications, and dynamic updates built on WebSockets."
+  },
+  {
+    "id": "p-doc-qa",
+    "title": "LLM Document Q&A",
+    "category": "AI / LLM",
+    "image": "/images/round2.png",
+    "tags": ["Node.js", "LLM", "Prompt Pipelines"],
+    "live": "#",
+    "source": "#",
+    "description": "Document question-answering system built at Eqaim using layered prompt pipelines over large document corpora."
+  },
+  {
+    "id": "p-moderation",
+    "title": "AI Content Moderation",
+    "category": "AI / LLM",
+    "image": "/images/round3.png",
+    "tags": ["Node.js", "ML", "Media Pipeline"],
+    "live": "#",
+    "source": "#",
+    "description": "Content-moderation service detecting unsafe media — production system serving concurrent users."
+  }
+]

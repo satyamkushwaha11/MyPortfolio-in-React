@@ -1,27 +1,17 @@
-import React, { useEffect } from 'react';
-import './themeToggle.css'
-import { getLocalStorage } from '../../config/sessions';
+import React from 'react';
+import './themeToggle.css';
 
-const ThemeToggle = ({theme, toggleTheme }) => {
-    const toggleChange = () => {
-        const seletedTheme=getLocalStorage('theme')
-        if (seletedTheme === 'dark') {
-            toggleTheme('light')
-        } else {
-            toggleTheme('dark')
-
-        }
-    }
-
-    console.log(theme,'ppppppppppppp')
+const ThemeToggle = ({ theme, toggleTheme }) => {
     return (
-        <div>
-            <label className="switch">
-                <input type="checkbox" checked={!!(theme==="dark")}  onChange={toggleChange}/>
-                <span className="slider round"></span>
-            </label>
-        </div>
-    )
-}
+        <label className="switch" aria-label="Toggle theme">
+            <input
+                type="checkbox"
+                checked={theme === 'dark'}
+                onChange={toggleTheme}
+            />
+            <span className="slider round" />
+        </label>
+    );
+};
 
-export default ThemeToggle
+export default ThemeToggle;

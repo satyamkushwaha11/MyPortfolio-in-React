@@ -1,16 +1,15 @@
-/* .section2_content{
-   
-    min-height: 10vh;
-    padding: 8rem 0;
-    border: none;
-} */
-
-
-
 .dizme_tm_process {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.dizme_tm_process .brush {
+    transition: transform 0.5s ease;
+}
+
+.dizme_tm_process:hover .brush {
+    transform: rotate(8deg) scale(1.05);
 }
 
 .dizme_tm_process .svg {
@@ -20,12 +19,19 @@
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-  
 }
 
 .dizme_tm_process .svg #process_outline {
- fill: var(--reverse-color);
+    fill: var(--reverse-color);
 }
 
+.service-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
 
-
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(247, 80, 35, 0.12);
+}

@@ -1,25 +1,60 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import './header.css';
-import ThemeToggle from '../theme-toggle/ThemeToggle';
-import { getLocalStorage, setLocalStorage } from '../../config/sessions';
-import LOGO from '../logo';
-import SimpleBtn from '../buttons/SimpleBtn/SimpleBtn';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from 'react-icons/io5';
 import debounce from 'lodash.debounce';
 
-const Menu = ({ theme, toggleTheme, isVertical }) => (
+import './header.css';
+import ThemeToggle from '../theme-toggle/ThemeToggle';
+import LOGO from '../logo';
+import SimpleBtn from '../buttons/SimpleBtn/SimpleBtn';
+import useScrollSpy from '../../hooks/useScrollSpy';
+import useTheme from '../../hooks/useTheme';
+import { useData } from '../../context/DataContext';
+import { CV_URL_OVERRIDE } from '../../config/config';
+
+const NAV = [
+    { label: 'Home', to: '/', section: 'home' },
+    { label: 'About', to: '/', section: 'about' },
+    { label: 'Services', to: '/', section: 'services' },
+    { label: 'Portfolio', to: '/', section: 'portfolio' },
+    { label: 'Gallery', to: '/gallery' },
+    { label: 'Blog', to: '/blog' },
+    { label: 'Resume', to: '/resume' },
+    { label: 'Contact', to: '/', section: 'contact' },
+];
+
+const isDownloadableFile = (url) => /\.(pdf|docx?|odt|rtf)(\?|#|$)/i.test(String(url || ''));
+
+const SECTION_IDS = NAV.filter((n) => n.section).map((n) => n.section);
+
+const Menu = ({ isVertical, onNavigate, activeSection, pathname, theme, toggleTheme, cvUrl }) => (
     <ul className={isVertical ? 'vert-ul' : 'header-ul'}>
-        <li className='header-li'>Home</li>
-        <li className='header-li'>About</li>
-        <li className='header-li'>Portfolio</li>
-        <li className='header-li'>Services</li>
-        <li className='header-li'>Blog</li>
-        <li className='header-li'>Contact</li>
-        <li>
+        {NAV.map((item) => {
+            const isActive =
+                (item.section && pathname === '/' && activeSection === item.section) ||
+                (!item.section && pathname === item.to);
+            return (
+                <li
+                    key={item.label}
+                    className={`header-li ${isActive ? 'header-li-active' : ''}`}
+                    onClick={() => onNavigate(item)}
+                >
+                    {item.label}
+                </li>
+            );
+        })}
+        <li className="header-theme">
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         </li>
         <li>
-            <SimpleBtn>Download CV</SimpleBtn>
+            <SimpleBtn
+                href={cvUrl}
+                download={isDownloadableFile(cvUrl) || undefined}
+                target={isDownloadableFile(cvUrl) ? undefined : '_blank'}
+            >
+                Download CV
+            </SimpleBtn>
         </li>
     </ul>
 );
@@ -27,24 +62,23 @@ const Menu = ({ theme, toggleTheme, isVertical }) => (
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [theme, setTheme] = useState("");
+    const { theme, toggleTheme } = useTheme();
+    const navigate = useNavigate();
+    const location = useLocation();
+    const activeSection = useScrollSpy(SECTION_IDS);
+    const { data } = useData();
+    const cvUrl = (CV_URL_OVERRIDE || data.site.cvUrl || '/Satyam_Kushwaha_CV.pdf').trim();
 
-    const handleScroll = useCallback(debounce(() => {
-        setScrolled(window.scrollY > 50);
-    }, 100), []);
-
-    const toggleTheme = (theme) => {
-        const newTheme = theme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-        setLocalStorage('theme', newTheme);
-        document.body.setAttribute('data-theme', newTheme);
-    };
+    const handleScroll = useMemo(
+        () =>
+            debounce(() => {
+                setScrolled(window.scrollY > 50);
+            }, 80),
+        []
+    );
 
     useEffect(() => {
-        const storedTheme = getLocalStorage('theme') || 'light';
-        setTheme(storedTheme);
-        document.body.setAttribute('data-theme', storedTheme);
-
+        handleScroll();
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -52,163 +86,70 @@ const Header = () => {
         };
     }, [handleScroll]);
 
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
+
+    const scrollToSection = (id) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
+    const handleNavigate = (item) => {
+        setMenuOpen(false);
+        if (item.section) {
+            if (location.pathname !== '/') {
+                navigate(`/#${item.section}`);
+            } else {
+                scrollToSection(item.section);
+            }
+        } else {
+            navigate(item.to);
+        }
+    };
+
     return (
         <div className={`header_container ${scrolled ? 'scrolled' : ''}`}>
-            <div className='flex items-center container justify-between'>
-                <LOGO />
-                <div className='hrz-ul'>
-                    <Menu theme={theme} toggleTheme={() => toggleTheme(theme)} isVertical={false} />
+            <div className="flex items-center container justify-between w-full">
+                <Link to="/" className="logo-link">
+                    <LOGO />
+                </Link>
+                <div className="hrz-ul">
+                    <Menu
+                        isVertical={false}
+                        onNavigate={handleNavigate}
+                        activeSection={activeSection}
+                        pathname={location.pathname}
+                        theme={theme}
+                        toggleTheme={toggleTheme}
+                        cvUrl={cvUrl}
+                    />
                 </div>
+                <button
+                    type="button"
+                    className="vert-ul-icon"
+                    onClick={() => setMenuOpen((o) => !o)}
+                    aria-label="Toggle menu"
+                >
+                    {menuOpen ? <IoClose size={28} /> : <GiHamburgerMenu size={25} />}
+                </button>
             </div>
-            <div className='vert-ul-icon' onClick={() => setMenuOpen(!menuOpen)}>
-                <GiHamburgerMenu size={25} />
+
+            <div className={`mobile-menu ${menuOpen ? 'mobile-menu-open' : ''}`}>
+                <Menu
+                    isVertical={true}
+                    onNavigate={handleNavigate}
+                    activeSection={activeSection}
+                    pathname={location.pathname}
+                    theme={theme}
+                    toggleTheme={toggleTheme}
+                    cvUrl={cvUrl}
+                />
             </div>
-            {menuOpen && (
-                <div className='absolute w-full bottom-0 left-0'>
-                    <Menu theme={theme} toggleTheme={() => toggleTheme(theme)} isVertical={true} />
-                </div>
-            )}
         </div>
     );
 };
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useEffect, useLayoutEffect, useState } from 'react'
-// import './header.css';
-// import ThemeToggle from '../theme-toggle/ThemeToggle';
-// import { getLocalStorage, setLocalStorage } from '../../config/sessions';
-// import LOGO from '../logo';
-// import SimpleBtn from '../buttons/SimpleBtn/SimpleBtn';
-// import { GiHamburgerMenu } from 'react-icons/gi'
-
-
-// const Header = () => {
-//     const [scrolled, setScrolled] = useState(false);
-//     const [menuOpen, setMenuOpen] = useState(false);
-//     const [theme, setTheme] = useState("");
-
-
-//     const setDarkMode = () => {
-//         setTheme("dark")
-//         setLocalStorage('theme', 'dark')
-//         document.querySelector("body").setAttribute('data-theme', 'dark');
-//     }
-//     const setLightMode = () => {
-//         setTheme("light")
-//         setLocalStorage('theme', 'light')
-//         document.querySelector("body").setAttribute('data-theme', 'light');
-
-//     }
-
-//     const toggleTheme = (theme) => {
-//         if (theme === 'dark') {
-//             setDarkMode()
-//         }
-//         else {
-//             setLightMode()
-//         }
-//     }
-
-//     useLayoutEffect(() => {
-//         const getTheme = getLocalStorage('theme')
-//         if (getTheme === "light") {
-//             setLightMode()
-//         }
-//         else {
-//             setDarkMode()
-//         }
-
-//         const handleScroll = () => {
-//             if (window.scrollY > 50) {
-//                 setScrolled(true);
-//             } else {
-//                 setScrolled(false);
-//             }
-//         };
-
-//         window.addEventListener('scroll', handleScroll);
-//         return () => {
-//             window.removeEventListener('scroll', handleScroll);
-//         };
-//     }, [])
-//     return (
-
-
-//         <div className={`header_container    ${scrolled ? 'scrolled' : ''}`}>
-//             <div className='flex items-center container justify-between'>
-//                 <LOGO />
-//                 <div className='hrz-ul'>
-//                     <ul className=' header-ul'>
-//                         <li className='header-li'>Home</li>
-//                         <li className='header-li'>About</li>
-//                         <li className='header-li'>Portfolio</li>
-//                         <li className='header-li'>Services</li>
-//                         <li className='header-li'>Blog</li>
-//                         <li className='header-li'>Contact</li>
-//                         <li>
-//                             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-//                         </li>
-//                         <li>
-//                             <SimpleBtn>Download CV</SimpleBtn>
-//                         </li>
-//                     </ul>
-//                 </div>
-
-//             </div>
-//             <div className=' vert-ul-icon' onClick={() => setMenuOpen(!menuOpen)}>
-//                 <GiHamburgerMenu size={25} />
-//             </div>
-
-//             <div className='absolute w-full bottom-[0px] left-0'>
-//                 {
-//                     menuOpen &&
-//                     <ul className=' vert-ul'>
-//                         <li className='header-li'>Home</li>
-//                         <li className='header-li'>About</li>
-//                         <li className='header-li'>Portfolio</li>
-//                         <li className='header-li'>Services</li>
-//                         <li className='header-li'> Blog</li>
-//                         <li className='header-li'>Contact</li>
-//                         <li className='header-li'>
-//                             <SimpleBtn>Download CV</SimpleBtn>
-//                         </li>
-
-//                         <li className='header-li'>
-//                             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-//                         </li>
-
-//                     </ul>
-//                 }
-//             </div>
-//         </div>
-
-
-
-//     )
-// }
-
-// export default Header
-
-
-
