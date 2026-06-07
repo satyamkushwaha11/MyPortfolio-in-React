@@ -5,13 +5,18 @@ import Header from './components/header/Header';
 import PublicRouter from './routers/PublicRouter';
 import ScrollToTopOnRouteChange from './routers/ScrollToTopOnRouteChange';
 import ScrollToTopButton from './components/buttons/ScrollToTopButton/ScrollToTopButton';
+import CustomCursor from './components/cursor/CustomCursor';
+import { ADMIN_ENABLED } from './pages/admin/adminAuth';
 
 function App() {
   const { pathname } = useLocation();
-  const isAdmin = pathname.startsWith('/admin');
+  // Only treat /admin as the chrome-less admin view when admin is actually
+  // enabled (dev). In production /admin 404s and should show the normal layout.
+  const isAdmin = ADMIN_ENABLED && pathname.startsWith('/admin');
 
   return (
     <div className="App">
+      <CustomCursor />
       <ScrollToTopOnRouteChange />
       {!isAdmin && <Header />}
       <PublicRouter />

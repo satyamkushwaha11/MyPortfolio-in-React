@@ -1,39 +1,63 @@
-.custom-cursor {
+/* Hide the native cursor only when the custom one is active (fine pointer). */
+.has-custom-cursor,
+.has-custom-cursor * {
+    cursor: none !important;
+}
+
+.cursor-dot,
+.cursor-ring {
     position: fixed;
-    width: 30px;
-    height: 30px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
     pointer-events: none;
-    z-index: 9999;
-  }
-  
-  .outer-circle {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 87, 51, 0.2);
-    border: 2px solid rgba(255, 87, 51, 0.4);
-    border-radius: 50%;
-    mix-blend-mode: difference;
+    z-index: 99999;
+    will-change: left, top, transform;
+}
+
+/* Solid dot — sits exactly on the pointer. */
+.cursor-dot {
+    width: 7px;
+    height: 7px;
+    background-color: var(--orange);
     transform: translate(-50%, -50%);
-    animation: outer-circle-follow 0.1s ease-in-out;
-  }
-  
-  .red-dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #ff5733;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  @keyframes outer-circle-follow {
-    from {
-      transform: translate(-50%, -50%);
+    transition: opacity 0.18s ease, background-color 0.18s ease;
+}
+
+/* Outer ring — trails the dot (eased in JS) and grows over interactive items. */
+.cursor-ring {
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--orange);
+    background-color: transparent;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.18s ease, background-color 0.18s ease,
+        border-color 0.18s ease, opacity 0.18s ease;
+}
+
+/* Over links/buttons: ring expands and faintly fills, dot fades into it. */
+.cursor-hover .cursor-ring {
+    transform: translate(-50%, -50%) scale(1.7);
+    background-color: color-mix(in srgb, var(--orange) 16%, transparent);
+}
+
+.cursor-hover .cursor-dot {
+    opacity: 0;
+}
+
+/* Click feedback. */
+.cursor-down .cursor-ring {
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Hide both when the mouse leaves the window. */
+.cursor-hidden .cursor-dot,
+.cursor-hidden .cursor-ring {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor-ring {
+        transition: opacity 0.18s ease;
     }
-    to {
-      transform: translate(-50%, -50%) translate(0, 0); /* No need for template literals */
-    }
-  }
-  
-  
+}

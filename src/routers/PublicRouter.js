@@ -6,6 +6,7 @@ import BlogPost from "../pages/blog/BlogPost";
 import Gallery from "../pages/myGallery/Gallery";
 import NotFound from "../pages/notFound/NotFound";
 import Admin from "../pages/admin/Admin";
+import { ADMIN_ENABLED } from "../pages/admin/adminAuth";
 import Resume from "../pages/resume/Resume";
 
 const PublicRouter = () => {
@@ -18,7 +19,7 @@ const PublicRouter = () => {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/admin" element={<Admin />} />
+        {ADMIN_ENABLED && <Route path="/admin" element={<Admin />} />}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

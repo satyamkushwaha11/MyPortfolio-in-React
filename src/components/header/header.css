@@ -27,7 +27,7 @@
 
 .header-ul {
     display: flex;
-    gap: 28px;
+    gap: 20px;
     align-items: center;
     list-style: none;
 }

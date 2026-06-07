@@ -10,6 +10,13 @@ import './contact.css';
 
 const INITIAL = { name: '', email: '', phone: '', subject: '', message: '' };
 
+// Builds a Gmail "compose" URL so the message opens in a new Gmail tab with the
+// recipient/subject/body pre-filled, instead of launching the OS mail client.
+const gmailCompose = (to, subject, body) =>
+    `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}` +
+    (subject ? `&su=${encodeURIComponent(subject)}` : '') +
+    (body ? `&body=${encodeURIComponent(body)}` : '');
+
 const validate = (values) => {
     const errors = {};
     if (!values.name.trim()) errors.name = 'Name is required';
@@ -42,7 +49,8 @@ const ContactMe = () => {
                 Icon: MdEmail,
                 label: 'Email',
                 value: site.email,
-                href: `mailto:${site.email}`,
+                href: gmailCompose(site.email),
+                newTab: true,
                 color: '#1cbe59',
                 bg: '#ddf5e6',
             },
@@ -79,16 +87,13 @@ const ContactMe = () => {
             '',
             values.message,
         ].filter(Boolean);
-        const mailto =
-            `mailto:${targetEmail}` +
-            `?subject=${encodeURIComponent(subject)}` +
-            `&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+        const composeUrl = gmailCompose(targetEmail, subject, bodyLines.join('\n'));
         setStatus('sending');
-        window.location.href = mailto;
-        setTimeout(() => {
-            setStatus('sent');
-            setTimeout(() => setStatus('idle'), 4000);
-        }, 300);
+        window.open(composeUrl, '_blank', 'noopener,noreferrer');
+        setValues(INITIAL);
+        setErrors({});
+        setStatus('sent');
+        setTimeout(() => setStatus('idle'), 4000);
     };
 
     return (
@@ -108,7 +113,7 @@ const ContactMe = () => {
                         className={`w-full lg:w-1/2 ${infoVisible ? 'reveal reveal-left' : 'reveal'}`}
                     >
                         <div className="flex flex-col gap-4 md:gap-6 mb-5">
-                            {contactInfo.map(({ Icon, label, value, href, color, bg }) => (
+                            {contactInfo.map(({ Icon, label, value, href, newTab, color, bg }) => (
                                 <div className="flex gap-4 contact-item" key={label}>
                                     <div className="icon-contact-me" style={{ color, backgroundColor: bg }}>
                                         <Icon size={32} />
@@ -116,7 +121,11 @@ const ContactMe = () => {
                                     <div className="flex flex-col gap-3 py-1">
                                         <h5 className="text-[30px] font-semibold">{label}</h5>
                                         {href ? (
-                                            <a href={href} className="contact-value contact-link">
+                                            <a
+                                                href={href}
+                                                className="contact-value contact-link"
+                                                {...(newTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                                            >
                                                 {value}
                                             </a>
                                         ) : (
@@ -196,7 +205,7 @@ const ContactMe = () => {
                                     {status === 'sending' ? 'Sending…' : 'Submit Now'}
                                 </SimpleBtn>
                                 {status === 'sent' && (
-                                    <span className="form-success">Your email client should have opened — thanks!</span>
+                                    <span className="form-success">Gmail should have opened in a new tab — thanks!</span>
                                 )}
                             </div>
                         </form>

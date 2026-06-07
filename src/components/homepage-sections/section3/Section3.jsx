@@ -43,7 +43,7 @@ const Section3 = () => {
                     </div>
 
                     <img
-                        src="/images/satyam1.png"
+                        src="/images/satyam_profile-pic.jpg"
                         alt={site.name}
                         className="section3-photo flip-horz"
                     />

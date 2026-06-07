@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="agHead" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8AA0FF"/>
+      <stop offset="100%" stop-color="#6C7CFF"/>
+    </linearGradient>
+  </defs>
+  <!-- antenna -->
+  <line x1="32" y1="6" x2="32" y2="15" stroke="#6C7CFF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="6" r="3.4" fill="#f75023"/>
+  <!-- ears -->
+  <rect x="7" y="27" width="6" height="13" rx="3" fill="#6C7CFF"/>
+  <rect x="51" y="27" width="6" height="13" rx="3" fill="#6C7CFF"/>
+  <!-- head -->
+  <rect x="13" y="15" width="38" height="33" rx="11" fill="url(#agHead)"/>
+  <!-- face screen -->
+  <rect x="18" y="21" width="28" height="21" rx="7" fill="#1b2440"/>
+  <!-- eyes -->
+  <circle cx="26" cy="31" r="3.3" fill="#00d6f0"/>
+  <circle cx="38" cy="31" r="3.3" fill="#00d6f0"/>
+  <!-- smile -->
+  <path d="M26 37 q6 4 12 0" fill="none" stroke="#00d6f0" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- autonomy orbit dot -->
+  <circle cx="50" cy="14" r="2.6" fill="#f75023"/>
+</svg>

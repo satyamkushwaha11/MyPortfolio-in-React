@@ -1,5 +1,305 @@
 [
   {
+    "id": "post-agentic",
+    "slug": "agentic-ai-changing-software",
+    "title": "Agentic AI in 2026: How Autonomous Agents Are Changing How We Build Software",
+    "excerpt": "Agents that plan, call tools, and act on their own are moving from demos to production. Here is what actually changes for the people who build software.",
+    "date": "2026-05-28",
+    "readMinutes": 8,
+    "cover": "/images/blog/agentic-ai-changing-software-cover.jpg",
+    "tags": ["Agentic AI", "LLM", "AI"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "For most of the last two years, AI in software meant a chat box: you typed a question, a model typed an answer. Useful, but passive. Agentic AI flips that relationship. Instead of answering, the model is given a goal, a set of tools, and the freedom to take steps toward that goal on its own.",
+      "That sounds like a small shift. In practice it changes the shape of the systems we build.",
+      { "type": "heading", "text": "What makes an agent an agent" },
+      "An agent is a loop, not a single call. The model proposes an action, the system executes it, the result is fed back, and the model decides what to do next. The interesting engineering is not the model — it is the harness around it: the tools it can call, the guardrails on those tools, and the way you decide when the loop is done.",
+      "When I build agentic features, three things matter more than the prompt itself:",
+      { "type": "list", "items": [
+        "Tools with tight contracts — every action the agent can take is a typed function with validation, not a free-form command.",
+        "Observability — you log every step, every tool call, and every decision so you can replay a run when it goes wrong.",
+        "A stopping condition — agents that cannot decide they are finished will happily burn tokens forever."
+      ]},
+      { "type": "image", "src": "/images/blog/agentic-ai-changing-software-fig.jpg", "alt": "Agentic AI illustration", "caption": "An agent is a loop: propose an action, run it, observe the result, decide what is next." },
+      { "type": "heading", "text": "What changes for developers" },
+      "The biggest change is that we spend less time writing glue code and more time designing capabilities and boundaries. The agent figures out the sequence; our job is to make sure each thing it can do is safe, scoped, and reversible.",
+      "It also changes testing. You can no longer assert a single deterministic output. Instead you test the tools in isolation, then evaluate the agent against a suite of realistic tasks and score how often it succeeds — closer to evaluating a junior teammate than unit-testing a function.",
+      { "type": "quote", "text": "The model is the cheap part. The expensive, valuable part is the system you build around it." },
+      { "type": "heading", "text": "Where to start" },
+      "You do not need a framework to begin. Start with one real task, give the model two or three well-defined tools, and put a human in the loop before any irreversible action. Once you trust the success rate, you loosen the leash. That progression — narrow, observed, then gradually autonomous — is the safest way I have found to ship agents people actually rely on.",
+      "Agentic AI is not going to replace the craft of engineering. It is going to move it up a level: from writing every step, to designing the space in which steps are taken."
+    ]
+  },
+  {
+    "id": "post-llm-integration",
+    "slug": "integrating-llms-into-web-apps",
+    "title": "A Practical Guide to Integrating LLMs Into Your Web App",
+    "excerpt": "Past the demo, real LLM features need streaming, structure, cost control, and graceful failure. A field-tested checklist from shipping these in production.",
+    "date": "2026-05-14",
+    "readMinutes": 9,
+    "cover": "/images/blog/integrating-llms-into-web-apps-cover.jpg",
+    "tags": ["LLM", "Node.js", "AI"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Calling a language model is one line of code. Shipping an LLM feature that is fast, predictable, and affordable is a different job entirely. After integrating models into several production apps, these are the parts that actually decide whether the feature works.",
+      { "type": "heading", "text": "Stream everything the user waits on" },
+      "Models are slow by web standards — a full response can take many seconds. If the user stares at a spinner the whole time, the feature feels broken even when it works. Stream tokens to the client as they arrive. Perceived performance is the feature.",
+      "On the server, that means Server-Sent Events or a streaming response; on the client, append chunks as they come. The same model call feels twice as fast purely because the user sees progress.",
+      { "type": "heading", "text": "Get structure out, not just text" },
+      "Freeform text is hard to build on. When a feature needs data — a category, a score, a list — ask the model for structured output and validate it against a schema before you trust it. If validation fails, you retry or fall back, rather than rendering garbage.",
+      { "type": "list", "items": [
+        "Define the shape you want as a schema and enforce it on the way out.",
+        "Treat the model as an untrusted input source — always validate.",
+        "Keep a deterministic fallback for when the model returns something unusable."
+      ]},
+      { "type": "image", "src": "/images/blog/integrating-llms-into-web-apps-fig.jpg", "alt": "LLM integration illustration", "caption": "Treat model output like any external input: stream it, validate it, and have a fallback." },
+      { "type": "heading", "text": "Control cost before it controls you" },
+      "Tokens are money, and usage scales with users. Cache aggressively where inputs repeat, trim context to what the task needs, and pick the smallest model that clears the quality bar — not the biggest one available. Most features do not need your most expensive model for every call.",
+      { "type": "heading", "text": "Design for failure" },
+      "Models time out, rate-limit, and occasionally return nonsense. None of that should take down your page. Wrap calls with timeouts and retries, degrade gracefully to a non-AI experience when needed, and never let a model error become a blank screen.",
+      { "type": "quote", "text": "A good LLM feature is mostly ordinary engineering: streaming, validation, caching, and good error handling — applied to a probabilistic dependency." },
+      "Nail those four — streaming, structure, cost, and failure — and the model itself becomes the easy part of the system."
+    ]
+  },
+  {
+    "id": "post-automation",
+    "slug": "automating-developer-workflows",
+    "title": "Automating the Boring Parts: Workflows That Save Developers Hours Every Week",
+    "excerpt": "The quiet productivity win is not a new editor — it is removing the small repetitive tasks that quietly eat your week. Here is what is worth automating first.",
+    "date": "2026-04-30",
+    "readMinutes": 6,
+    "cover": "/images/blog/automating-developer-workflows-cover.jpg",
+    "tags": ["Automation", "Tooling", "DevOps"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Every developer has a set of small tasks they do by hand a dozen times a day: formatting, running the same commands, copying boilerplate, checking the same dashboards. Individually they take seconds. Together they are a tax on your focus.",
+      "Automation is not about clever scripts for their own sake. It is about removing the friction between thinking and shipping.",
+      { "type": "heading", "text": "Start with what you repeat" },
+      "The best automation candidates are the things you have done so many times your hands know them. Watch yourself for a day and write down every repeated action. That list is your backlog.",
+      { "type": "list", "items": [
+        "Formatting and linting on save and on commit, so style is never a discussion.",
+        "Pre-commit checks that catch obvious mistakes before they reach CI.",
+        "One command that sets up a fresh environment from nothing.",
+        "Scripts for the tedious project chores you otherwise do manually."
+      ]},
+      { "type": "image", "src": "/images/blog/automating-developer-workflows-fig.jpg", "alt": "Automation illustration", "caption": "Automate the actions your hands already know by heart — that is where the hours hide." },
+      { "type": "heading", "text": "Let CI do the nagging" },
+      "Continuous integration is the cheapest teammate you will ever hire. Tests, type checks, builds, and security scans on every push mean problems get caught while context is fresh, not days later in review. The goal is to make the right thing happen automatically and the wrong thing hard to miss.",
+      { "type": "heading", "text": "Know when to stop" },
+      "Not everything should be automated. If a task is rare, or changes every time, a script can cost more than it saves and rot quietly until it misleads you. Automate the frequent and stable; leave the rare and fluid to judgment.",
+      { "type": "quote", "text": "Good automation is invisible. You only notice it when it is gone." },
+      "Spend an afternoon removing one repetitive task this week. Do that a few times and you will quietly buy back hours you did not know you were spending."
+    ]
+  },
+  {
+    "id": "post-react-perf",
+    "slug": "react-performance-field-guide",
+    "title": "React Performance in 2026: A Field Guide to a Fast, Smooth UI",
+    "excerpt": "Most React slowness comes from a handful of repeat offenders. A practical, measure-first guide to finding and fixing them without premature optimization.",
+    "date": "2026-04-16",
+    "readMinutes": 7,
+    "cover": "/images/blog/react-performance-field-guide-cover.jpg",
+    "tags": ["React", "Performance", "Frontend"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Fast UIs feel like quality, even when users cannot name why. The good news is that most React performance problems are not exotic — they come from the same short list of causes, and you can fix them once you can see them.",
+      { "type": "heading", "text": "Measure before you touch anything" },
+      "The first rule is to never optimize by guessing. Open the profiler, record an interaction that feels slow, and look at what actually renders and how long it takes. Almost every time, the real cause is not where intuition points.",
+      { "type": "heading", "text": "The usual suspects" },
+      "When a React app feels heavy, it is usually one of these:",
+      { "type": "list", "items": [
+        "Rendering long lists all at once instead of windowing what is visible.",
+        "Recreating functions and objects on every render so memoized children re-render anyway.",
+        "Heavy work in the render path that belongs in a memo or an effect.",
+        "Oversized images and bundles that block the first paint."
+      ]},
+      { "type": "image", "src": "/images/blog/react-performance-field-guide-fig.jpg", "alt": "React performance illustration", "caption": "Performance work is a measurement loop: profile, fix the biggest cost, measure again." },
+      { "type": "heading", "text": "Ship less to the browser" },
+      "The cheapest render is the one that never happens, and the cheapest byte is the one you never send. Code-split routes, lazy-load below-the-fold work, and right-size your images. On this very site, screenshots dropped from half a megabyte to fifty kilobytes just by encoding them sensibly — a ten-times win for one command.",
+      { "type": "heading", "text": "Respect the user's device and preferences" },
+      "Not everyone is on a fast laptop. Test on a throttled connection and a mid-range phone, honor reduced-motion settings, and keep animations cheap — transform and opacity, not layout-thrashing properties.",
+      { "type": "quote", "text": "Performance is a feature you can feel before you can explain." },
+      "Make it a habit: measure, fix the biggest thing, measure again. A handful of these loops will take an app from sluggish to smooth."
+    ]
+  },
+  {
+    "id": "post-fullstack",
+    "slug": "shipping-full-stack-features",
+    "title": "From Idea to Production: How I Ship Full-Stack Features End-to-End",
+    "excerpt": "A look at the process I use to take a feature from a rough idea to something running in production — and the small disciplines that keep it from going sideways.",
+    "date": "2026-04-02",
+    "readMinutes": 7,
+    "cover": "/images/blog/shipping-full-stack-features-cover.jpg",
+    "tags": ["Engineering", "Full-Stack", "Process"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Shipping a full-stack feature is less about heroics and more about a repeatable process. The teams I have worked with move fastest not because they cut corners, but because they have a clear path from idea to production that they trust.",
+      { "type": "heading", "text": "Start at the edges, not the database" },
+      "I begin with the contract: what does this feature do from the outside? I sketch the API shape and the UI states before writing logic. Getting the boundaries right early means the middle almost writes itself, and it surfaces the hard questions while they are still cheap to answer.",
+      { "type": "heading", "text": "Build the thinnest end-to-end slice first" },
+      "Rather than finishing the backend, then the frontend, I get one path working all the way through as fast as possible — even if it is ugly. A working slice tells you more than a perfect half.",
+      { "type": "list", "items": [
+        "Define the API contract and the UI states up front.",
+        "Wire one happy path end-to-end before polishing anything.",
+        "Add the edge cases and error states once the shape is proven.",
+        "Only then optimize, refactor, and make it pretty."
+      ]},
+      { "type": "image", "src": "/images/blog/shipping-full-stack-features-fig.jpg", "alt": "Full-stack delivery illustration", "caption": "A thin end-to-end slice teaches you more than a perfectly finished half." },
+      { "type": "heading", "text": "Handle the unhappy paths on purpose" },
+      "Most of the real work in a feature is what happens when things go wrong — empty states, network failures, validation, permissions. I treat these as part of the feature, not an afterthought, because they are exactly where users lose trust.",
+      { "type": "heading", "text": "Leave it better than you found it" },
+      "Before I call something done, I make sure the next person — often future me — can understand it. Clear names, a short note on why, and tests around the tricky parts. That is what makes the next feature faster too.",
+      { "type": "quote", "text": "Velocity is not rushing. It is having a process you do not have to think about." },
+      "From idea to production is mostly about reducing surprises. A clear contract, a thin slice, honest error handling, and a clean handoff — that is the whole game."
+    ]
+  },
+  {
+    "id": "post-prompt-engineering",
+    "slug": "prompt-engineering-for-developers",
+    "title": "Prompt Engineering for Developers: Patterns That Actually Work",
+    "excerpt": "Forget the magic-words mythology. Reliable prompting is engineering: clear instructions, examples, structure, and tests. The patterns I reach for.",
+    "date": "2026-03-19",
+    "readMinutes": 6,
+    "cover": "/images/blog/prompt-engineering-for-developers-cover.jpg",
+    "tags": ["AI", "LLM", "Prompt Engineering"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "There is a lot of folklore around prompting — secret phrases that supposedly unlock better answers. In production, the things that actually move quality are far more boring and far more reliable. Prompting well is just clear communication with a tireless, literal collaborator.",
+      { "type": "heading", "text": "Be specific about the job and the output" },
+      "Vague prompts get vague answers. The single biggest improvement is telling the model exactly what role it is playing, what the task is, and what shape the answer should take. When I need data back, I describe the exact structure and ask for nothing else.",
+      { "type": "heading", "text": "Show, do not just tell" },
+      "A couple of good examples beat a paragraph of instructions. Examples pin down tone, format, and edge cases in a way prose rarely manages. This is the cheapest reliability upgrade available.",
+      { "type": "list", "items": [
+        "State the role, the task, and the output format explicitly.",
+        "Include two or three examples that cover the tricky cases.",
+        "Give the model a way to say it does not know, instead of inventing.",
+        "Keep instructions positive — say what to do, not just what to avoid."
+      ]},
+      { "type": "image", "src": "/images/blog/prompt-engineering-for-developers-fig.jpg", "alt": "Prompt engineering illustration", "caption": "Reliable prompting is clear instructions plus examples plus a way to fail honestly." },
+      { "type": "heading", "text": "Test prompts like code" },
+      "A prompt that works on one input is a demo. A prompt that works across a suite of real inputs is a feature. Keep a set of representative cases and re-run them whenever you change the prompt — the same way you would run tests after changing a function.",
+      { "type": "quote", "text": "Prompting is not magic words. It is specification — written for a reader who takes everything literally." },
+      "Treat prompts as part of your codebase: version them, review them, and test them. Do that and the mystery disappears, replaced by something you can actually depend on."
+    ]
+  },
+  {
+    "id": "post-frontend-stack",
+    "slug": "modern-frontend-stack-without-hype",
+    "title": "The Modern Frontend Stack: Choosing Tools Without the Hype",
+    "excerpt": "Every week brings a new framework promising to change everything. Here is a calmer way to choose your stack — based on what your project actually needs.",
+    "date": "2026-03-05",
+    "readMinutes": 6,
+    "cover": "/images/blog/modern-frontend-stack-without-hype-cover.jpg",
+    "tags": ["Frontend", "Tooling", "React"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Frontend has a reputation for churn, and not without reason. But most of the noise is optional. If you choose tools based on the problem in front of you rather than the timeline you scrolled this morning, the stack gets a lot calmer.",
+      { "type": "heading", "text": "Start from the project, not the trend" },
+      "The right stack for a marketing site is the wrong stack for a data-heavy dashboard. Before picking anything, I ask what this project actually demands: how much interactivity, how much content, what the team already knows, and how long it needs to last.",
+      { "type": "list", "items": [
+        "Mostly content? Favor simplicity and great defaults over a heavy app framework.",
+        "Highly interactive? Invest in a component model and solid state management.",
+        "Small team? Boring, well-documented tools beat clever, niche ones.",
+        "Long-lived? Optimize for maintainability, not for what is exciting today."
+      ]},
+      { "type": "image", "src": "/images/blog/modern-frontend-stack-without-hype-fig.jpg", "alt": "Frontend stack illustration", "caption": "Pick tools for the shape of the problem, not the shape of the hype cycle." },
+      { "type": "heading", "text": "Boring is a feature" },
+      "Mature tools have something new ones cannot fake: years of solved edge cases, deep documentation, and a community that has already hit the wall you are about to hit. That stability is worth more than a marginally nicer API.",
+      { "type": "heading", "text": "Lean on the platform" },
+      "Before reaching for a library, check whether the browser already does it. Modern CSS, native APIs, and the standard library cover far more than they used to. Much of what we install is vestigial — solving problems the platform quietly fixed.",
+      { "type": "quote", "text": "The best stack is the one your team can move quickly in a year from now, not the one that demos best today." },
+      "Choose deliberately, keep it small, and revisit only when the project actually outgrows a tool. That is how you stay modern without chasing every wave."
+    ]
+  },
+  {
+    "id": "post-node-apis",
+    "slug": "scalable-nodejs-apis",
+    "title": "Building Scalable Node.js APIs: Lessons From Production",
+    "excerpt": "Scaling a Node API is less about clever code and more about boring discipline — clear boundaries, careful I/O, and knowing where the time really goes.",
+    "date": "2026-02-20",
+    "readMinutes": 8,
+    "cover": "/images/blog/scalable-nodejs-apis-cover.jpg",
+    "tags": ["Backend", "Node.js", "Architecture"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Node.js makes it easy to ship an API and surprisingly easy to ship one that falls over under load. The difference is rarely a single bottleneck — it is a set of habits that keep the system predictable as traffic grows.",
+      { "type": "heading", "text": "Respect the event loop" },
+      "Node's superpower is non-blocking I/O, and its biggest footgun is blocking it. One heavy synchronous operation can stall every request on the server. Keep the hot path asynchronous, push CPU-heavy work off to a worker or a queue, and never let one request hold the loop hostage.",
+      { "type": "heading", "text": "The database is usually the real ceiling" },
+      "Most APIs are not CPU-bound; they are waiting on the database. Before scaling servers, I look at queries: missing indexes, N+1 patterns, and fetching far more data than the response needs. A single index has saved more systems than a fleet of new instances.",
+      { "type": "list", "items": [
+        "Index the columns you actually filter and sort on.",
+        "Kill N+1 queries by batching and loading related data deliberately.",
+        "Paginate everything that can grow — never return an unbounded list.",
+        "Cache the expensive reads that do not change often."
+      ]},
+      { "type": "image", "src": "/images/blog/scalable-nodejs-apis-fig.jpg", "alt": "Node.js API illustration", "caption": "Most scaling problems are I/O problems wearing a CPU costume." },
+      { "type": "heading", "text": "Make failure boring" },
+      "At scale, things fail constantly — a slow dependency, a flaky network, a spike in traffic. Resilient APIs expect it: timeouts on every external call, retries with backoff, and limits that shed load instead of collapsing under it. Failing in a small, predictable way beats failing all at once.",
+      { "type": "heading", "text": "You cannot scale what you cannot see" },
+      "Structured logs, metrics, and tracing are not optional extras — they are how you find the bottleneck before your users do. Measure latency where it actually happens, and let the data, not your intuition, tell you what to fix.",
+      { "type": "quote", "text": "Scaling is mostly the discipline of removing surprises, one measured bottleneck at a time." },
+      "None of this is glamorous. But clear boundaries, careful I/O, and honest observability are what let a Node API grow from a prototype into something thousands of people quietly rely on."
+    ]
+  },
+  {
+    "id": "post-ai-workflow",
+    "slug": "ai-reshaping-developer-workflow",
+    "title": "How AI Is Reshaping the Developer Workflow (And What to Learn Next)",
+    "excerpt": "AI tools are changing the day-to-day of building software faster than any shift I have seen. What is actually different, and the skills worth doubling down on.",
+    "date": "2026-02-06",
+    "readMinutes": 7,
+    "cover": "/images/blog/ai-reshaping-developer-workflow-cover.jpg",
+    "tags": ["Career", "AI", "Productivity"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "I have watched a lot of tools come and go, but nothing has changed the texture of a normal workday as quickly as AI assistants. The hype is loud, so it is worth being concrete about what has actually changed — and what has not.",
+      { "type": "heading", "text": "What genuinely got faster" },
+      "The boilerplate is gone. Scaffolding a component, writing the first draft of a test, translating between languages, explaining an unfamiliar codebase — these used to cost real minutes and now cost seconds. The friction of starting has collapsed.",
+      { "type": "heading", "text": "What did not change" },
+      "Knowing what to build, deciding whether the output is correct, and owning the consequences are still entirely on us. AI accelerates typing, not judgment. If anything, the ability to read code critically matters more now, because more code arrives faster and not all of it is right.",
+      { "type": "list", "items": [
+        "Faster: drafts, boilerplate, lookups, and exploring unfamiliar code.",
+        "Unchanged: design, judgment, debugging the truly hard bugs, and accountability.",
+        "More valuable: reviewing code well, because there is more of it to review."
+      ]},
+      { "type": "image", "src": "/images/blog/ai-reshaping-developer-workflow-fig.jpg", "alt": "AI developer workflow illustration", "caption": "AI accelerates the typing. The thinking — and the responsibility — stays with us." },
+      { "type": "heading", "text": "What to learn next" },
+      "If the mechanical parts are getting cheaper, the leverage moves to the things AI cannot do for you: system design, clear thinking about trade-offs, and communicating well. I would also learn to work with these tools deliberately — how to prompt, how to verify, and where not to trust them.",
+      { "type": "quote", "text": "The developers who thrive will not be the ones who resist AI or the ones who blindly trust it — but the ones who direct it well." },
+      "Treat AI as a fast, eager collaborator who needs supervision. Lean on it for speed, keep your hand on the judgment, and invest in the durable skills it makes more valuable, not less."
+    ]
+  },
+  {
+    "id": "post-clean-code",
+    "slug": "clean-code-habits-that-compound",
+    "title": "Clean Code Habits That Compound: Small Disciplines, Big Payoff",
+    "excerpt": "Clean code is not about strict rules — it is a few small habits that compound over a project's life into something a team can move quickly in.",
+    "date": "2026-01-23",
+    "readMinutes": 5,
+    "cover": "/images/blog/clean-code-habits-that-compound-cover.jpg",
+    "tags": ["Craft", "Best Practices", "Engineering"],
+    "author": "Satyam Kushwaha",
+    "content": [
+      "Clean code gets talked about like a moral position. I think of it more practically: it is a set of small habits that each save a little time, and compound over months into a codebase your team can actually move quickly in.",
+      { "type": "heading", "text": "Name things for the reader" },
+      "Code is read far more often than it is written, usually by someone who has lost all the context you have right now. A good name does more for readability than any comment. If you need a comment to explain a variable, the variable is probably misnamed.",
+      { "type": "heading", "text": "Keep functions small and honest" },
+      "A function should do one thing and be named after that thing. When a function starts needing the word and to describe it, it is two functions wearing a trenchcoat. Small, honest functions are easier to test, reuse, and reason about.",
+      { "type": "list", "items": [
+        "Name for intent, not implementation.",
+        "One responsibility per function; split when it grows a second.",
+        "Delete dead code instead of commenting it out.",
+        "Leave a short note on why, not what — the code already says what."
+      ]},
+      { "type": "image", "src": "/images/blog/clean-code-habits-that-compound-fig.jpg", "alt": "Clean code illustration", "caption": "None of these habits is dramatic on its own. Their value is that they compound." },
+      { "type": "heading", "text": "Optimize for change, not cleverness" },
+      "The cleverest solution is rarely the kindest one. Code that is obvious — even if it is a few lines longer — is code the next person can change without fear. Most of a system's life is spent being modified, so make modification easy.",
+      { "type": "quote", "text": "Clean code is just kindness to the next developer, who is usually you in three months." },
+      "You do not need to adopt a rulebook. Pick a couple of these habits, apply them consistently, and let them compound. That is how ordinary discipline turns into a codebase people enjoy working in."
+    ]
+  },
+  {
     "id": "post-1",
     "slug": "crafting-a-minimal-react-portfolio",
     "title": "Crafting a Minimal React Portfolio That Still Feels Alive",

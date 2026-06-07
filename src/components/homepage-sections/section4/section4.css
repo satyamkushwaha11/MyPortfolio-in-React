@@ -160,3 +160,48 @@
     padding: 3rem 0;
     color: #6f6b80;
 }
+
+.portfolio-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2.5rem;
+    padding: 0 20px;
+}
+
+.page-btn {
+    min-width: 42px;
+    height: 42px;
+    padding: 0 6px;
+    border-radius: 12px;
+    border: 2px solid color-mix(in srgb, var(--app-text-color) 14%, transparent);
+    background: transparent;
+    color: var(--app-text-color);
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.22s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.page-btn.active {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #fff;
+}
+
+.page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.page-arrow {
+    color: var(--app-text-color);
+}

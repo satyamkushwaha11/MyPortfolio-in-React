@@ -18,7 +18,6 @@ const NAV = [
     { label: 'About', to: '/', section: 'about' },
     { label: 'Services', to: '/', section: 'services' },
     { label: 'Portfolio', to: '/', section: 'portfolio' },
-    { label: 'Gallery', to: '/gallery' },
     { label: 'Blog', to: '/blog' },
     { label: 'Resume', to: '/resume' },
     { label: 'Contact', to: '/', section: 'contact' },

@@ -81,6 +81,19 @@
 .floating-delay-3 { animation-delay: 1.2s; }
 .floating-delay-4 { animation-delay: 1.6s; }
 
+/*
+ * Position the floating icons in percentages relative to the photo wrapper so
+ * they scale with the photo on every screen size. These override the hardcoded
+ * pixel offsets set via utility classes in Section1.jsx (higher specificity).
+ */
+.hero-photo-wrap .floating-element:nth-of-type(1) { top: 9%;  left: 7%;   right: auto; bottom: auto; }
+.hero-photo-wrap .floating-element:nth-of-type(2) { top: 20%; right: 4%;  left: auto;  bottom: auto; }
+.hero-photo-wrap .floating-element:nth-of-type(3) { top: 47%; left: -2%;  right: auto; bottom: auto; }
+.hero-photo-wrap .floating-element:nth-of-type(4) { bottom: 28%; right: -2%; left: auto; top: auto; }
+.hero-photo-wrap .floating-element:nth-of-type(5) { bottom: 12%; left: 28%; right: auto; top: auto; }
+.hero-photo-wrap .floating-element:nth-of-type(6) { top: 35%; right: 6%;  left: auto; bottom: auto; }
+.hero-photo-wrap .floating-element:nth-of-type(7) { bottom: 6%;  left: 6%;  right: auto; top: auto; }
+
 .dizme_tm_down {
     position: absolute;
     bottom: 0;
@@ -138,11 +151,18 @@
         padding-top: 90px;
         padding-bottom: 120px;
     }
-    .floating-element { display: none; }
+    /* keep the floating icons visible on tablet, just a touch smaller */
+    .floating-element { width: 46px; height: 46px; }
     .hero-photo-wrap { max-width: 380px; }
 }
 
 @media screen and (max-width: 640px) {
-    .hero-photo-wrap { max-width: 260px; }
+    .hero-photo-wrap { max-width: 280px; }
+    .floating-element {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
     .dizme_tm_down svg { width: 22px; }
 }

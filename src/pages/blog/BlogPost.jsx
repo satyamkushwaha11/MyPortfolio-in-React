@@ -4,6 +4,7 @@ import { FiArrowLeft, FiCalendar, FiClock } from 'react-icons/fi';
 import { useData } from '../../context/DataContext';
 import SocialMedia from '../../components/social media/SocialMedia';
 import useReveal from '../../hooks/useReveal';
+import usePageMeta from '../../hooks/usePageMeta';
 import './blog.css';
 
 const formatDate = (iso) =>
@@ -18,6 +19,16 @@ const BlogPost = () => {
     const { data } = useData();
     const post = data.posts.find((p) => p.slug === slug);
     const [ref, visible] = useReveal();
+
+    usePageMeta(
+        post
+            ? {
+                  title: post.title,
+                  description: post.excerpt,
+                  image: post.cover ? `https://satyamkushwaha.netlify.app${post.cover}` : undefined,
+              }
+            : { title: 'Post not found' }
+    );
 
     if (!post) {
         return (
@@ -37,9 +48,40 @@ const BlogPost = () => {
         .filter((p) => p.slug !== post.slug && (p.tags || []).some((t) => (post.tags || []).includes(t)))
         .slice(0, 2);
 
-    const paragraphs = Array.isArray(post.content)
+    // Content is an array of blocks. A plain string is treated as a paragraph
+    // (backward compatible with older posts); objects carry a `type`.
+    const blocks = Array.isArray(post.content)
         ? post.content
-        : String(post.content || '').split(/\n\n+/);
+        : String(post.content || '')
+              .split(/\n\n+/)
+              .map((text) => ({ type: 'paragraph', text }));
+
+    const renderBlock = (block, i) => {
+        if (typeof block === 'string') return <p key={i}>{block}</p>;
+        switch (block.type) {
+            case 'heading':
+                return <h2 key={i} className="blog-post-h2">{block.text}</h2>;
+            case 'image':
+                return (
+                    <figure key={i} className="blog-post-figure">
+                        <img src={block.src} alt={block.alt || ''} loading="lazy" />
+                        {block.caption && <figcaption>{block.caption}</figcaption>}
+                    </figure>
+                );
+            case 'list':
+                return (
+                    <ul key={i} className="blog-post-list">
+                        {(block.items || []).map((item, j) => (
+                            <li key={j}>{item}</li>
+                        ))}
+                    </ul>
+                );
+            case 'quote':
+                return <blockquote key={i} className="blog-post-quote">{block.text}</blockquote>;
+            default:
+                return <p key={i}>{block.text}</p>;
+        }
+    };
 
     return (
         <div className="page-container theme-bg">
@@ -70,9 +112,7 @@ const BlogPost = () => {
                 </div>
 
                 <div className="blog-post-body">
-                    {paragraphs.map((para, i) => (
-                        <p key={i}>{para}</p>
-                    ))}
+                    {blocks.map((block, i) => renderBlock(block, i))}
                 </div>
 
                 <div className="blog-post-share">

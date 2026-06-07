@@ -6,8 +6,15 @@ import ContactMe from '../../components/homepage-sections/contactMe/ContactMe';
 import Section3 from '../../components/homepage-sections/section3/Section3';
 import Section4 from '../../components/homepage-sections/section4/Section4';
 import MyTech from '../../components/homepage-sections/My-tech/MyTech';
+import Testimonials from '../../components/homepage-sections/testimonials/Testimonials';
+import usePageMeta from '../../hooks/usePageMeta';
 
 const Homepage = () => {
+    usePageMeta({
+        description:
+            'Satyam Kushwaha is a Full-Stack Software Engineer building scalable web and mobile apps with React, Node.js, and AI — specializing in LLM integration, agentic AI, and automation. Explore projects, services, and articles.',
+    });
+
     return (
         <div className="homepage-container">
             <section id="home">
@@ -25,6 +32,9 @@ const Homepage = () => {
                 </section>
                 <section id="portfolio">
                     <Section4 />
+                </section>
+                <section id="testimonials">
+                    <Testimonials />
                 </section>
                 <section id="contact">
                     <ContactMe />

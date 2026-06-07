@@ -10,9 +10,10 @@ const QUICK_LINKS = [
     { label: 'About Me', to: '/', section: 'about' },
     { label: 'Skills', to: '/', section: 'skills' },
     { label: 'Projects', to: '/', section: 'portfolio' },
-    { label: 'Gallery', to: '/gallery' },
     { label: 'Blogs', to: '/blog' },
 ];
+
+const currentYear = new Date().getFullYear();
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -90,6 +91,17 @@ const Footer = () => {
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+            <div className="footer-bottom">
+                <div className="container footer-bottom-inner">
+                    <span>
+                        © {currentYear} {site.name}. All rights reserved.
+                    </span>
+                    <span className="footer-bottom-built">
+                        Built with React &amp; Tailwind CSS
+                    </span>
                 </div>
             </div>
         </div>

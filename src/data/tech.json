@@ -36,6 +36,15 @@
     ]
   },
   {
+    "id": "g-ai",
+    "label": "AI & Automation",
+    "data": [
+      { "id": "t-agentic", "name": "Agentic AI", "description": "Building autonomous AI agents that plan, use tools, and execute multi-step tasks.", "image": "agentic-ai.svg", "rating": 4 },
+      { "id": "t-llm", "name": "LLM Integration", "description": "Integrating large language models into apps via APIs, prompts, and orchestration.", "image": "llm.svg", "rating": 5 },
+      { "id": "t-automation", "name": "Automation", "description": "Automating workflows and pipelines to remove repetitive manual work.", "image": "automation.svg", "rating": 4 }
+    ]
+  },
+  {
     "id": "g-other",
     "label": "Other",
     "data": [

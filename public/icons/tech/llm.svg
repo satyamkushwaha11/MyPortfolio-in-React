@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="llmBubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c3e6"/>
+      <stop offset="100%" stop-color="#00a3cc"/>
+    </linearGradient>
+  </defs>
+  <!-- speech bubble -->
+  <path d="M14 10h36a8 8 0 0 1 8 8v20a8 8 0 0 1-8 8H28l-11 9 1.5-9H14a8 8 0 0 1-8-8V18a8 8 0 0 1 8-8z" fill="url(#llmBubble)"/>
+  <!-- AI sparkle (language model spark) -->
+  <path d="M30 16 l3 7.5 7.5 3 -7.5 3 -3 7.5 -3-7.5 -7.5-3 7.5-3 z" fill="#ffffff"/>
+  <!-- small accent sparkle -->
+  <path d="M46 26 l1.6 4 4 1.6 -4 1.6 -1.6 4 -1.6-4 -4-1.6 4-1.6 z" fill="#fca311"/>
+</svg>

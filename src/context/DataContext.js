@@ -5,7 +5,10 @@ import postsDefaults from '../data/posts.json';
 import techDefaults from '../data/tech.json';
 import galleryDefaults from '../data/gallery.json';
 
-const STORAGE_KEY = 'portfolio_data_v2';
+// Bumped to v3 to ship the real project list + AI tech group. Note: v2 is
+// intentionally NOT migrated — older browsers cached a stale project list that
+// would otherwise override the new defaults. They'll fall through to defaults.
+const STORAGE_KEY = 'portfolio_data_v4';
 const LEGACY_KEYS = ['portfolio_data_v1'];
 
 const buildDefaults = () => ({

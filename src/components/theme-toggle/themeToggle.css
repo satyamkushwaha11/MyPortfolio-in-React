@@ -23,42 +23,40 @@
     transition: .4s;
   }
   
-  .slider:before {
+  .slider-knob {
     position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     left: 4px;
-    bottom: 5px;
-    background-color: white;
+    bottom: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     -webkit-transition: .4s;
     transition: .4s;
   }
 
-  input:checked + .slider:before {
-    background-color: var(--app-background);
-  }
- 
   input:checked + .slider {
     background-color: var(--orange);
   }
 
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+  input:checked + .slider .slider-knob {
+    background-color: var(--app-background);
+    color: var(--orange);
     -webkit-transform: translateX(30px);
     -ms-transform: translateX(30px);
     transform: translateX(30px);
   }
-  
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
   }

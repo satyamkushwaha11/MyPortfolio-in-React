@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tm-uu2",
+    "company": "UU2",
+    "logo": "/images/logos/uu2.png",
+    "url": "https://uu2.co/",
+    "role": "AI B2B Marketplace",
+    "quote": "Satyam built our customer-facing site and the admin panel end-to-end. Clean architecture, reliable delivery, and the AI vendor-matching flow shipped exactly as scoped."
+  },
+  {
+    "id": "tm-boundless",
+    "company": "Boundless Giving",
+    "logo": "/images/logos/boundlessgiving.png",
+    "url": "https://boundlessgiving.com/",
+    "role": "Charity Marketplace",
+    "quote": "He owned key parts of our storefront and checkout. Thoughtful about performance and edge cases, and a genuinely smooth collaborator across the stack."
+  },
+  {
+    "id": "tm-instacoach",
+    "company": "Instacoach",
+    "logo": "/images/logos/instacoach.png",
+    "url": "https://instacoach.com/",
+    "role": "AI Baseball Coach",
+    "quote": "Satyam helped bring our AI training app to life — fast iteration on the mobile experience and a sharp eye for detail in the workout flows."
+  },
+  {
+    "id": "tm-fotorus",
+    "company": "FotoRus",
+    "logo": "/images/logos/fotorus.png",
+    "url": "https://apps.apple.com/us/app/fotorus-camera-photo-editor/id457517348",
+    "role": "Camera & Photo Editor",
+    "quote": "Solid contributions to our photo-editing app used by millions. Dependable engineering and a strong sense for polished, user-friendly UI."
+  },
+  {
+    "id": "tm-besteon",
+    "company": "Besteon",
+    "logo": "/images/logos/besteon.png",
+    "url": "https://besteon.eu/",
+    "role": "Solar Wholesale Platform",
+    "quote": "Delivered our B2B solar commerce platform with care — clean, maintainable code and clear communication throughout the build."
+  }
+]

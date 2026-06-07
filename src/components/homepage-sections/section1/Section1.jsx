@@ -60,6 +60,8 @@ const Section1 = () => {
                             <UpdownIcon classNamee="floating-element floating-delay-2 top-[250px] left-[0px]" imageUrl={'/icons/tech/react.png'} />
                             <UpdownIcon classNamee="floating-element floating-delay-3 bottom-[160px] right-[0px]" imageUrl={'/icons/tech/reactNative.png'} />
                             <UpdownIcon classNamee="floating-element floating-delay-4 bottom-[80px] left-[160px]" imageUrl={'/icons/tech/expressjs.png'} />
+                            <UpdownIcon classNamee="floating-element floating-delay-2 top-[180px] right-[40px]" imageUrl={'/icons/tech/agentic-ai.svg'} />
+                            <UpdownIcon classNamee="floating-element floating-delay-3 bottom-[40px] left-[40px]" imageUrl={'/icons/tech/llm.svg'} />
                             <img
                                 src="/images/satyam1.png"
                                 alt={site.name}

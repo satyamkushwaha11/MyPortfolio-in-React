@@ -1,5 +1,55 @@
 [
   {
+    "id": "p-uu2",
+    "title": "UU2 — AI B2B Marketplace",
+    "category": "Web App",
+    "image": "/images/projects/uu2.jpg",
+    "tags": ["React.js", "Node.js", "AI Matching", "Admin Panel"],
+    "live": "https://uu2.co/",
+    "source": "#",
+    "description": "AI-powered B2B marketplace connecting Malaysian vendors with global buyers. Built the customer-facing website and the admin panel, with intelligent vendor matching and verified-vendor workflows."
+  },
+  {
+    "id": "p-boundless-giving",
+    "title": "Boundless Giving — Charity Marketplace",
+    "category": "E-commerce",
+    "image": "/images/projects/boundlessgiving.jpg",
+    "tags": ["React.js", "Node.js", "E-commerce", "Payments"],
+    "live": "https://boundlessgiving.com/",
+    "source": "#",
+    "description": "Social-impact e-commerce marketplace where 10–70% of every sale goes to vetted charities. Curated fashion, beauty, and home goods with automatic donation flows at checkout."
+  },
+  {
+    "id": "p-instacoach",
+    "title": "Instacoach — AI Baseball Coach",
+    "category": "Mobile App",
+    "image": "/images/projects/instacoach.jpg",
+    "tags": ["React Native", "AI / LLM", "Node.js"],
+    "live": "https://instacoach.com/",
+    "source": "#",
+    "description": "AI baseball-training app that builds personalized, equipment-aware workouts for hitting, pitching, and arm care — on-demand sessions with adaptive programming and progress tracking."
+  },
+  {
+    "id": "p-fotorus",
+    "title": "FotoRus — Camera & Photo Editor",
+    "category": "Mobile App",
+    "image": "/images/projects/fotorus.jpg",
+    "tags": ["iOS", "Android", "Image Processing", "Camera"],
+    "live": "https://apps.apple.com/us/app/fotorus-camera-photo-editor/id457517348",
+    "source": "#",
+    "description": "All-in-one camera and photo-editing app (4.3★ on the App Store) featuring a collage maker, real-time beauty camera, filters, stickers, and picture-in-picture effects across iOS and Android."
+  },
+  {
+    "id": "p-besteon",
+    "title": "Besteon — Solar Wholesale Platform",
+    "category": "E-commerce",
+    "image": "/images/projects/besteon.jpg",
+    "tags": ["React.js", "Node.js", "B2B", "E-commerce"],
+    "live": "https://besteon.eu/",
+    "source": "#",
+    "description": "B2B photovoltaic (solar) wholesale distribution platform for the renewable-energy market — product catalog and ordering built for a European solar-equipment distributor."
+  },
+  {
     "id": "p-smart-commerce",
     "title": "Smart Commerce Platform",
     "category": "Web App",

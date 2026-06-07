@@ -44,16 +44,7 @@
 }
 
 
-.floating-element {
-    min-width: 50px;
-    min-height: 50px;
-    padding: 4px;
-    /* background-color: #3498db; */
-    /* border: 1px solid gray; */
-    border-radius: 5px;
-    position: absolute;
-    animation: floatAnimation 3s ease-in-out infinite;
-}
+/* .floating-element styling now lives in section1/section1.css */
 
 @keyframes floatAnimation {
 
@@ -83,12 +74,8 @@
         justify-content: space-between;
     }
 
-    .floating-element{
-        display: none;
-    }
-    
     .section1_content {
-     
+
         padding-top: 100px;
     }
 

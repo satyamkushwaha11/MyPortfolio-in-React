@@ -1,37 +1,65 @@
-.dizme_tm_process {
-    position: relative;
-    display: flex;
-    justify-content: center;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 0 16px;
 }
 
-.dizme_tm_process .brush {
-    transition: transform 0.5s ease;
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-.dizme_tm_process:hover .brush {
-    transform: rotate(8deg) scale(1.05);
-}
-
-.dizme_tm_process .svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-}
-
-.dizme_tm_process .svg #process_outline {
-    fill: var(--reverse-color);
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .service-card {
-    padding: 1.5rem;
-    border-radius: 16px;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    padding: 2rem 1.7rem;
+    border-radius: 18px;
+    text-align: left;
+    border: 1px solid color-mix(in srgb, var(--reverse-color) 12%, transparent);
+    background: color-mix(in srgb, var(--reverse-color) 3%, transparent);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(247, 80, 35, 0.12);
+    box-shadow: 0 20px 44px rgba(247, 80, 35, 0.14);
+    border-color: color-mix(in srgb, var(--orange) 45%, transparent);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    background: color-mix(in srgb, var(--orange) 14%, transparent);
+    margin-bottom: 1.2rem;
+    transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.08) rotate(-4deg);
+    background: var(--orange);
+    color: #fff;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--reverse-color);
+}
+
+.service-desc {
+    font-size: 0.96rem;
+    line-height: 1.65;
+    color: color-mix(in srgb, var(--reverse-color) 62%, transparent);
 }
