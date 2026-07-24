@@ -1,5 +1,55 @@
 [
   {
+    "id": "p-git-vault",
+    "title": "Git Vault — GitHub as Media Storage",
+    "category": "Web App",
+    "image": "/images/projects/git-vault.png",
+    "tags": ["Next.js", "TypeScript", "NextAuth", "GitHub API", "Tailwind CSS"],
+    "live": "https://git-vault-rho.vercel.app/",
+    "source": "https://github.com/satyamkushwaha11/git-vault",
+    "description": "Turns any GitHub repository into a free media bucket. Authenticate with GitHub, drag-and-drop uploads with automatic image compression, browse a real gallery, and generate permanent CDN links — with multi-branch support, folder management, and full Git version history."
+  },
+  {
+    "id": "p-cvremix",
+    "title": "CVremix — AI Resume Tailor & ATS Optimizer",
+    "category": "SaaS",
+    "image": "/images/projects/cvtailor.png",
+    "tags": ["Next.js", "TypeScript", "AI / LLM", "ATS Scoring"],
+    "live": "https://cv-tailor-ai-tau.vercel.app/",
+    "source": "https://github.com/satyamkushwaha11/CVtailor",
+    "description": "AI resume optimizer that tailors your CV to any job description to pass Applicant Tracking Systems. Four rewriting strategies, before/after ATS match scoring, keyword-gap analysis, a CAR bullet optimizer, and six ATS-safe templates — no sign-up, nothing stored."
+  },
+  {
+    "id": "p-ai-bazaar",
+    "title": "AI Bazaar — AI Marketplace with Negotiation",
+    "category": "E-commerce",
+    "image": "/images/projects/ai-bazzar.png",
+    "tags": ["Next.js", "AI Assistant", "E-commerce", "Price Negotiation"],
+    "live": "https://ai-bazzar-web-olive.vercel.app/",
+    "source": "https://github.com/satyamkushwaha11/ai-bazzar",
+    "description": "An AI-powered marketplace that brings bazaar-style haggling online. An AI assistant helps shoppers find products across 50,000+ items in 18 departments, then buyers chat the price down with the seller — agreed prices lock for 10 minutes to complete checkout."
+  },
+  {
+    "id": "p-rigforge",
+    "title": "RigForge — AI-Powered PC Builder",
+    "category": "AI / LLM",
+    "image": "/images/projects/pc-builder.png",
+    "tags": ["Next.js", "TypeScript", "Prisma", "AI / LLM", "3D Visualization"],
+    "live": "https://pc-builder-delta-three.vercel.app/",
+    "source": "https://github.com/satyamkushwaha11/pc-builder",
+    "description": "Describe your needs in plain language (\"4K editing + gaming, quiet, ~₹1.2L\") and get three compatibility-guaranteed builds — Value, Balanced, and Performance — from a 2,300+ part catalog. A deterministic solver picks parts while AI handles interpretation and explanation, with 3D build previews."
+  },
+  {
+    "id": "p-logger-logs",
+    "title": "logger-logs — Zero-Dependency Node Logger",
+    "category": "Open Source",
+    "image": "/images/projects/logger-logs.png",
+    "tags": ["Node.js", "TypeScript", "npm Package", "Open Source"],
+    "live": "https://www.npmjs.com/package/logger-logs",
+    "source": "https://github.com/satyamkushwaha11/logger-logs",
+    "description": "A fast, zero-dependency structured logger for Node.js, TypeScript, and JavaScript published to npm. Log levels, JSON and pretty output, file & line numbers, child loggers, async context, rotating file transport, and automatic secret redaction — all in a tiny package with no runtime dependencies."
+  },
+  {
     "id": "p-uu2",
     "title": "UU2 — AI B2B Marketplace",
     "category": "Web App",
