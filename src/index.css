@@ -31,6 +31,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Deep links like /#portfolio must not park the section under the fixed
+   header — this offset applies to scrollIntoView and native anchor jumps. */
+section[id] {
+  scroll-margin-top: calc(10vh + 16px);
+}
+
 body {
   margin: 0;
   background-color: var(--app-background);

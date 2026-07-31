@@ -8,13 +8,24 @@ import NotFound from "../pages/notFound/NotFound";
 import Admin from "../pages/admin/Admin";
 import { ADMIN_ENABLED } from "../pages/admin/adminAuth";
 import Resume from "../pages/resume/Resume";
+import { SECTIONS, isHomepagePath } from "../config/sections";
 
 const PublicRouter = () => {
   const location = useLocation();
+  // Every section path is the same page, so they share one fade key: keying on
+  // the raw pathname would remount the homepage and replay its animations each
+  // time a tab is clicked.
+  const fadeKey = isHomepagePath(location.pathname) ? "/" : location.pathname;
+
   return (
-    <div key={location.pathname} className="page-fade">
+    <div key={fadeKey} className="page-fade">
       <Routes location={location}>
         <Route path="/" element={<Homepage />} />
+        {/* "/portfolio", "/contact", … render the homepage and RouteScrollManager
+            scrolls to the matching section. */}
+        {SECTIONS.map(({ id }) => (
+          <Route key={id} path={`/${id}`} element={<Homepage />} />
+        ))}
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/gallery" element={<Gallery />} />

@@ -41,6 +41,12 @@
     transition: color 0.25s ease;
 }
 
+.header-nav-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
 .header-li::after {
     content: "";
     position: absolute;

@@ -1,0 +1,4 @@
+# Single-page app: every path is handled by the React router, so unknown paths
+# must still be served index.html (otherwise /portfolio, /blog, /resume … 404 on
+# a hard refresh or a shared link). Read by Netlify and Cloudflare Pages.
+/*  /index.html  200

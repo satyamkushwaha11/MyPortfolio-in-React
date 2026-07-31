@@ -1,38 +1,29 @@
 import React from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { PiCopyrightBold } from 'react-icons/pi';
 import SocialMedia from '../social media/SocialMedia';
 import { useData } from '../../context/DataContext';
+import useSectionNavigate from '../../hooks/useSectionNavigate';
+import { sectionHref } from '../../config/sections';
 import './footer.css';
 
 const QUICK_LINKS = [
-    { label: 'Home', to: '/', section: 'home' },
-    { label: 'About Me', to: '/', section: 'about' },
-    { label: 'Skills', to: '/', section: 'skills' },
-    { label: 'Projects', to: '/', section: 'portfolio' },
+    { label: 'Home', section: 'home' },
+    { label: 'About Me', section: 'about' },
+    { label: 'Skills', section: 'skills' },
+    { label: 'Projects', section: 'portfolio' },
     { label: 'Blogs', to: '/blog' },
 ];
+
+const isModifiedClick = (e) =>
+    e.button !== 0 || e.metaKey || e.altKey || e.ctrlKey || e.shiftKey;
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
+    const goToSection = useSectionNavigate();
     const { data } = useData();
     const { site } = data;
-
-    const handleLink = (item) => {
-        if (item.section) {
-            if (location.pathname !== '/') {
-                navigate(`/#${item.section}`);
-            } else {
-                const el = document.getElementById(item.section);
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-            }
-        } else {
-            navigate(item.to);
-        }
-    };
 
     return (
         <div className="footer-container">
@@ -67,12 +58,24 @@ const Footer = () => {
                     <ul className="flex flex-col gap-2 footer-ul">
                         {QUICK_LINKS.map((item) =>
                             item.section ? (
-                                <li key={item.label} onClick={() => handleLink(item)}>
-                                    {item.label}
+                                <li key={item.label}>
+                                    <a
+                                        className="footer-link"
+                                        href={sectionHref(item.section)}
+                                        onClick={(e) => {
+                                            if (isModifiedClick(e)) return;
+                                            e.preventDefault();
+                                            goToSection(item.section);
+                                        }}
+                                    >
+                                        {item.label}
+                                    </a>
                                 </li>
                             ) : (
                                 <li key={item.label}>
-                                    <Link to={item.to}>{item.label}</Link>
+                                    <Link className="footer-link" to={item.to}>
+                                        {item.label}
+                                    </Link>
                                 </li>
                             )
                         )}

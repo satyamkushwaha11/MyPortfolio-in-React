@@ -10,36 +10,68 @@ import LOGO from '../logo';
 import SimpleBtn from '../buttons/SimpleBtn/SimpleBtn';
 import useScrollSpy from '../../hooks/useScrollSpy';
 import useTheme from '../../hooks/useTheme';
+import useSectionUrlSync from '../../hooks/useSectionUrlSync';
+import useSectionNavigate from '../../hooks/useSectionNavigate';
 import { useData } from '../../context/DataContext';
+import { SECTION_IDS, isHomepagePath, sectionHref } from '../../config/sections';
 import { CV_URL_OVERRIDE } from '../../config/config';
 
 const NAV = [
-    { label: 'Home', to: '/', section: 'home' },
-    { label: 'About', to: '/', section: 'about' },
-    { label: 'Services', to: '/', section: 'services' },
-    { label: 'Portfolio', to: '/', section: 'portfolio' },
+    { label: 'Home', section: 'home' },
+    { label: 'About', section: 'about' },
+    { label: 'Services', section: 'services' },
+    { label: 'Portfolio', section: 'portfolio' },
     { label: 'Blog', to: '/blog' },
     { label: 'Resume', to: '/resume' },
-    { label: 'Contact', to: '/', section: 'contact' },
+    { label: 'Contact', section: 'contact' },
 ];
+
+const navHref = (item) => (item.section ? sectionHref(item.section) : item.to);
+
+const NAV_SECTION_IDS = NAV.filter((n) => n.section).map((n) => n.section);
+
+// Some sections (skills, testimonials) have no tab of their own — while they are
+// in view, keep the previous tab underlined instead of clearing the whole nav.
+const navSectionFor = (sectionId) => {
+    for (let i = SECTION_IDS.indexOf(sectionId); i >= 0; i -= 1) {
+        if (NAV_SECTION_IDS.includes(SECTION_IDS[i])) return SECTION_IDS[i];
+    }
+    return null;
+};
 
 const isDownloadableFile = (url) => /\.(pdf|docx?|odt|rtf)(\?|#|$)/i.test(String(url || ''));
 
-const SECTION_IDS = NAV.filter((n) => n.section).map((n) => n.section);
+// Let the browser handle ctrl/cmd/shift-click and middle-click so tabs can still
+// be opened in a new window.
+const isModifiedClick = (e) =>
+    e.button !== 0 || e.metaKey || e.altKey || e.ctrlKey || e.shiftKey;
 
 const Menu = ({ isVertical, onNavigate, activeSection, pathname, theme, toggleTheme, cvUrl }) => (
     <ul className={isVertical ? 'vert-ul' : 'header-ul'}>
         {NAV.map((item) => {
             const isActive =
-                (item.section && pathname === '/' && activeSection === item.section) ||
+                (item.section && isHomepagePath(pathname) && activeSection === item.section) ||
                 (!item.section && pathname === item.to);
             return (
                 <li
                     key={item.label}
                     className={`header-li ${isActive ? 'header-li-active' : ''}`}
-                    onClick={() => onNavigate(item)}
                 >
-                    {item.label}
+                    {/* A real <a href> so the tab can be copied, shared and
+                        opened in a new tab; the click is still handled by the
+                        router for a smooth in-page scroll. */}
+                    <a
+                        className="header-nav-link"
+                        href={navHref(item)}
+                        aria-current={isActive ? 'page' : undefined}
+                        onClick={(e) => {
+                            if (isModifiedClick(e)) return;
+                            e.preventDefault();
+                            onNavigate(item);
+                        }}
+                    >
+                        {item.label}
+                    </a>
                 </li>
             );
         })}
@@ -63,9 +95,15 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
     const navigate = useNavigate();
+    const goToSection = useSectionNavigate();
     const location = useLocation();
     const activeSection = useScrollSpy(SECTION_IDS);
     const { data } = useData();
+
+    // Mirror the section in view into the URL, so whatever the visitor copies
+    // from the address bar reopens on the same section.
+    useSectionUrlSync(activeSection, isHomepagePath(location.pathname));
+    const activeNavSection = navSectionFor(activeSection);
     const cvUrl = (CV_URL_OVERRIDE || data.site.cvUrl || '/Satyam_Kushwaha_CV.pdf').trim();
 
     const handleScroll = useMemo(
@@ -89,21 +127,10 @@ const Header = () => {
         setMenuOpen(false);
     }, [location.pathname]);
 
-    const scrollToSection = (id) => {
-        const el = document.getElementById(id);
-        if (el) {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
-
     const handleNavigate = (item) => {
         setMenuOpen(false);
         if (item.section) {
-            if (location.pathname !== '/') {
-                navigate(`/#${item.section}`);
-            } else {
-                scrollToSection(item.section);
-            }
+            goToSection(item.section);
         } else {
             navigate(item.to);
         }
@@ -119,7 +146,7 @@ const Header = () => {
                     <Menu
                         isVertical={false}
                         onNavigate={handleNavigate}
-                        activeSection={activeSection}
+                        activeSection={activeNavSection}
                         pathname={location.pathname}
                         theme={theme}
                         toggleTheme={toggleTheme}
@@ -140,7 +167,7 @@ const Header = () => {
                 <Menu
                     isVertical={true}
                     onNavigate={handleNavigate}
-                    activeSection={activeSection}
+                    activeSection={activeNavSection}
                     pathname={location.pathname}
                     theme={theme}
                     toggleTheme={toggleTheme}

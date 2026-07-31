@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import PublicRouter from './routers/PublicRouter';
-import ScrollToTopOnRouteChange from './routers/ScrollToTopOnRouteChange';
+import RouteScrollManager from './routers/RouteScrollManager';
 import ScrollToTopButton from './components/buttons/ScrollToTopButton/ScrollToTopButton';
 import CustomCursor from './components/cursor/CustomCursor';
 import { ADMIN_ENABLED } from './pages/admin/adminAuth';
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <CustomCursor />
-      <ScrollToTopOnRouteChange />
+      <RouteScrollManager />
       {!isAdmin && <Header />}
       <PublicRouter />
       {!isAdmin && <Footer />}

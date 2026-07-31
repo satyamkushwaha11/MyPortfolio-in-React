@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import SimpleBtn from '../../buttons/SimpleBtn/SimpleBtn';
 import useReveal from '../../../hooks/useReveal';
+import useSectionNavigate from '../../../hooks/useSectionNavigate';
 import { useData } from '../../../context/DataContext';
 import './section3.css';
 
-const scrollToContact = () => {
-    const el = document.getElementById('contact');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-};
-
 const Section3 = () => {
     const [ref, visible] = useReveal();
+    const goToSection = useSectionNavigate();
     const { data } = useData();
     const { site } = data;
     const target = Number(site.totalProjects) || 0;
@@ -57,7 +54,7 @@ const Section3 = () => {
                             {site.aboutTitle}
                         </div>
                         <p className="w-full text-gray-400">{site.aboutBody}</p>
-                        <SimpleBtn fill className="mt-4" onClick={scrollToContact}>
+                        <SimpleBtn fill className="mt-4" onClick={() => goToSection('contact')}>
                             Hire Me
                         </SimpleBtn>
                     </div>

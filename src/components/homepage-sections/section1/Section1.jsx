@@ -3,17 +3,14 @@ import UpdownIcon from '../../logo/UpdownIcon/UpdownIcon';
 import SimpleBtn from '../../buttons/SimpleBtn/SimpleBtn';
 import SocialMedia from '../../social media/SocialMedia';
 import useReveal from '../../../hooks/useReveal';
+import useSectionNavigate from '../../../hooks/useSectionNavigate';
 import { useData } from '../../../context/DataContext';
 import './section1.css';
-
-const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
 
 const Section1 = () => {
     const [infoRef, infoVisible] = useReveal();
     const [imgRef, imgVisible] = useReveal();
+    const scrollTo = useSectionNavigate();
     const { data } = useData();
     const { site } = data;
 
