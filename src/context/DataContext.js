@@ -5,10 +5,11 @@ import postsDefaults from '../data/posts.json';
 import techDefaults from '../data/tech.json';
 import galleryDefaults from '../data/gallery.json';
 
-// Bumped to v3 to ship the real project list + AI tech group. Note: v2 is
-// intentionally NOT migrated — older browsers cached a stale project list that
-// would otherwise override the new defaults. They'll fall through to defaults.
-const STORAGE_KEY = 'portfolio_data_v5';
+// Bumped on every content change that must reach returning visitors: stored
+// collections replace the defaults wholesale, so a browser holding an older key
+// would keep showing the stale list. Old keys are intentionally NOT migrated —
+// they fall through to the current defaults. v6 ships the AI Interviewer project.
+const STORAGE_KEY = 'portfolio_data_v6';
 const LEGACY_KEYS = ['portfolio_data_v1'];
 
 const buildDefaults = () => ({

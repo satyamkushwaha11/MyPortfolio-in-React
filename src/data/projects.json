@@ -1,5 +1,15 @@
 [
   {
+    "id": "p-ai-interviewer",
+    "title": "AI Interviewer — Voice-First Mock Interviews",
+    "category": "AI / LLM",
+    "image": "/images/projects/ai-interviewer.png",
+    "tags": ["Next.js", "TypeScript", "OpenAI", "Neon Postgres", "Web Speech API", "Tailwind CSS"],
+    "live": "https://ai-interviewer.satyamkushwaha.online/",
+    "source": "https://github.com/satyamkushwaha11/Ai-interviewer",
+    "description": "A live AI interviewer that reads your resume and target role, then runs a voice-to-voice mock interview with real follow-ups instead of a fixed question list. Pick focus, rigor and duration, and finish with a graded report scored question by question."
+  },
+  {
     "id": "p-git-vault",
     "title": "Git Vault — GitHub as Media Storage",
     "category": "Web App",
@@ -118,16 +128,6 @@
     "live": "#",
     "source": "#",
     "description": "AI resume-tailoring system using LLM agents — improves ATS matching with keyword optimization and prompt engineering. Cut manual resume effort by 70%."
-  },
-  {
-    "id": "p-interview-practice",
-    "title": "Interview Practice Platform",
-    "category": "AI / LLM",
-    "image": "/images/round3.png",
-    "tags": ["React.js", "Node.js", "OpenAI API"],
-    "live": "#",
-    "source": "#",
-    "description": "AI interview simulator that generates questions from a resume and job description, and gives adaptive feedback across realistic scenarios."
   },
   {
     "id": "p-social",
