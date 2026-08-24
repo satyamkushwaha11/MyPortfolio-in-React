@@ -1,0 +1,315 @@
+<title>Satyam Kushwaha Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+  :root {
+    --surround: #eceeef;
+    --sheet: #ffffff;
+    --ink: #1c2126;
+    --body: #2d343b;
+    --muted: #5d6771;
+    --accent: #0e5e56;
+    --hairline: #d9dde0;
+    --hint-bg: #e2e5e7;
+    --hint-text: #454d55;
+  }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --surround: #16181b;
+      --hint-bg: #24282c;
+      --hint-text: #b3bac1;
+    }
+  }
+  :root[data-theme="dark"] {
+    --surround: #16181b;
+    --hint-bg: #24282c;
+    --hint-text: #b3bac1;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surround);
+    font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+    color: var(--body);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-hint {
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 10px 4px;
+    font-size: 13px;
+    color: var(--hint-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .print-hint button {
+    font: 600 13px "Source Sans 3", Arial, sans-serif;
+    color: var(--sheet);
+    background: var(--accent);
+    border: none;
+    border-radius: 3px;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .print-hint button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .sheet {
+    background: var(--sheet);
+    max-width: 210mm;
+    margin: 0 auto 40px;
+    padding: 15mm 16mm 14mm;
+    box-shadow: 0 1px 3px rgba(0,0,0,.18), 0 8px 28px rgba(0,0,0,.10);
+    line-height: 1.42;
+    font-size: 10.3pt;
+  }
+
+  /* ---------- Header ---------- */
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 700;
+    font-size: 24pt;
+    letter-spacing: .02em;
+    color: var(--ink);
+    margin: 0 0 2pt;
+    text-wrap: balance;
+  }
+  .role-line {
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 6pt;
+  }
+  .contact-line {
+    font-size: 9.6pt;
+    color: var(--muted);
+    margin: 0;
+  }
+  .contact-line a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .contact-line a:hover, .contact-line a:focus-visible { text-decoration: underline; }
+  .sep { padding: 0 5pt; color: var(--hairline); }
+
+  /* ---------- Sections ---------- */
+  h2 {
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 9.3pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--ink);
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 3pt;
+    margin: 14pt 0 7pt;
+  }
+  p { margin: 0; }
+
+  /* ---------- Skills ---------- */
+  .skills { display: grid; grid-template-columns: max-content 1fr; gap: 3pt 10pt; }
+  .skills dt { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .skills dd { margin: 0; }
+  .skills, .skills dt, .skills dd { font-size: 10pt; }
+  .yrs { color: var(--accent); font-weight: 700; }
+
+  /* ---------- Experience / Projects ---------- */
+  .entry { margin: 0 0 9pt; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+    flex-wrap: wrap;
+  }
+  .entry-head h3 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0;
+  }
+  .when {
+    font-size: 9.4pt;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .where {
+    font-size: 9.6pt;
+    color: var(--muted);
+    font-style: italic;
+    margin: 1pt 0 2pt;
+  }
+  .stack { font-style: normal; color: var(--accent); font-weight: 600; }
+  ul { margin: 3pt 0 0; padding-left: 14pt; }
+  li { margin: 0 0 2.5pt; }
+  li:last-child { margin-bottom: 0; }
+  li::marker { color: var(--accent); }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24pt; }
+  .plain-list { list-style: none; padding: 0; margin: 0; }
+  .plain-list li { margin-bottom: 3pt; }
+  .plain-list .org { color: var(--muted); }
+  .plain-list strong { color: var(--ink); }
+
+  /* ---------- Screen responsiveness ---------- */
+  @media screen and (max-width: 760px) {
+    .sheet { padding: 24px 20px; margin-bottom: 24px; }
+    .two-col { grid-template-columns: 1fr; }
+    .skills { grid-template-columns: 1fr; gap: 0; }
+    .skills dt { margin-top: 5pt; }
+  }
+
+  /* ---------- Print ---------- */
+  @page { size: A4; margin: 13mm 14mm; }
+  @media print {
+    body { background: #ffffff; }
+    .print-hint { display: none; }
+    .sheet { box-shadow: none; margin: 0; padding: 0; max-width: none; }
+    .entry, .two-col { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    .contact-line a { color: var(--accent); }
+  }
+</style>
+
+<div class="print-hint">
+  <span>A4 print layout — save as PDF from the print dialog to get the file you can email.</span>
+  <button type="button" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<main class="sheet">
+  <header>
+    <h1>SATYAM KUSHWAHA</h1>
+    <p class="role-line">Full-Stack Software Engineer · React.js · Node.js · MongoDB</p>
+    <p class="contact-line">
+      Noida, Uttar Pradesh, India<span class="sep">|</span>(+91) 96251 10686<span class="sep">|</span><a href="mailto:satyamkushwaha1101@gmail.com">satyamkushwaha1101@gmail.com</a><span class="sep">|</span><a href="https://github.com/satyamkushwaha">GitHub</a><span class="sep">|</span><a href="https://www.linkedin.com/in/satyamkushwaha">LinkedIn</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Full-Stack Software Engineer with <strong>4.5+ years</strong> of professional experience building and operating production web applications end to end — <strong>React.js</strong> front ends, <strong>Node.js / Express.js</strong> back ends, <strong>MongoDB</strong> and SQL data layers — with hands-on <strong>DevOps</strong> ownership of AWS deployments, Docker, and GitHub Actions CI/CD pipelines. Most recently led a technical team scaling a SaaS platform to 50,000+ active users, alongside 1.5+ years of hands-on experience integrating LLMs and agentic AI workflows into production systems.</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <dl class="skills">
+      <dt>Frontend <span class="yrs">(4.5+ yrs)</span></dt>
+      <dd>React.js, Next.js, Redux, Tailwind CSS, Material UI, Bootstrap</dd>
+      <dt>Backend <span class="yrs">(4.5+ yrs)</span></dt>
+      <dd>Node.js, Express.js, REST APIs, GraphQL, Socket.io, Microservices, Serverless Framework</dd>
+      <dt>Databases</dt>
+      <dd>MongoDB (schema design, aggregation pipelines, indexing), MySQL, PostgreSQL, Redis, Vector Databases</dd>
+      <dt>DevOps &amp; Cloud</dt>
+      <dd>AWS (Lambda, S3, API Gateway), Docker, GitHub Actions CI/CD, Git, GitHub</dd>
+      <dt>Languages</dt>
+      <dd>JavaScript (ES6+), TypeScript, Python, C, C++</dd>
+      <dt>AI / LLM</dt>
+      <dd>OpenAI API, LangChain, RAG Pipelines, AI Agents, Prompt Engineering</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer (Technical Lead) — Swiirl Inc</h3>
+        <span class="when">Oct 2025 – Jul 2026</span>
+      </div>
+      <p class="where">Remote, USA</p>
+      <ul>
+        <li>Led the tech team building a market-intelligence and brand-insight SaaS platform from scratch, scaling backend infrastructure to support <strong>50,000+ active users</strong>.</li>
+        <li>Implemented automated Node.js + TypeScript delivery with <strong>GitHub Actions CI/CD pipelines</strong>, reducing release cycle times by 25%.</li>
+        <li>Engineered advanced AI integrations and agentic workflows, including automated meeting bots that join client calls, generate comprehensive meeting reports, and analyze product potential.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Full Stack Developer — Eqaim Technology and Services Pvt. Ltd.</h3>
+        <span class="when">Mar 2023 – Sep 2025</span>
+      </div>
+      <p class="where">Hyderabad, India</p>
+      <ul>
+        <li>Owned architecture, development, and client management end to end for <strong>20+ scalable enterprise web projects</strong> built with React.js, Next.js, Node.js, Express.js, and serverless architectures.</li>
+        <li>Engineered high-performance production systems on <strong>AWS with automated CI/CD pipelines</strong>, cutting heavy database query execution times by 40%.</li>
+        <li>Streamlined cloud and deployment workflows across multiple roles, slashing deployment and management overhead costs by 20% while accelerating delivery timelines.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>MERN Stack Developer — Appsdelite Technology</h3>
+        <span class="when">Jan 2022 – Feb 2023</span>
+      </div>
+      <p class="where">Mohali, India</p>
+      <ul>
+        <li>Developed <strong>10+ pixel-perfect, fully responsive</strong> client-facing web applications using React.js, Tailwind CSS, and component-driven modular architectures.</li>
+        <li>Designed and published secure, well-documented <strong>RESTful APIs with Express.js and MongoDB</strong>, with robust JWT authentication and role-based access control.</li>
+        <li>Optimized <strong>MongoDB aggregation pipelines</strong> and MySQL query structures, improving system throughput and reducing server memory overhead by 30%.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Social Networking App (our-batch)</h3>
+        <span class="when"><span class="stack">React.js · Node.js · MongoDB · Socket.io</span></span>
+      </div>
+      <ul>
+        <li>Built a high-concurrency real-time social networking platform on a <strong>MongoDB</strong> data layer, supporting instantaneous messaging across 1,000+ simultaneous virtual rooms.</li>
+        <li>Integrated WebSockets and Socket.io event-driven listeners for live notification broadcasts, connection pooling, and online-state syncing with zero perceptible latency.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Smart E-Commerce Platform (AI Bazar)</h3>
+        <span class="when"><span class="stack">React.js · Node.js · Express.js · MySQL · OpenAI API</span></span>
+      </div>
+      <ul>
+        <li>Engineered a full-featured e-commerce application with semantic product discovery powered by natural-language search queries.</li>
+        <li>Built an autonomous price-negotiation agent that dynamically generates optimized discount offers, boosting conversion likelihood by 20%.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Interview Practice Platform (ai-interviewer)</h3>
+        <span class="when"><span class="stack">React.js · Node.js · OpenAI API</span></span>
+      </div>
+      <ul>
+        <li>Developed an interactive AI agent that parses candidate resumes and job descriptions to dynamically synthesize 50+ situational technical interview questions, with an adaptive scoring engine giving instant, granular feedback.</li>
+      </ul>
+    </article>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Certifications &amp; Achievements</h2>
+      <ul class="plain-list">
+        <li><strong>Agentic AI Certification</strong> <span class="org">— Oracle</span></li>
+        <li><strong>Web Developer Certification</strong> <span class="org">— IBM</span></li>
+        <li><strong>React Native Certification</strong> <span class="org">— Udemy</span></li>
+        <li><strong>Technical Mentorship</strong> <span class="org">— NavGurukul (NGO)</span></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <ul class="plain-list">
+        <li><strong>Bachelor of Computer Applications (BCA)</strong><br><span class="org">Indira Gandhi National Open University (IGNOU)</span></li>
+        <li><strong>Senior Secondary</strong><br><span class="org">Jawahar Navodaya Vidyalaya (JNV)</span></li>
+      </ul>
+    </section>
+  </div>
+</main>
