@@ -6,7 +6,7 @@ export const SITE = {
   phone: "+91-9625110686",
   cvUrl: "/cv.pdf",
   socials: {
-    github: "https://github.com/satyamkushwaha",
+    github: "https://github.com/satyamkushwaha11",
     linkedin: "https://www.linkedin.com/in/satyamkushwaha",
     instagram: "https://www.instagram.com/",
     facebook: "https://www.facebook.com/",
