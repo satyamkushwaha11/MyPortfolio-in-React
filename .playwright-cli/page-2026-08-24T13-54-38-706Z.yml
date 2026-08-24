@@ -1,0 +1,876 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "Satyam Kushwaha" [ref=e6]:
+        - /url: /
+        - generic [ref=e7]:
+          - generic [ref=e8]: Satyam
+          - generic [ref=e9]: Kushwaha
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "Home" [ref=e13]:
+            - /url: /
+        - listitem [ref=e14]:
+          - link "About" [ref=e15]:
+            - /url: /about
+        - listitem [ref=e16]:
+          - link "Services" [ref=e17]:
+            - /url: /services
+        - listitem [ref=e18]:
+          - link "Portfolio" [ref=e19]:
+            - /url: /portfolio
+        - listitem [ref=e20]:
+          - link "Blog" [ref=e21]:
+            - /url: /blog
+        - listitem [ref=e22]:
+          - link "Resume" [ref=e23]:
+            - /url: /resume
+        - listitem [ref=e24]:
+          - link "Contact" [ref=e25]:
+            - /url: /contact
+        - listitem [ref=e26]:
+          - generic "Toggle theme" [ref=e27]:
+            - checkbox "Toggle theme"
+            - img [ref=e30]
+        - listitem [ref=e36]:
+          - link "Download CV" [ref=e37]:
+            - /url: /Satyam_Kushwaha_CV.pdf
+            - generic: Download CV
+    - list [ref=e38]:
+      - listitem [ref=e39]:
+        - link "Home" [ref=e40]:
+          - /url: /
+      - listitem [ref=e41]:
+        - link "About" [ref=e42]:
+          - /url: /about
+      - listitem [ref=e43]:
+        - link "Services" [ref=e44]:
+          - /url: /services
+      - listitem [ref=e45]:
+        - link "Portfolio" [ref=e46]:
+          - /url: /portfolio
+      - listitem [ref=e47]:
+        - link "Blog" [ref=e48]:
+          - /url: /blog
+      - listitem [ref=e49]:
+        - link "Resume" [ref=e50]:
+          - /url: /resume
+      - listitem [ref=e51]:
+        - link "Contact" [ref=e52]:
+          - /url: /contact
+      - listitem [ref=e53]:
+        - generic "Toggle theme" [ref=e54]:
+          - checkbox "Toggle theme"
+          - img [ref=e57]
+      - listitem [ref=e63]:
+        - link "Download CV" [ref=e64]:
+          - /url: /Satyam_Kushwaha_CV.pdf
+          - generic: Download CV
+  - generic [ref=e66]:
+    - generic [ref=e68]:
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: Hello, I'm
+          - heading "Satyam Kushwaha" [level=3] [ref=e74]
+          - generic [ref=e75]: A Software Engineer · Full-Stack Developer From India.
+          - paragraph [ref=e76]: Full-Stack Software Engineer with 4+ years of experience building scalable web and mobile applications. Specialized in AI-driven systems, LLM integration, and cloud-native architectures using AWS — delivered end-to-end using React and Node.js with a focus on scalability, reliability, and user experience.
+          - generic [ref=e77]:
+            - button "About Me" [ref=e78]:
+              - generic: About Me
+            - list [ref=e79]:
+              - listitem [ref=e80]:
+                - link "GitHub" [ref=e81]:
+                  - /url: https://github.com/satyamkushwaha11
+                  - img [ref=e82]
+              - listitem [ref=e84]:
+                - link "LinkedIn" [ref=e85]:
+                  - /url: https://www.linkedin.com/in/satyam-kushwaha-783573205
+                  - img [ref=e86]
+              - listitem [ref=e88]:
+                - link "Instagram" [ref=e89]:
+                  - /url: https://www.instagram.com/
+                  - img [ref=e90]
+              - listitem [ref=e92]:
+                - link "Facebook" [ref=e93]:
+                  - /url: https://www.facebook.com/
+                  - img [ref=e94]
+        - img "Satyam Kushwaha" [ref=e105]
+      - button "Scroll down" [ref=e107]:
+        - img [ref=e108]
+    - generic [ref=e110]:
+      - generic [ref=e113]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: Services
+          - generic [ref=e117]: What I Can Build For You
+          - paragraph [ref=e118]: From a single feature to a full product — here's how I can help bring your idea to life.
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - img [ref=e122]
+            - heading "Full-Stack Web Development" [level=3] [ref=e125]
+            - paragraph [ref=e126]: End-to-end web apps built with React and Node.js — fast, responsive, and production-ready from the database to the UI.
+          - generic [ref=e127]:
+            - img [ref=e129]
+            - heading "AI & LLM Integration" [level=3] [ref=e131]
+            - paragraph [ref=e132]: Add real intelligence to your product with LLM integration, agentic AI, and smart features powered by OpenAI and beyond.
+          - generic [ref=e133]:
+            - img [ref=e135]
+            - heading "Mobile App Development" [level=3] [ref=e137]
+            - paragraph [ref=e138]: Cross-platform mobile apps with React Native — one codebase, a native feel on both iOS and Android.
+          - generic [ref=e139]:
+            - img [ref=e141]
+            - heading "Backend & API Development" [level=3] [ref=e144]
+            - paragraph [ref=e145]: Scalable REST APIs, secure authentication, and well-modeled databases designed to grow with your users.
+          - generic [ref=e146]:
+            - img [ref=e148]
+            - heading "Automation & Workflows" [level=3] [ref=e150]
+            - paragraph [ref=e151]: Automate the repetitive — workflows, pipelines, and integrations that save your team hours every week.
+          - generic [ref=e152]:
+            - img [ref=e154]
+            - heading "E-commerce & SaaS Platforms" [level=3] [ref=e157]
+            - paragraph [ref=e158]: Marketplaces, dashboards, payments, and admin panels — complete SaaS products shipped end-to-end.
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - generic [ref=e164]: 4+
+            - generic [ref=e165]: Years of Experience
+          - generic [ref=e166]:
+            - generic [ref=e167]: "0"
+            - generic [ref=e168]: Total Projects
+          - img "Satyam Kushwaha" [ref=e169]
+        - generic [ref=e171]:
+          - generic [ref=e172]: Software Engineer & Technical Lead
+          - generic [ref=e173]: I Build AI-Driven Full-Stack Systems End-to-End
+          - paragraph [ref=e174]: Hi, I'm Satyam — a full-stack engineer with 4+ years of experience shipping production SaaS, AI-powered platforms, and mobile apps. I enjoy architecting scalable systems, integrating LLMs into real user workflows, and leading features from whiteboard to deploy.
+          - button "Hire Me" [ref=e175]:
+            - generic: Hire Me
+      - generic [ref=e178]:
+        - generic [ref=e180]:
+          - generic [ref=e181]: Expertise
+          - generic [ref=e182]: My Tech Stack
+          - paragraph [ref=e183]: A breakdown of the tools I reach for across the stack — rated by how much I actually use them in production.
+        - generic [ref=e184]:
+          - heading "Languages" [level=1] [ref=e185]: Languages
+          - generic [ref=e187]:
+            - generic [ref=e188]:
+              - img "Javascript" [ref=e190]
+              - generic [ref=e191]:
+                - generic [ref=e192]: Javascript
+                - paragraph [ref=e193]: Scripting language powering dynamic content on the web.
+                - generic [ref=e194]:
+                  - img [ref=e195]
+                  - img [ref=e197]
+                  - img [ref=e199]
+                  - img [ref=e201]
+                  - img [ref=e203]
+            - generic [ref=e205]:
+              - img "Typescript" [ref=e207]
+              - generic [ref=e208]:
+                - generic [ref=e209]: Typescript
+                - paragraph [ref=e210]: Strongly typed language that builds on JavaScript.
+                - generic [ref=e211]:
+                  - img [ref=e212]
+                  - img [ref=e214]
+                  - img [ref=e216]
+                  - img [ref=e218]
+                  - img [ref=e220]
+            - generic [ref=e222]:
+              - img "Python" [ref=e224]
+              - generic [ref=e225]:
+                - generic [ref=e226]: Python
+                - paragraph [ref=e227]: Interpreted, object-oriented language with dynamic semantics.
+                - generic [ref=e228]:
+                  - img [ref=e229]
+                  - img [ref=e231]
+                  - img [ref=e233]
+                  - img [ref=e235]
+                  - img [ref=e237]
+            - generic [ref=e239]:
+              - img "C++" [ref=e241]
+              - generic [ref=e242]:
+                - generic [ref=e243]: C++
+                - paragraph [ref=e244]: Versatile OO language with polymorphism and templates.
+                - generic [ref=e245]:
+                  - img [ref=e246]
+                  - img [ref=e248]
+                  - img [ref=e250]
+                  - img [ref=e252]
+                  - img [ref=e254]
+            - generic [ref=e256]:
+              - img "C" [ref=e258]
+              - generic [ref=e259]:
+                - generic [ref=e260]: C
+                - paragraph [ref=e261]: Low-level language known for efficiency and hardware access.
+                - generic [ref=e262]:
+                  - img [ref=e263]
+                  - img [ref=e265]
+                  - img [ref=e267]
+                  - img [ref=e269]
+                  - img [ref=e271]
+        - generic [ref=e273]:
+          - heading "Frontend" [level=1] [ref=e274]: Frontend
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - img "HTML" [ref=e279]
+              - generic [ref=e280]:
+                - generic [ref=e281]: HTML
+                - paragraph [ref=e282]: Standard markup language for web documents.
+                - generic [ref=e283]:
+                  - img [ref=e284]
+                  - img [ref=e286]
+                  - img [ref=e288]
+                  - img [ref=e290]
+                  - img [ref=e292]
+            - generic [ref=e294]:
+              - img "CSS" [ref=e296]
+              - generic [ref=e297]:
+                - generic [ref=e298]: CSS
+                - paragraph [ref=e299]: Styles HTML and layouts across devices.
+                - generic [ref=e300]:
+                  - img [ref=e301]
+                  - img [ref=e303]
+                  - img [ref=e305]
+                  - img [ref=e307]
+                  - img [ref=e309]
+            - generic [ref=e311]:
+              - img "React.js" [ref=e313]
+              - generic [ref=e314]:
+                - generic [ref=e315]: React.js
+                - paragraph [ref=e316]: Library for building component-based UIs.
+                - generic [ref=e317]:
+                  - img [ref=e318]
+                  - img [ref=e320]
+                  - img [ref=e322]
+                  - img [ref=e324]
+                  - img [ref=e326]
+            - generic [ref=e328]:
+              - img "React Native" [ref=e330]
+              - generic [ref=e331]:
+                - generic [ref=e332]: React Native
+                - paragraph [ref=e333]: Framework for cross-platform native apps.
+                - generic [ref=e334]:
+                  - img [ref=e335]
+                  - img [ref=e337]
+                  - img [ref=e339]
+                  - img [ref=e341]
+                  - img [ref=e343]
+            - generic [ref=e345]:
+              - img "Next.js" [ref=e347]
+              - generic [ref=e348]:
+                - generic [ref=e349]: Next.js
+                - paragraph [ref=e350]: React framework for SSR/SSG web apps.
+                - generic [ref=e351]:
+                  - img [ref=e352]
+                  - img [ref=e354]
+                  - img [ref=e356]
+                  - img [ref=e358]
+                  - img [ref=e360]
+            - generic [ref=e362]:
+              - img "Material UI" [ref=e364]
+              - generic [ref=e365]:
+                - generic [ref=e366]: Material UI
+                - paragraph [ref=e367]: React components implementing Material Design.
+                - generic [ref=e368]:
+                  - img [ref=e369]
+                  - img [ref=e371]
+                  - img [ref=e373]
+                  - img [ref=e375]
+                  - img [ref=e377]
+            - generic [ref=e379]:
+              - img "Bootstrap" [ref=e381]
+              - generic [ref=e382]:
+                - generic [ref=e383]: Bootstrap
+                - paragraph [ref=e384]: Popular CSS framework for responsive design.
+                - generic [ref=e385]:
+                  - img [ref=e386]
+                  - img [ref=e388]
+                  - img [ref=e390]
+                  - img [ref=e392]
+                  - img [ref=e394]
+            - generic [ref=e396]:
+              - img "Redux" [ref=e398]
+              - generic [ref=e399]:
+                - generic [ref=e400]: Redux
+                - paragraph [ref=e401]: Predictable state container for JS apps.
+                - generic [ref=e402]:
+                  - img [ref=e403]
+                  - img [ref=e405]
+                  - img [ref=e407]
+                  - img [ref=e409]
+                  - img [ref=e411]
+        - generic [ref=e413]:
+          - heading "Backend" [level=1] [ref=e414]: Backend
+          - generic [ref=e416]:
+            - generic [ref=e417]:
+              - img "Node.js" [ref=e419]
+              - generic [ref=e420]:
+                - generic [ref=e421]: Node.js
+                - paragraph [ref=e422]: Cross-platform JavaScript runtime.
+                - generic [ref=e423]:
+                  - img [ref=e424]
+                  - img [ref=e426]
+                  - img [ref=e428]
+                  - img [ref=e430]
+                  - img [ref=e432]
+            - generic [ref=e434]:
+              - img "Express.js" [ref=e436]
+              - generic [ref=e437]:
+                - generic [ref=e438]: Express.js
+                - paragraph [ref=e439]: Minimal web framework for Node.
+                - generic [ref=e440]:
+                  - img [ref=e441]
+                  - img [ref=e443]
+                  - img [ref=e445]
+                  - img [ref=e447]
+                  - img [ref=e449]
+            - generic [ref=e451]:
+              - img "MongoDB" [ref=e453]
+              - generic [ref=e454]:
+                - generic [ref=e455]: MongoDB
+                - paragraph [ref=e456]: Document-oriented NoSQL database.
+                - generic [ref=e457]:
+                  - img [ref=e458]
+                  - img [ref=e460]
+                  - img [ref=e462]
+                  - img [ref=e464]
+                  - img [ref=e466]
+            - generic [ref=e468]:
+              - img "MySQL" [ref=e470]
+              - generic [ref=e471]:
+                - generic [ref=e472]: MySQL
+                - paragraph [ref=e473]: Popular relational SQL database.
+                - generic [ref=e474]:
+                  - img [ref=e475]
+                  - img [ref=e477]
+                  - img [ref=e479]
+                  - img [ref=e481]
+                  - img [ref=e483]
+            - generic [ref=e485]:
+              - img "PostgreSQL" [ref=e487]
+              - generic [ref=e488]:
+                - generic [ref=e489]: PostgreSQL
+                - paragraph [ref=e490]: Advanced open-source relational database.
+                - generic [ref=e491]:
+                  - img [ref=e492]
+                  - img [ref=e494]
+                  - img [ref=e496]
+                  - img [ref=e498]
+                  - img [ref=e500]
+        - generic [ref=e502]:
+          - heading "AI & Automation" [level=1] [ref=e503]: AI & Automation
+          - generic [ref=e505]:
+            - generic [ref=e506]:
+              - img "Agentic AI" [ref=e508]
+              - generic [ref=e509]:
+                - generic [ref=e510]: Agentic AI
+                - paragraph [ref=e511]: Building autonomous AI agents that plan, use tools, and execute multi-step tasks.
+                - generic [ref=e512]:
+                  - img [ref=e513]
+                  - img [ref=e515]
+                  - img [ref=e517]
+                  - img [ref=e519]
+                  - img [ref=e521]
+            - generic [ref=e523]:
+              - img "LLM Integration" [ref=e525]
+              - generic [ref=e526]:
+                - generic [ref=e527]: LLM Integration
+                - paragraph [ref=e528]: Integrating large language models into apps via APIs, prompts, and orchestration.
+                - generic [ref=e529]:
+                  - img [ref=e530]
+                  - img [ref=e532]
+                  - img [ref=e534]
+                  - img [ref=e536]
+                  - img [ref=e538]
+            - generic [ref=e540]:
+              - img "Automation" [ref=e542]
+              - generic [ref=e543]:
+                - generic [ref=e544]: Automation
+                - paragraph [ref=e545]: Automating workflows and pipelines to remove repetitive manual work.
+                - generic [ref=e546]:
+                  - img [ref=e547]
+                  - img [ref=e549]
+                  - img [ref=e551]
+                  - img [ref=e553]
+                  - img [ref=e555]
+        - generic [ref=e557]:
+          - heading "Other" [level=1] [ref=e558]: Other
+          - generic [ref=e560]:
+            - generic [ref=e561]:
+              - img "Git & GitHub" [ref=e563]
+              - generic [ref=e564]:
+                - generic [ref=e565]: Git & GitHub
+                - paragraph [ref=e566]: Worked with GitHub, Bitbucket, and GitLab.
+                - generic [ref=e567]:
+                  - img [ref=e568]
+                  - img [ref=e570]
+                  - img [ref=e572]
+                  - img [ref=e574]
+                  - img [ref=e576]
+            - generic [ref=e578]:
+              - img "AWS" [ref=e580]
+              - generic [ref=e581]:
+                - generic [ref=e582]: AWS
+                - paragraph [ref=e583]: EC2, Lambda, DynamoDB, S3 and friends.
+                - generic [ref=e584]:
+                  - img [ref=e585]
+                  - img [ref=e587]
+                  - img [ref=e589]
+                  - img [ref=e591]
+                  - img [ref=e593]
+            - generic [ref=e595]:
+              - img "VS Code" [ref=e597]
+              - generic [ref=e598]:
+                - generic [ref=e599]: VS Code
+                - paragraph [ref=e600]: Primary editor with a tuned setup.
+                - generic [ref=e601]:
+                  - img [ref=e602]
+                  - img [ref=e604]
+                  - img [ref=e606]
+                  - img [ref=e608]
+                  - img [ref=e610]
+            - generic [ref=e612]:
+              - img "Productivity" [ref=e614]
+              - generic [ref=e615]:
+                - generic [ref=e616]: Productivity
+                - paragraph [ref=e617]: Jira, Trello, Asana, Notion.
+                - generic [ref=e618]:
+                  - img [ref=e619]
+                  - img [ref=e621]
+                  - img [ref=e623]
+                  - img [ref=e625]
+                  - img [ref=e627]
+      - generic [ref=e631]:
+        - generic [ref=e633]:
+          - generic [ref=e634]: Credentials
+          - generic [ref=e635]: Licenses & Certifications
+          - paragraph [ref=e636]: Verified credentials from Oracle, Anthropic, Coursera, HackerRank and more — each one links to the certificate itself.
+        - generic [ref=e637]:
+          - generic [ref=e638]:
+            - img [ref=e640]
+            - generic [ref=e642]:
+              - generic [ref=e643]: Agentic AI Certified Foundations Associate
+              - generic [ref=e644]: Oracle · Issued Aug 2026
+          - generic [ref=e645]:
+            - img [ref=e647]
+            - generic [ref=e649]:
+              - generic [ref=e650]: Claude Code 101 — Certificate of Completion
+              - generic [ref=e651]: Anthropic · Issued Aug 2026
+              - generic [ref=e652]: "Credential ID: pei3ogyzbor5"
+              - link "View credential" [ref=e653]:
+                - /url: https://verify.skilljar.com/c/pei3ogyzbor5
+                - text: View credential
+                - img [ref=e654]
+          - generic [ref=e656]:
+            - img [ref=e658]
+            - generic [ref=e660]:
+              - generic [ref=e661]: React Native (App Development)
+              - generic [ref=e662]: Udemy · Issued Jan 2024
+              - link "View credential" [ref=e663]:
+                - /url: https://udemy-certificate.s3.amazonaws.com/image/UC-c587ee05-0396-4a54-a3cb-583751c1547c.jpg
+                - text: View credential
+                - img [ref=e664]
+          - generic [ref=e666]:
+            - img [ref=e668]
+            - generic [ref=e670]:
+              - generic [ref=e671]: Cutshort Certified React.js — Basic
+              - generic [ref=e672]: Cutshort · Issued Sep 2022
+              - generic [ref=e673]: "Credential ID: 71984"
+              - link "View credential" [ref=e674]:
+                - /url: https://cutshort.io/certificate/71984
+                - text: View credential
+                - img [ref=e675]
+          - generic [ref=e677]:
+            - img [ref=e679]
+            - generic [ref=e681]:
+              - generic [ref=e682]: Web Development with HTML, CSS, JavaScript
+              - generic [ref=e683]: Coursera (IBM) · Issued Sep 2022
+              - generic [ref=e684]: "Credential ID: SPUUQ5AK7NSR"
+              - link "View credential" [ref=e685]:
+                - /url: https://www.coursera.org/account/accomplishments/certificate/SPUUQ5AK7NSR
+                - text: View credential
+                - img [ref=e686]
+          - generic [ref=e688]:
+            - img [ref=e690]
+            - generic [ref=e692]:
+              - generic [ref=e693]: JavaScript
+              - generic [ref=e694]: HackerRank · Issued Jul 2022
+              - link "View credential" [ref=e695]:
+                - /url: https://www.hackerrank.com/certificates/201d3031cba9
+                - text: View credential
+                - img [ref=e696]
+          - generic [ref=e698]:
+            - img [ref=e700]
+            - generic [ref=e702]:
+              - generic [ref=e703]: Software Programming
+              - generic [ref=e704]: NavGurukul · Issued Jan 2022
+              - link "View credential" [ref=e705]:
+                - /url: https://res.cloudinary.com/dpqchc972/image/upload/v1659439853/NavGurukul_Certificate_80_5_1__page-0001_xvn2do.jpg
+                - text: View credential
+                - img [ref=e706]
+          - generic [ref=e708]:
+            - img [ref=e710]
+            - generic [ref=e712]:
+              - generic [ref=e713]: Core Python
+              - generic [ref=e714]: Sololearn
+              - generic [ref=e715]: "Credential ID: CT-2DSX7FSR"
+              - link "View credential" [ref=e716]:
+                - /url: https://www.sololearn.com/certificates/CT-2DSX7FSR
+                - text: View credential
+                - img [ref=e717]
+          - generic [ref=e719]:
+            - img [ref=e721]
+            - generic [ref=e723]:
+              - generic [ref=e724]: Node.js
+              - generic [ref=e725]: HackerRank
+              - link "View credential" [ref=e726]:
+                - /url: https://www.hackerrank.com/certificates/ec48b17575bf
+                - text: View credential
+                - img [ref=e727]
+        - link "See verified credentials on LinkedIn" [ref=e730]:
+          - /url: https://www.linkedin.com/in/satyam-kushwaha-783573205/details/certifications/
+          - img [ref=e731]
+          - generic [ref=e733]: See verified credentials on LinkedIn
+      - generic [ref=e736]:
+        - generic [ref=e738]:
+          - generic [ref=e739]: Portfolio
+          - generic [ref=e740]: My Amazing Works
+          - paragraph [ref=e741]: A selection of projects I've shipped — filter by type to focus on what matters.
+        - generic [ref=e742]:
+          - button "All" [ref=e743]
+          - button "AI / LLM" [ref=e744]
+          - button "Web App" [ref=e745]
+          - button "SaaS" [ref=e746]
+          - button "E-commerce" [ref=e747]
+          - button "Open Source" [ref=e748]
+          - button "Mobile App" [ref=e749]
+        - generic [ref=e750]:
+          - article [ref=e751]:
+            - generic [ref=e752]:
+              - img "AI Interviewer — Voice-First Mock Interviews" [ref=e753]
+              - generic [ref=e754]:
+                - link "Visit live website" [ref=e755]:
+                  - /url: https://ai-interviewer.satyamkushwaha.online/
+                  - img [ref=e756]
+                - link "View code on GitHub" [ref=e760]:
+                  - /url: https://github.com/satyamkushwaha11/Ai-interviewer
+                  - img [ref=e761]
+            - generic [ref=e763]:
+              - generic [ref=e764]: AI / LLM
+              - heading "AI Interviewer — Voice-First Mock Interviews" [level=3] [ref=e765]
+              - paragraph [ref=e766]: A live AI interviewer that reads your resume and target role, then runs a voice-to-voice mock interview with real follow-ups instead of a fixed question list. Pick focus, rigor and duration, and finish with a graded report scored question by question.
+              - list [ref=e767]:
+                - listitem [ref=e768]: Next.js
+                - listitem [ref=e769]: TypeScript
+                - listitem [ref=e770]: OpenAI
+                - listitem [ref=e771]: Neon Postgres
+                - listitem [ref=e772]: Web Speech API
+                - listitem [ref=e773]: Tailwind CSS
+          - article [ref=e774]:
+            - generic [ref=e775]:
+              - img "Git Vault — GitHub as Media Storage" [ref=e776]
+              - generic [ref=e777]:
+                - link "Visit live website" [ref=e778]:
+                  - /url: https://git-vault-rho.vercel.app/
+                  - img [ref=e779]
+                - link "View code on GitHub" [ref=e783]:
+                  - /url: https://github.com/satyamkushwaha11/git-vault
+                  - img [ref=e784]
+            - generic [ref=e786]:
+              - generic [ref=e787]: Web App
+              - heading "Git Vault — GitHub as Media Storage" [level=3] [ref=e788]
+              - paragraph [ref=e789]: Turns any GitHub repository into a free media bucket. Authenticate with GitHub, drag-and-drop uploads with automatic image compression, browse a real gallery, and generate permanent CDN links — with multi-branch support, folder management, and full Git version history.
+              - list [ref=e790]:
+                - listitem [ref=e791]: Next.js
+                - listitem [ref=e792]: TypeScript
+                - listitem [ref=e793]: NextAuth
+                - listitem [ref=e794]: GitHub API
+                - listitem [ref=e795]: Tailwind CSS
+          - article [ref=e796]:
+            - generic [ref=e797]:
+              - img "CVremix — AI Resume Tailor & ATS Optimizer" [ref=e798]
+              - generic [ref=e799]:
+                - link "Visit live website" [ref=e800]:
+                  - /url: https://cv-tailor-ai-tau.vercel.app/
+                  - img [ref=e801]
+                - link "View code on GitHub" [ref=e805]:
+                  - /url: https://github.com/satyamkushwaha11/CVtailor
+                  - img [ref=e806]
+            - generic [ref=e808]:
+              - generic [ref=e809]: SaaS
+              - heading "CVremix — AI Resume Tailor & ATS Optimizer" [level=3] [ref=e810]
+              - paragraph [ref=e811]: AI resume optimizer that tailors your CV to any job description to pass Applicant Tracking Systems. Four rewriting strategies, before/after ATS match scoring, keyword-gap analysis, a CAR bullet optimizer, and six ATS-safe templates — no sign-up, nothing stored.
+              - list [ref=e812]:
+                - listitem [ref=e813]: Next.js
+                - listitem [ref=e814]: TypeScript
+                - listitem [ref=e815]: AI / LLM
+                - listitem [ref=e816]: ATS Scoring
+          - article [ref=e817]:
+            - generic [ref=e818]:
+              - img "AI Bazaar — AI Marketplace with Negotiation" [ref=e819]
+              - generic [ref=e820]:
+                - link "Visit live website" [ref=e821]:
+                  - /url: https://ai-bazzar-web-olive.vercel.app/
+                  - img [ref=e822]
+                - link "View code on GitHub" [ref=e826]:
+                  - /url: https://github.com/satyamkushwaha11/ai-bazzar
+                  - img [ref=e827]
+            - generic [ref=e829]:
+              - generic [ref=e830]: E-commerce
+              - heading "AI Bazaar — AI Marketplace with Negotiation" [level=3] [ref=e831]
+              - paragraph [ref=e832]: An AI-powered marketplace that brings bazaar-style haggling online. An AI assistant helps shoppers find products across 50,000+ items in 18 departments, then buyers chat the price down with the seller — agreed prices lock for 10 minutes to complete checkout.
+              - list [ref=e833]:
+                - listitem [ref=e834]: Next.js
+                - listitem [ref=e835]: AI Assistant
+                - listitem [ref=e836]: E-commerce
+                - listitem [ref=e837]: Price Negotiation
+          - article [ref=e838]:
+            - generic [ref=e839]:
+              - img "RigForge — AI-Powered PC Builder" [ref=e840]
+              - generic [ref=e841]:
+                - link "Visit live website" [ref=e842]:
+                  - /url: https://pc-builder-delta-three.vercel.app/
+                  - img [ref=e843]
+                - link "View code on GitHub" [ref=e847]:
+                  - /url: https://github.com/satyamkushwaha11/pc-builder
+                  - img [ref=e848]
+            - generic [ref=e850]:
+              - generic [ref=e851]: AI / LLM
+              - heading "RigForge — AI-Powered PC Builder" [level=3] [ref=e852]
+              - paragraph [ref=e853]: Describe your needs in plain language ("4K editing + gaming, quiet, ~₹1.2L") and get three compatibility-guaranteed builds — Value, Balanced, and Performance — from a 2,300+ part catalog. A deterministic solver picks parts while AI handles interpretation and explanation, with 3D build previews.
+              - list [ref=e854]:
+                - listitem [ref=e855]: Next.js
+                - listitem [ref=e856]: TypeScript
+                - listitem [ref=e857]: Prisma
+                - listitem [ref=e858]: AI / LLM
+                - listitem [ref=e859]: 3D Visualization
+          - article [ref=e860]:
+            - generic [ref=e861]:
+              - img "logger-logs — Zero-Dependency Node Logger" [ref=e862]
+              - generic [ref=e863]:
+                - link "Visit live website" [ref=e864]:
+                  - /url: https://www.npmjs.com/package/logger-logs
+                  - img [ref=e865]
+                - link "View code on GitHub" [ref=e869]:
+                  - /url: https://github.com/satyamkushwaha11/logger-logs
+                  - img [ref=e870]
+            - generic [ref=e872]:
+              - generic [ref=e873]: Open Source
+              - heading "logger-logs — Zero-Dependency Node Logger" [level=3] [ref=e874]
+              - paragraph [ref=e875]: A fast, zero-dependency structured logger for Node.js, TypeScript, and JavaScript published to npm. Log levels, JSON and pretty output, file & line numbers, child loggers, async context, rotating file transport, and automatic secret redaction — all in a tiny package with no runtime dependencies.
+              - list [ref=e876]:
+                - listitem [ref=e877]: Node.js
+                - listitem [ref=e878]: TypeScript
+                - listitem [ref=e879]: npm Package
+                - listitem [ref=e880]: Open Source
+        - navigation "Portfolio pages" [ref=e881]:
+          - button "Previous page" [disabled] [ref=e882]:
+            - img [ref=e883]
+          - button "Page 1" [ref=e885]: "1"
+          - button "Page 2" [ref=e886]: "2"
+          - button "Page 3" [ref=e887]: "3"
+          - button "Next page" [ref=e888]:
+            - img [ref=e889]
+      - generic [ref=e892]:
+        - generic [ref=e895]:
+          - generic [ref=e896]: Testimonials
+          - generic [ref=e897]: Trusted By Teams I've Built For
+          - paragraph [ref=e898]: A few words from the products and companies I've shipped work for.
+        - generic [ref=e900]:
+          - article [ref=e901]:
+            - img [ref=e902]
+            - paragraph [ref=e904]: Satyam built our customer-facing site and the admin panel end-to-end. Clean architecture, reliable delivery, and the AI vendor-matching flow shipped exactly as scoped.
+            - generic [ref=e905]:
+              - link "Visit UU2" [ref=e906]:
+                - /url: https://uu2.co/
+                - img "UU2 logo" [ref=e907]
+              - generic [ref=e908]:
+                - generic [ref=e909]: UU2
+                - generic [ref=e910]: AI B2B Marketplace
+          - article [ref=e911]:
+            - img [ref=e912]
+            - paragraph [ref=e914]: He owned key parts of our storefront and checkout. Thoughtful about performance and edge cases, and a genuinely smooth collaborator across the stack.
+            - generic [ref=e915]:
+              - link "Visit Boundless Giving" [ref=e916]:
+                - /url: https://boundlessgiving.com/
+                - img "Boundless Giving logo" [ref=e917]
+              - generic [ref=e918]:
+                - generic [ref=e919]: Boundless Giving
+                - generic [ref=e920]: Charity Marketplace
+          - article [ref=e921]:
+            - img [ref=e922]
+            - paragraph [ref=e924]: Satyam helped bring our AI training app to life — fast iteration on the mobile experience and a sharp eye for detail in the workout flows.
+            - generic [ref=e925]:
+              - link "Visit Instacoach" [ref=e926]:
+                - /url: https://instacoach.com/
+                - img "Instacoach logo" [ref=e927]
+              - generic [ref=e928]:
+                - generic [ref=e929]: Instacoach
+                - generic [ref=e930]: AI Baseball Coach
+          - article [ref=e931]:
+            - img [ref=e932]
+            - paragraph [ref=e934]: Solid contributions to our photo-editing app used by millions. Dependable engineering and a strong sense for polished, user-friendly UI.
+            - generic [ref=e935]:
+              - link "Visit FotoRus" [ref=e936]:
+                - /url: https://apps.apple.com/us/app/fotorus-camera-photo-editor/id457517348
+                - img "FotoRus logo" [ref=e937]
+              - generic [ref=e938]:
+                - generic [ref=e939]: FotoRus
+                - generic [ref=e940]: Camera & Photo Editor
+          - article [ref=e941]:
+            - img [ref=e942]
+            - paragraph [ref=e944]: Delivered our B2B solar commerce platform with care — clean, maintainable code and clear communication throughout the build.
+            - generic [ref=e945]:
+              - link "Visit Besteon" [ref=e946]:
+                - /url: https://besteon.eu/
+                - img "Besteon logo" [ref=e947]
+              - generic [ref=e948]:
+                - generic [ref=e949]: Besteon
+                - generic [ref=e950]: Solar Wholesale Platform
+          - article [ref=e951]:
+            - img [ref=e952]
+            - paragraph [ref=e954]: Satyam built our customer-facing site and the admin panel end-to-end. Clean architecture, reliable delivery, and the AI vendor-matching flow shipped exactly as scoped.
+            - generic [ref=e955]:
+              - link "Visit UU2" [ref=e956]:
+                - /url: https://uu2.co/
+                - img "UU2 logo" [ref=e957]
+              - generic [ref=e958]:
+                - generic [ref=e959]: UU2
+                - generic [ref=e960]: AI B2B Marketplace
+          - article [ref=e961]:
+            - img [ref=e962]
+            - paragraph [ref=e964]: He owned key parts of our storefront and checkout. Thoughtful about performance and edge cases, and a genuinely smooth collaborator across the stack.
+            - generic [ref=e965]:
+              - link "Visit Boundless Giving" [ref=e966]:
+                - /url: https://boundlessgiving.com/
+                - img "Boundless Giving logo" [ref=e967]
+              - generic [ref=e968]:
+                - generic [ref=e969]: Boundless Giving
+                - generic [ref=e970]: Charity Marketplace
+          - article [ref=e971]:
+            - img [ref=e972]
+            - paragraph [ref=e974]: Satyam helped bring our AI training app to life — fast iteration on the mobile experience and a sharp eye for detail in the workout flows.
+            - generic [ref=e975]:
+              - link "Visit Instacoach" [ref=e976]:
+                - /url: https://instacoach.com/
+                - img "Instacoach logo" [ref=e977]
+              - generic [ref=e978]:
+                - generic [ref=e979]: Instacoach
+                - generic [ref=e980]: AI Baseball Coach
+          - article [ref=e981]:
+            - img [ref=e982]
+            - paragraph [ref=e984]: Solid contributions to our photo-editing app used by millions. Dependable engineering and a strong sense for polished, user-friendly UI.
+            - generic [ref=e985]:
+              - link "Visit FotoRus" [ref=e986]:
+                - /url: https://apps.apple.com/us/app/fotorus-camera-photo-editor/id457517348
+                - img "FotoRus logo" [ref=e987]
+              - generic [ref=e988]:
+                - generic [ref=e989]: FotoRus
+                - generic [ref=e990]: Camera & Photo Editor
+          - article [ref=e991]:
+            - img [ref=e992]
+            - paragraph [ref=e994]: Delivered our B2B solar commerce platform with care — clean, maintainable code and clear communication throughout the build.
+            - generic [ref=e995]:
+              - link "Visit Besteon" [ref=e996]:
+                - /url: https://besteon.eu/
+                - img "Besteon logo" [ref=e997]
+              - generic [ref=e998]:
+                - generic [ref=e999]: Besteon
+                - generic [ref=e1000]: Solar Wholesale Platform
+      - generic [ref=e1003]:
+        - generic [ref=e1004]:
+          - generic [ref=e1005]: Contact Me
+          - generic [ref=e1006]: I Want To Hear From You
+          - paragraph [ref=e1007]: Fill out the form and I'll get back to you, usually within a day. Or call between 9:00 a.m. and 8:00 p.m. IST, Mon–Fri.
+        - generic [ref=e1008]:
+          - generic [ref=e1010]:
+            - generic [ref=e1011]:
+              - img [ref=e1013]
+              - generic [ref=e1015]:
+                - heading "Address" [level=5] [ref=e1016]
+                - generic [ref=e1017]: Noida, Uttar Pradesh, India
+            - generic [ref=e1018]:
+              - img [ref=e1020]
+              - generic [ref=e1023]:
+                - heading "Email" [level=5] [ref=e1024]
+                - link "satyamkushwaha1101@gmail.com" [ref=e1025]:
+                  - /url: https://mail.google.com/mail/?view=cm&fs=1&to=satyamkushwaha1101%40gmail.com
+            - generic [ref=e1026]:
+              - img [ref=e1028]
+              - generic [ref=e1030]:
+                - heading "Phone" [level=5] [ref=e1031]
+                - link "+91-9626110686" [ref=e1032]:
+                  - /url: tel:+91-9626110686
+          - generic [ref=e1034]:
+            - generic [ref=e1035]:
+              - textbox "Name" [ref=e1037]
+              - textbox "Email" [ref=e1039]
+            - generic [ref=e1040]:
+              - textbox "Phone Number" [ref=e1042]
+              - textbox "Subject" [ref=e1044]
+            - textbox "Write Your Message Here..." [ref=e1046]
+            - button "Submit Now" [ref=e1048]:
+              - generic: Submit Now
+  - generic [ref=e1049]:
+    - generic [ref=e1050]:
+      - generic [ref=e1051]:
+        - heading "About Me" [level=2] [ref=e1052]
+        - list [ref=e1053]:
+          - listitem [ref=e1054]:
+            - paragraph [ref=e1055]: A full-stack web developer from India, merging creative design with powerful functionality.
+          - list [ref=e1056]:
+            - listitem [ref=e1057]:
+              - link "GitHub" [ref=e1058]:
+                - /url: https://github.com/satyamkushwaha11
+                - img [ref=e1059]
+            - listitem [ref=e1061]:
+              - link "LinkedIn" [ref=e1062]:
+                - /url: https://www.linkedin.com/in/satyam-kushwaha-783573205
+                - img [ref=e1063]
+            - listitem [ref=e1065]:
+              - link "Instagram" [ref=e1066]:
+                - /url: https://www.instagram.com/
+                - img [ref=e1067]
+            - listitem [ref=e1069]:
+              - link "Facebook" [ref=e1070]:
+                - /url: https://www.facebook.com/
+                - img [ref=e1071]
+      - generic [ref=e1073]:
+        - heading "Contact Me" [level=2] [ref=e1074]
+        - list [ref=e1075]:
+          - listitem [ref=e1076]: Noida, Uttar Pradesh, India
+          - listitem [ref=e1077]:
+            - link "+91-9626110686" [ref=e1078]:
+              - /url: tel:+91-9626110686
+          - listitem [ref=e1079]:
+            - link "satyamkushwaha1101@gmail.com" [ref=e1080]:
+              - /url: mailto:satyamkushwaha1101@gmail.com
+      - generic [ref=e1081]:
+        - heading "Quick Links" [level=2] [ref=e1082]
+        - list [ref=e1083]:
+          - listitem [ref=e1084]:
+            - link "Home" [ref=e1085]:
+              - /url: /
+          - listitem [ref=e1086]:
+            - link "About Me" [ref=e1087]:
+              - /url: /about
+          - listitem [ref=e1088]:
+            - link "Skills" [ref=e1089]:
+              - /url: /skills
+          - listitem [ref=e1090]:
+            - link "Projects" [ref=e1091]:
+              - /url: /portfolio
+          - listitem [ref=e1092]:
+            - link "Blogs" [ref=e1093]:
+              - /url: /blog
+      - generic [ref=e1094]:
+        - heading "Satyam Kushwaha" [level=2] [ref=e1095]:
+          - img [ref=e1096]
+          - text: Satyam Kushwaha
+        - list [ref=e1098]:
+          - listitem [ref=e1099]:
+            - text: MADE WITH ❤️ BY
+            - generic [ref=e1100]: Satyam Kushwaha.
+    - generic [ref=e1102]:
+      - generic [ref=e1103]: © 2026 Satyam Kushwaha. All rights reserved.
+      - generic [ref=e1104]: Built with React & Tailwind CSS
+  - button "Scroll to top":
+    - img

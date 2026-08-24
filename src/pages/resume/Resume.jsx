@@ -155,6 +155,17 @@ const Resume = () => {
                     </section>
                 )}
 
+                {Array.isArray(resume.certifications) && resume.certifications.length > 0 && (
+                    <section className="resume-section">
+                        <h2><span>Cer</span>tifications</h2>
+                        <ul>
+                            {resume.certifications.map((c, i) => (
+                                <li key={i}>{c.name} — {c.issuer}</li>
+                            ))}
+                        </ul>
+                    </section>
+                )}
+
                 {Array.isArray(resume.achievements) && resume.achievements.length > 0 && (
                     <section className="resume-section">
                         <h2><span>Ach</span>ievements</h2>

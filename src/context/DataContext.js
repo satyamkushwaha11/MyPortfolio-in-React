@@ -8,8 +8,9 @@ import galleryDefaults from '../data/gallery.json';
 // Bumped on every content change that must reach returning visitors: stored
 // collections replace the defaults wholesale, so a browser holding an older key
 // would keep showing the stale list. Old keys are intentionally NOT migrated —
-// they fall through to the current defaults. v6 ships the AI Interviewer project.
-const STORAGE_KEY = 'portfolio_data_v6';
+// they fall through to the current defaults. v7 ships the certifications on the
+// resume page.
+const STORAGE_KEY = 'portfolio_data_v7';
 const LEGACY_KEYS = ['portfolio_data_v1'];
 
 const buildDefaults = () => ({

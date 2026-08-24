@@ -6,6 +6,7 @@ import ContactMe from '../../components/homepage-sections/contactMe/ContactMe';
 import Section3 from '../../components/homepage-sections/section3/Section3';
 import Section4 from '../../components/homepage-sections/section4/Section4';
 import MyTech from '../../components/homepage-sections/My-tech/MyTech';
+import Certifications from '../../components/homepage-sections/certifications/Certifications';
 import Testimonials from '../../components/homepage-sections/testimonials/Testimonials';
 import usePageMeta from '../../hooks/usePageMeta';
 
@@ -29,6 +30,9 @@ const Homepage = () => {
                 </section>
                 <section id="skills">
                     <MyTech />
+                </section>
+                <section id="certifications">
+                    <Certifications />
                 </section>
                 <section id="portfolio">
                     <Section4 />

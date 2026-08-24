@@ -91,6 +91,17 @@
         "location": "Dadri, India"
       }
     ],
+    "certifications": [
+      { "name": "Agentic AI Certified Foundations Associate", "issuer": "Oracle" },
+      { "name": "Claude Code 101", "issuer": "Anthropic" },
+      { "name": "React Native (App Development)", "issuer": "Udemy" },
+      { "name": "Cutshort Certified React.js — Basic", "issuer": "Cutshort" },
+      { "name": "Web Development with HTML, CSS, JavaScript", "issuer": "Coursera (IBM)" },
+      { "name": "JavaScript", "issuer": "HackerRank" },
+      { "name": "Software Programming", "issuer": "NavGurukul" },
+      { "name": "Core Python", "issuer": "Sololearn" },
+      { "name": "Node.js", "issuer": "HackerRank" }
+    ],
     "achievements": [
       "Gold Medalist — National Judo Championship",
       "Silver Medalist — SGFI Judo Championship",

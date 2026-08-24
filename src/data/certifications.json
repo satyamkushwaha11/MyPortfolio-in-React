@@ -1,0 +1,74 @@
+[
+    {
+        "id": "cert-oracle-agentic-ai",
+        "name": "Agentic AI Certified Foundations Associate",
+        "issuer": "Oracle",
+        "issued": "Aug 2026",
+        "credentialId": "",
+        "url": ""
+    },
+    {
+        "id": "cert-anthropic-claude-code-101",
+        "name": "Claude Code 101 — Certificate of Completion",
+        "issuer": "Anthropic",
+        "issued": "Aug 2026",
+        "credentialId": "pei3ogyzbor5",
+        "url": "https://verify.skilljar.com/c/pei3ogyzbor5"
+    },
+    {
+        "id": "cert-udemy-react-native",
+        "name": "React Native (App Development)",
+        "issuer": "Udemy",
+        "issued": "Jan 2024",
+        "credentialId": "",
+        "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-c587ee05-0396-4a54-a3cb-583751c1547c.jpg"
+    },
+    {
+        "id": "cert-cutshort-react",
+        "name": "Cutshort Certified React.js — Basic",
+        "issuer": "Cutshort",
+        "issued": "Sep 2022",
+        "credentialId": "71984",
+        "url": "https://cutshort.io/certificate/71984"
+    },
+    {
+        "id": "cert-coursera-web-dev",
+        "name": "Web Development with HTML, CSS, JavaScript",
+        "issuer": "Coursera (IBM)",
+        "issued": "Sep 2022",
+        "credentialId": "SPUUQ5AK7NSR",
+        "url": "https://www.coursera.org/account/accomplishments/certificate/SPUUQ5AK7NSR"
+    },
+    {
+        "id": "cert-hackerrank-javascript",
+        "name": "JavaScript",
+        "issuer": "HackerRank",
+        "issued": "Jul 2022",
+        "credentialId": "",
+        "url": "https://www.hackerrank.com/certificates/201d3031cba9"
+    },
+    {
+        "id": "cert-navgurukul-software-programming",
+        "name": "Software Programming",
+        "issuer": "NavGurukul",
+        "issued": "Jan 2022",
+        "credentialId": "",
+        "url": "https://res.cloudinary.com/dpqchc972/image/upload/v1659439853/NavGurukul_Certificate_80_5_1__page-0001_xvn2do.jpg"
+    },
+    {
+        "id": "cert-sololearn-core-python",
+        "name": "Core Python",
+        "issuer": "Sololearn",
+        "issued": "",
+        "credentialId": "CT-2DSX7FSR",
+        "url": "https://www.sololearn.com/certificates/CT-2DSX7FSR"
+    },
+    {
+        "id": "cert-hackerrank-nodejs",
+        "name": "Node.js",
+        "issuer": "HackerRank",
+        "issued": "",
+        "credentialId": "",
+        "url": "https://www.hackerrank.com/certificates/ec48b17575bf"
+    }
+]

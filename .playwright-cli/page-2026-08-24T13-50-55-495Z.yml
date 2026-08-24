@@ -1,0 +1,602 @@
+- generic [ref=e1]:
+  - link [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+    - text: Skip to main content
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /?trk=public_profile_nav-header-logo
+        - generic [ref=e6]: LinkedIn
+        - img [ref=e8]
+      - list [ref=e19]:
+        - listitem [ref=e20]:
+          - link [ref=e21] [cursor=pointer]:
+            - /url: https://www.linkedin.com/top-content?trk=public_profile_guest_nav_menu_topContent
+            - img [ref=e23]
+            - generic [ref=e25]: Top Content
+        - listitem [ref=e26]:
+          - link [ref=e27] [cursor=pointer]:
+            - /url: https://www.linkedin.com/pub/dir/+/+?trk=public_profile_guest_nav_menu_people
+            - img [ref=e29]
+            - generic [ref=e31]: People
+        - listitem [ref=e32]:
+          - link [ref=e33] [cursor=pointer]:
+            - /url: https://www.linkedin.com/learning/search?trk=public_profile_guest_nav_menu_learning
+            - img [ref=e35]
+            - generic [ref=e40]: Learning
+        - listitem [ref=e41]:
+          - link [ref=e42] [cursor=pointer]:
+            - /url: https://www.linkedin.com/jobs/jobs-in-delhi-india?trk=public_profile_guest_nav_menu_jobs
+            - img [ref=e44]
+            - generic [ref=e46]: Jobs
+        - listitem [ref=e47]:
+          - link [ref=e48] [cursor=pointer]:
+            - /url: https://www.linkedin.com/games?trk=public_profile_guest_nav_menu_games
+            - img [ref=e50]
+            - generic [ref=e52]: Games
+      - generic [ref=e53]:
+        - link [ref=e54] [cursor=pointer]:
+          - /url: https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fin%2Elinkedin%2Ecom%2Fin%2Fsatyam-kushwaha-783573205&fromSignIn=true&trk=public_profile_nav-header-signin
+          - text: Sign in
+        - link [ref=e55] [cursor=pointer]:
+          - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=satyam-kushwaha-783573205&session_redirect=https%3A%2F%2Fin.linkedin.com%2Fin%2Fsatyam-kushwaha-783573205&trk=public_profile_nav-header-join
+          - text: Join now
+  - main [ref=e56]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - figure [ref=e61]
+        - generic [ref=e64]:
+          - img [ref=e66]
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - button [ref=e69] [cursor=pointer]:
+                - heading [level=1] [ref=e70]: Satyam kushwaha
+              - heading [level=3] [ref=e71]:
+                - generic [ref=e72]:
+                  - text: Noida, Uttar Pradesh, India
+                  - generic [ref=e73]: ·
+                  - button [ref=e74] [cursor=pointer]: Contact Info
+                  - generic [ref=e75]: 2K followers · 500+ connections
+              - heading [level=4] [ref=e76]:
+                - generic [ref=e78]:
+                  - generic [ref=e79]:
+                    - img [ref=e80]
+                    - img [ref=e81]
+                    - img [ref=e82]
+                  - button [ref=e83] [cursor=pointer]: See your mutual connections
+              - generic [ref=e84]:
+                - link [ref=e85] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=satyam-kushwaha-783573205&trk=public_profile_top-card-primary-button-join-to-view-profile
+                  - text: Join to view profile
+                - button [ref=e87] [cursor=pointer]:
+                  - img [ref=e89]
+                  - text: Message
+            - generic [ref=e92]:
+              - link [ref=e94] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/swiirl?trk=public_profile_topcard-current-company
+                - img [ref=e95]
+                - generic [ref=e96]: swiirl
+              - link [ref=e98] [cursor=pointer]:
+                - /url: https://in.linkedin.com/school/indira-gandhi-national-open-university-ignou-/?trk=public_profile_topcard-school
+                - img [ref=e99]
+                - generic [ref=e100]: Indira Gandhi National Open University (IGNOU)
+              - link [ref=e102] [cursor=pointer]:
+                - /url: https://www.linkedin.com/redir/redirect?url=satyamkushwaha%2Enetlify%2Eapp&urlhash=RTm8&trk=public_profile_topcard-website
+                - generic [ref=e103]: Blog
+          - button [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+      - generic [ref=e110]:
+        - heading [level=2] [ref=e111]: About
+        - generic [ref=e113]:
+          - text: I’m a self taught Full Stack Software Engineer with experience building scalable web…
+          - button [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]: see more
+      - generic [ref=e117]:
+        - heading [level=2] [ref=e118]: Services
+        - generic [ref=e119]:
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - link [ref=e122] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/it-consultants?trk=public_profile_services_pill
+                - text: IT Consulting
+            - listitem [ref=e123]:
+              - link [ref=e124] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/web-developers?trk=public_profile_services_pill
+                - text: Web Development
+            - listitem [ref=e125]:
+              - link [ref=e126] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/cloud-management-professionals?trk=public_profile_services_pill
+                - text: Cloud Management
+            - listitem [ref=e127]:
+              - link [ref=e128] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/software-testing-professionals?trk=public_profile_services_pill
+                - text: Software Testing
+            - listitem [ref=e129]:
+              - link [ref=e130] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/android-developers?trk=public_profile_services_pill
+                - text: Android Development
+            - listitem [ref=e131]:
+              - link [ref=e132] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/application-developers?trk=public_profile_services_pill
+                - text: Application Development
+            - listitem [ref=e133]:
+              - link [ref=e134] [cursor=pointer]:
+                - /url: https://www.linkedin.com/services/l2/mobile-developers?trk=public_profile_services_pill
+                - text: Mobile Application Development
+          - link [ref=e135] [cursor=pointer]:
+            - /url: https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fservices%2Fpage%2F80248a3446827a7529%2Frequest-proposal
+            - text: Request proposal
+      - generic [ref=e136]:
+        - heading [level=2] [ref=e137]: Experience & Education
+        - generic [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - img [ref=e142]
+              - generic [ref=e143]:
+                - heading [level=3] [ref=e144]: swiirl
+                - heading [level=4] [ref=e145]:
+                  - paragraph [ref=e146]: "******** ********"
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - img [ref=e150]
+              - generic [ref=e151]:
+                - heading [level=3] [ref=e152]: "***** ********** * ********"
+                - heading [level=4] [ref=e153]:
+                  - paragraph [ref=e154]: "**** ******** *********** ********"
+            - listitem [ref=e155]:
+              - img [ref=e156]
+              - generic [ref=e157]:
+                - heading [level=3] [ref=e158]: "********** **********"
+                - heading [level=4] [ref=e159]:
+                  - paragraph [ref=e160]: "**** ***** *********"
+            - listitem [ref=e161]:
+              - img [ref=e162]
+              - generic [ref=e163]:
+                - heading [level=3] [ref=e164]: "****** ****** ******** **** ********** *******"
+                - heading [level=4] [ref=e165]:
+                  - paragraph [ref=e166]: "******** ** ******** ************ ******** *** *********** ******** *** ******* ******** undefined"
+                - paragraph [ref=e168]:
+                  - generic [ref=e169]:
+                    - time [ref=e170]: "2022"
+                    - text: "-"
+                    - time [ref=e171]: "2025"
+            - listitem [ref=e172]:
+              - img [ref=e173]
+              - generic [ref=e174]:
+                - heading [level=3] [ref=e175]: "******* ******** ********* *****"
+                - heading [level=4] [ref=e176]:
+                  - paragraph [ref=e177]: "**** **** *********** *** ******** ******* *****"
+                - paragraph [ref=e179]:
+                  - generic [ref=e180]:
+                    - time [ref=e181]: "2020"
+                    - text: "-"
+                    - time [ref=e182]: "2021"
+          - generic [ref=e183]:
+            - heading [level=2] [ref=e184]: View Satyam’s full experience
+            - heading [level=3] [ref=e185]: See their title, tenure and more.
+            - generic [ref=e186]:
+              - button [ref=e188] [cursor=pointer]:
+                - generic [ref=e189]: Sign in
+              - paragraph [ref=e191]: or
+              - paragraph [ref=e193]:
+                - text: By clicking Continue to join or sign in, you agree to LinkedIn’s
+                - link [ref=e194] [cursor=pointer]:
+                  - /url: /legal/user-agreement?trk=public_profile_auth-button_user-agreement
+                  - text: User Agreement
+                - text: ","
+                - link [ref=e195] [cursor=pointer]:
+                  - /url: /legal/privacy-policy?trk=public_profile_auth-button_privacy-policy
+                  - text: Privacy Policy
+                - text: ", and"
+                - link [ref=e196] [cursor=pointer]:
+                  - /url: /legal/cookie-policy?trk=public_profile_auth-button_cookie-policy
+                  - text: Cookie Policy
+                - text: .
+      - generic [ref=e197]:
+        - heading [level=2] [ref=e198]: Licenses & Certifications
+        - list [ref=e200]:
+          - listitem [ref=e201]:
+            - link [ref=e202] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/oracle?trk=public_profile_profile-section-card_image-click
+              - img [ref=e203]
+            - generic [ref=e204]:
+              - heading [level=3] [ref=e205]: Agentic AI Certified Foundations Associate
+              - heading [level=4] [ref=e206]:
+                - link [ref=e207] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/oracle?trk=public_profile_profile-section-card_subtitle-click
+                  - text: Oracle
+              - generic [ref=e210]:
+                - text: Issued
+                - time [ref=e211]: Aug 2026
+          - listitem [ref=e212]:
+            - link [ref=e213] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/anthropicresearch?trk=public_profile_profile-section-card_image-click
+              - img [ref=e214]
+            - generic [ref=e215]:
+              - heading [level=3] [ref=e216]:
+                - link [ref=e217] [cursor=pointer]:
+                  - /url: https://verify.skilljar.com/c/pei3ogyzbor5?trk=public_profile_certification-title
+                  - text: "Certificate of completion: Claude code 101"
+              - heading [level=4] [ref=e218]:
+                - link [ref=e219] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/anthropicresearch?trk=public_profile_profile-section-card_subtitle-click
+                  - text: Anthropic
+              - generic [ref=e220]:
+                - generic [ref=e222]:
+                  - text: Issued
+                  - time [ref=e223]: Aug 2026
+                - generic [ref=e224]: Credential ID pei3ogyzbor5
+                - link [ref=e226] [cursor=pointer]:
+                  - /url: https://verify.skilljar.com/c/pei3ogyzbor5?trk=public_profile_see-credential
+                  - text: See credential
+          - listitem [ref=e227]:
+            - link [ref=e228] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/udemy?trk=public_profile_profile-section-card_image-click
+              - img [ref=e229]
+            - generic [ref=e230]:
+              - heading [level=3] [ref=e231]:
+                - link [ref=e232] [cursor=pointer]:
+                  - /url: https://udemy-certificate.s3.amazonaws.com/image/UC-c587ee05-0396-4a54-a3cb-583751c1547c.jpg?trk=public_profile_certification-title
+                  - text: Udemy certificate in React Native (App Development )
+              - heading [level=4] [ref=e233]:
+                - link [ref=e234] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/udemy?trk=public_profile_profile-section-card_subtitle-click
+                  - text: Udemy
+              - generic [ref=e235]:
+                - generic [ref=e237]:
+                  - text: Issued
+                  - time [ref=e238]: Jan 2024
+                - link [ref=e240] [cursor=pointer]:
+                  - /url: https://udemy-certificate.s3.amazonaws.com/image/UC-c587ee05-0396-4a54-a3cb-583751c1547c.jpg?trk=public_profile_see-credential
+                  - text: See credential
+          - listitem [ref=e241]:
+            - link [ref=e242] [cursor=pointer]:
+              - /url: https://in.linkedin.com/company/cutshort?trk=public_profile_profile-section-card_image-click
+              - img [ref=e243]
+            - generic [ref=e244]:
+              - heading [level=3] [ref=e245]:
+                - link [ref=e246] [cursor=pointer]:
+                  - /url: https://cutshort.io/certificate/71984?trk=public_profile_certification-title
+                  - text: Cutshort Certified React.js - Basic
+              - heading [level=4] [ref=e247]:
+                - link [ref=e248] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/cutshort?trk=public_profile_profile-section-card_subtitle-click
+                  - text: Cutshort
+              - generic [ref=e249]:
+                - generic [ref=e251]:
+                  - text: Issued
+                  - time [ref=e252]: Sep 2022
+                - generic [ref=e253]: Credential ID 71984
+                - link [ref=e255] [cursor=pointer]:
+                  - /url: https://cutshort.io/certificate/71984?trk=public_profile_see-credential
+                  - text: See credential
+          - listitem [ref=e256]:
+            - link [ref=e257] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/coursera?trk=public_profile_profile-section-card_image-click
+              - img [ref=e258]
+            - generic [ref=e259]:
+              - heading [level=3] [ref=e260]:
+                - link [ref=e261] [cursor=pointer]:
+                  - /url: https://www.coursera.org/account/accomplishments/certificate/SPUUQ5AK7NSR?trk=public_profile_certification-title
+                  - text: Web Development with HTML, CSS, JavaScript
+              - heading [level=4] [ref=e262]:
+                - link [ref=e263] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/coursera?trk=public_profile_profile-section-card_subtitle-click
+                  - text: Coursera
+              - generic [ref=e264]:
+                - generic [ref=e266]:
+                  - text: Issued
+                  - time [ref=e267]: Sep 2022
+                - generic [ref=e268]: Credential ID SPUUQ5AK7NSR
+                - link [ref=e270] [cursor=pointer]:
+                  - /url: https://www.coursera.org/account/accomplishments/certificate/SPUUQ5AK7NSR?trk=public_profile_see-credential
+                  - text: See credential
+          - listitem [ref=e271]:
+            - link [ref=e272] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/hackerrank?trk=public_profile_profile-section-card_image-click
+              - img [ref=e273]
+            - generic [ref=e274]:
+              - heading [level=3] [ref=e275]:
+                - link [ref=e276] [cursor=pointer]:
+                  - /url: https://www.hackerrank.com/certificates/201d3031cba9?trk=public_profile_certification-title
+                  - text: javascript
+              - heading [level=4] [ref=e277]:
+                - link [ref=e278] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/hackerrank?trk=public_profile_profile-section-card_subtitle-click
+                  - text: HackerRank
+              - generic [ref=e279]:
+                - generic [ref=e281]:
+                  - text: Issued
+                  - time [ref=e282]: Jul 2022
+                - link [ref=e284] [cursor=pointer]:
+                  - /url: https://www.hackerrank.com/certificates/201d3031cba9?trk=public_profile_see-credential
+                  - text: See credential
+          - listitem [ref=e285]:
+            - link [ref=e286] [cursor=pointer]:
+              - /url: https://in.linkedin.com/school/navgurukul/?trk=public_profile_profile-section-card_image-click
+              - img [ref=e287]
+            - generic [ref=e288]:
+              - heading [level=3] [ref=e289]:
+                - link [ref=e290] [cursor=pointer]:
+                  - /url: https://res.cloudinary.com/dpqchc972/image/upload/v1659439853/NavGurukul_Certificate_80_5_1__page-0001_xvn2do.jpg?trk=public_profile_certification-title
+                  - text: Software Programming
+              - heading [level=4] [ref=e291]:
+                - link [ref=e292] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/school/navgurukul/?trk=public_profile_profile-section-card_subtitle-click
+                  - text: NavGurukul
+              - generic [ref=e293]:
+                - generic [ref=e295]:
+                  - text: Issued
+                  - time [ref=e296]: Jan 2022
+                - link [ref=e298] [cursor=pointer]:
+                  - /url: https://res.cloudinary.com/dpqchc972/image/upload/v1659439853/NavGurukul_Certificate_80_5_1__page-0001_xvn2do.jpg?trk=public_profile_see-credential
+                  - text: See credential
+          - listitem [ref=e299]:
+            - link [ref=e300] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/sololearn-inc-?trk=public_profile_profile-section-card_image-click
+              - img [ref=e301]
+            - generic [ref=e302]:
+              - heading [level=3] [ref=e303]:
+                - link [ref=e304] [cursor=pointer]:
+                  - /url: https://www.sololearn.com/certificates/CT-2DSX7FSR?trk=public_profile_certification-title
+                  - text: Core Python
+              - heading [level=4] [ref=e305]:
+                - link [ref=e306] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/sololearn-inc-?trk=public_profile_profile-section-card_subtitle-click
+                  - text: Sololearn
+              - link [ref=e309] [cursor=pointer]:
+                - /url: https://www.sololearn.com/certificates/CT-2DSX7FSR?trk=public_profile_see-credential
+                - text: See credential
+          - listitem [ref=e310]:
+            - link [ref=e311] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/hackerrank?trk=public_profile_profile-section-card_image-click
+              - img [ref=e312]
+            - generic [ref=e313]:
+              - heading [level=3] [ref=e314]:
+                - link [ref=e315] [cursor=pointer]:
+                  - /url: https://www.hackerrank.com/certificates/ec48b17575bf?trk=public_profile_certification-title
+                  - text: nodejs
+              - heading [level=4] [ref=e316]:
+                - link [ref=e317] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/hackerrank?trk=public_profile_profile-section-card_subtitle-click
+                  - text: HackerRank
+              - link [ref=e320] [cursor=pointer]:
+                - /url: https://www.hackerrank.com/certificates/ec48b17575bf?trk=public_profile_see-credential
+                - text: See credential
+      - generic [ref=e321]:
+        - heading [level=2] [ref=e322]: Projects
+        - list [ref=e324]:
+          - listitem [ref=e325]:
+            - generic [ref=e326]:
+              - heading [level=3] [ref=e327]: Git-vault — media storage on GitHub
+              - heading [level=4] [ref=e328]: "-"
+              - paragraph [ref=e331]: Turn any GitHub repository into a media bucket. Sign in with GitHub, pick or create a repo, drag files in, browse them in a gallery, and copy permanent links into your site.
+          - listitem [ref=e332]:
+            - generic [ref=e333]:
+              - heading [level=3] [ref=e334]: Smart E‑Commerce Platform
+              - heading [level=4] [ref=e335]: "-"
+              - paragraph [ref=e338]: AI‑POWERED E‑COMMERCE PLATFORM WiTH INTELLiGENT NEGOTiATiON AGENT • Built an e‑commerce platform with AI‑based product search using natural language queries. • Developed intelligent price negotiation agent for optimized deal suggestions. • Implemented personalized recommendations using user behavior insights.
+          - listitem [ref=e339]:
+            - generic [ref=e340]:
+              - heading [level=3] [ref=e341]: PC builder
+              - heading [level=4] [ref=e342]: "-"
+          - listitem [ref=e343]:
+            - generic [ref=e344]:
+              - heading [level=3] [ref=e345]: Resume tailor website
+              - heading [level=4] [ref=e346]: "-"
+              - paragraph [ref=e349]: Full-stack web app that rewrites resumes to beat Applicant Tracking Systems — AI tailoring, real-time ATS scoring, keyword-gap analysis, and one-click export to 100% ATS-friendly PDF/DOCX.
+          - listitem [ref=e350]:
+            - generic [ref=e351]:
+              - heading [level=3] [ref=e352]: Ai engineering learning website
+              - heading [level=4] [ref=e353]:
+                - generic [ref=e354]:
+                  - time [ref=e355]: Jan 2026
+                  - text: "-"
+                  - time [ref=e356]: Jan 2026
+              - paragraph [ref=e359]: Ai engineer roadmap learning website
+          - listitem [ref=e360]:
+            - generic [ref=e361]:
+              - heading [level=3] [ref=e362]: "logger-logs : npm package"
+              - heading [level=4] [ref=e363]:
+                - generic [ref=e364]:
+                  - time [ref=e365]: Jan 2025
+                  - text: "-"
+                  - time [ref=e366]: Jan 2025
+              - paragraph [ref=e369]: "logger-logs is a lightweight and flexible utility for logging messages with detailed context. It outputs the file path, line number, and formatted messages to help you trace and debug issues effortlessly. Link: https://www.npmjs.com/package/logger-logs?activeTab=readme"
+          - listitem [ref=e370]:
+            - generic [ref=e371]:
+              - heading [level=3] [ref=e372]: tiny-link
+              - heading [level=4] [ref=e373]:
+                - generic [ref=e374]:
+                  - time [ref=e375]: Aug 2024
+                  - text: "-"
+                  - time [ref=e376]: Aug 2024
+              - paragraph [ref=e379]:
+                - text: "Project Description: URL Shortener with QR Code Generator : https://tinnylink.vercel.app/ This project is a URL Shortener application built using Next.js, MongoDB, and TypeScript. It allows users to input a long URL and receive a shortened version, along with a QR code for easy sharing. The application features a simple user interface where users can enter a URL, generate a shortened link, and view the QR code. The backend is powered by a RESTful API that handles URL shortening, QR code…"
+                - button [ref=e380] [cursor=pointer]: Show more
+          - listitem [ref=e382]:
+            - generic [ref=e383]:
+              - heading [level=3] [ref=e384]:
+                - link [ref=e385] [cursor=pointer]:
+                  - /url: https://satyamkushwaha.netlify.app/?trk=public_profile_project-title
+                  - text: My Portfolio
+              - heading [level=4] [ref=e386]:
+                - generic [ref=e387]:
+                  - time [ref=e388]: Jan 2022
+                  - text: "-"
+                  - time [ref=e389]: Apr 2022
+              - generic [ref=e390]:
+                - paragraph [ref=e392]: This is my Portfolio website .I made it with the help frontend UI library called React.js.Go and check my portfolio .
+                - link [ref=e393] [cursor=pointer]:
+                  - /url: https://satyamkushwaha.netlify.app/?trk=public_profile_project-button
+                  - text: See project
+          - listitem [ref=e394]:
+            - generic [ref=e395]:
+              - heading [level=3] [ref=e396]:
+                - link [ref=e397] [cursor=pointer]:
+                  - /url: https://real-cyan-coati-wig.cyclic.app/?trk=public_profile_project-title
+                  - text: Blog Creator and Editor
+              - heading [level=4] [ref=e398]:
+                - generic [ref=e399]:
+                  - time [ref=e400]: Feb 2022
+                  - text: "-"
+                  - time [ref=e401]: Feb 2022
+              - link [ref=e403] [cursor=pointer]:
+                - /url: https://real-cyan-coati-wig.cyclic.app/?trk=public_profile_project-button
+                - text: See project
+          - listitem [ref=e404]:
+            - generic [ref=e405]:
+              - heading [level=3] [ref=e406]:
+                - link [ref=e407] [cursor=pointer]:
+                  - /url: https://proud-bull-loafers.cyclic.app/?trk=public_profile_project-title
+                  - text: Notes Manager (Mern App)
+              - heading [level=4] [ref=e408]:
+                - generic [ref=e409]:
+                  - time [ref=e410]: Nov 2021
+                  - text: "-"
+                  - time [ref=e411]: Dec 2021
+              - generic [ref=e412]:
+                - paragraph [ref=e414]: The is the website which can be use to create and save your notes. I use React, nodejs , mongoDb ,express, bootstrap ect. to create this website.
+                - link [ref=e415] [cursor=pointer]:
+                  - /url: https://proud-bull-loafers.cyclic.app/?trk=public_profile_project-button
+                  - text: See project
+      - generic [ref=e416]:
+        - heading [level=2] [ref=e417]: Languages
+        - list [ref=e419]:
+          - listitem [ref=e420]:
+            - generic [ref=e421]:
+              - heading [level=3] [ref=e422]: English
+              - heading [level=4] [ref=e423]: Professional working proficiency
+          - listitem [ref=e424]:
+            - generic [ref=e425]:
+              - heading [level=3] [ref=e426]: Hindi
+              - heading [level=4] [ref=e427]: Native or bilingual proficiency
+          - listitem [ref=e428]:
+            - generic [ref=e429]:
+              - heading [level=3] [ref=e430]: Telugu
+              - heading [level=4] [ref=e431]: Elementary proficiency
+      - generic [ref=e434]:
+        - heading [level=2] [ref=e435]: View Satyam’s full profile
+        - list [ref=e436]:
+          - listitem [ref=e437]:
+            - generic [ref=e440]: See who you know in common
+          - listitem [ref=e441]:
+            - generic [ref=e444]: Get introduced
+          - listitem [ref=e445]:
+            - generic [ref=e448]: Contact Satyam directly
+        - link [ref=e449] [cursor=pointer]:
+          - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=satyam-kushwaha-783573205&trk=public_profile_bottom-cta-banner
+          - text: Join to view full profile
+    - generic [ref=e450]:
+      - generic [ref=e453]:
+        - heading [level=2] [ref=e455]: Explore top content on LinkedIn
+        - paragraph [ref=e456]: Find curated posts and insights for relevant topics all in one place.
+        - link [ref=e457] [cursor=pointer]:
+          - /url: https://www.linkedin.com/top-content/
+          - text: View top content
+      - generic [ref=e458]:
+        - heading [level=2] [ref=e459]: Add new skills with these courses
+        - generic [ref=e460]:
+          - list [ref=e461]:
+            - listitem [ref=e462]:
+              - link [ref=e463] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/scala-essential-training-for-data-science-29667701?trk=public_profile_recommended-course
+                - generic [ref=e464]:
+                  - generic [ref=e465]: 2h 14m
+                  - img [ref=e467]
+                - heading [level=3] [ref=e471]: Scala Essential Training for Data Science
+            - listitem [ref=e472]:
+              - link [ref=e473] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/large-language-models-on-aws-building-and-deploying-open-source-llms?trk=public_profile_recommended-course
+                - generic [ref=e474]:
+                  - generic [ref=e475]: 35m
+                  - img [ref=e477]
+                - heading [level=3] [ref=e481]: "Large Language Models on AWS: Building and Deploying Open-Source LLMs"
+            - listitem [ref=e482]:
+              - link [ref=e483] [cursor=pointer]:
+                - /url: https://www.linkedin.com/learning/aws-api-gateway-with-http-lambda-dynamodb-and-ios-24306413?trk=public_profile_recommended-course
+                - generic [ref=e484]:
+                  - generic [ref=e485]: 2h 1m
+                  - img [ref=e487]
+                - heading [level=3] [ref=e491]: AWS API Gateway with HTTP, Lambda, DynamoDB, and iOS
+          - link [ref=e492] [cursor=pointer]:
+            - /url: https://www.linkedin.com/learning/?trk=seo_pp_d_cymbii_more_m015_learning
+            - text: See all courses
+  - contentinfo [ref=e493]:
+    - list [ref=e494]:
+      - generic [ref=e495]: LinkedIn
+      - generic [ref=e497]: © 2026
+      - listitem [ref=e498]:
+        - link [ref=e499] [cursor=pointer]:
+          - /url: https://about.linkedin.com?trk=public_profile_v3_desktop_footer-about
+          - text: About
+      - listitem [ref=e500]:
+        - link [ref=e501] [cursor=pointer]:
+          - /url: https://www.linkedin.com/accessibility?trk=public_profile_v3_desktop_footer-accessibility
+          - text: Accessibility
+      - listitem [ref=e502]:
+        - link [ref=e503] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/user-agreement?trk=public_profile_v3_desktop_footer-user-agreement
+          - text: User Agreement
+      - listitem [ref=e504]:
+        - link [ref=e505] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/privacy-policy?trk=public_profile_v3_desktop_footer-privacy-policy
+          - text: Privacy Policy
+      - listitem [ref=e506]:
+        - link [ref=e507] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/cookie-policy?trk=public_profile_v3_desktop_footer-cookie-policy
+          - text: Cookie Policy
+      - listitem [ref=e508]:
+        - link [ref=e509] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/copyright-policy?trk=public_profile_v3_desktop_footer-copyright-policy
+          - text: Copyright Policy
+      - listitem [ref=e510]:
+        - link [ref=e511] [cursor=pointer]:
+          - /url: https://brand.linkedin.com/policies?trk=public_profile_v3_desktop_footer-brand-policy
+          - text: Brand Policy
+      - listitem [ref=e512]:
+        - link [ref=e513] [cursor=pointer]:
+          - /url: https://www.linkedin.com/psettings/guest-controls?trk=public_profile_v3_desktop_footer-guest-controls
+          - text: Guest Controls
+      - listitem [ref=e514]:
+        - link [ref=e515] [cursor=pointer]:
+          - /url: https://www.linkedin.com/legal/professional-community-policies?trk=public_profile_v3_desktop_footer-community-guide
+          - text: Community Guidelines
+      - listitem [ref=e516]:
+        - button [ref=e518]: Language
+  - dialog "View Satyam’s full profile" [active] [ref=e521]:
+    - button "Dismiss" [ref=e522] [cursor=pointer]:
+      - img [ref=e524]
+    - generic [ref=e527]:
+      - generic [ref=e528]:
+        - img [ref=e529]
+        - heading "View Satyam’s full profile" [level=2] [ref=e530]
+        - paragraph [ref=e532]:
+          - img [ref=e534]
+          - text: Satyam can introduce you to 10+ people at Swiirl
+      - generic [ref=e536]:
+        - generic:
+          - generic:
+            - button "Continue with google"
+        - button "Sign in with Email" [ref=e537] [cursor=pointer]:
+          - img [ref=e539]
+          - generic [ref=e541]: Sign in with Email
+        - paragraph [ref=e543]: or
+        - generic:
+          - generic:
+            - button "Continue with google"
+        - paragraph [ref=e544]:
+          - text: New to LinkedIn?
+          - link "Join now" [ref=e545] [cursor=pointer]:
+            - /url: https://www.linkedin.com/signup/public-profile-join?vieweeVanityName=satyam-kushwaha-783573205&trk=public_profile_contextual-sign-in-modal_join-link
+        - paragraph [ref=e546]:
+          - text: By clicking Continue to join or sign in, you agree to LinkedIn’s
+          - link "User Agreement" [ref=e547] [cursor=pointer]:
+            - /url: /legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement
+          - text: ","
+          - link "Privacy Policy" [ref=e548] [cursor=pointer]:
+            - /url: /legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy
+          - text: ", and"
+          - link "Cookie Policy" [ref=e549] [cursor=pointer]:
+            - /url: /legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy
+          - text: .
